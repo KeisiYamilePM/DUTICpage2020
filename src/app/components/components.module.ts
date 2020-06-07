@@ -15,14 +15,6 @@ import { NotificationComponent } from './notification/notification.component';
 import { NgbdModalBasic } from './modal/modal.component';
 
 @NgModule({
-    imports: [
-        CommonModule,
-        FormsModule,
-        NgbModule,
-        NouisliderModule,
-        RouterModule,
-        JwBootstrapSwitchNg2Module
-      ],
     declarations: [
         ComponentsComponent,
         BasicelementsComponent,
@@ -31,6 +23,14 @@ import { NgbdModalBasic } from './modal/modal.component';
         NucleoiconsComponent,
         NotificationComponent,
         NgbdModalBasic
+    ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        NgbModule,
+        NouisliderModule,
+        RouterModule,
+        JwBootstrapSwitchNg2Module
     ],
     exports:[ ComponentsComponent ]
 })
