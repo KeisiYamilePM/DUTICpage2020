@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
+import { MatTooltipModule } from '@angular/material/tooltip';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -21,7 +23,8 @@ import { FooterComponent } from './shared/footer/footer.component';
         FormsModule,
         RouterModule,
         AppRoutingModule,
-        ComponentsModule,        
+        ComponentsModule,      
+        MatTooltipModule,  
     ],
     providers: [],
     bootstrap: [AppComponent]

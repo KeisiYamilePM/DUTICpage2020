@@ -29,24 +29,24 @@
                 <th mat-header-cell *matHeaderCellDef> Nacionalidad </th>
                 <td mat-cell *matCellDef="let element"> {{element.nationality}} </td>
             </ng-container>
-            <ng-container matColumnDef="category">
+            <!-- <ng-container matColumnDef="category">
                 <th mat-header-cell *matHeaderCellDef> Categoria </th>
                 <td mat-cell *matCellDef="let element"> {{element.category}} </td>
-            </ng-container>
+            </ng-container> -->
             <!-- Symbol Column -->
             <ng-container matColumnDef="date">
                 <th mat-header-cell *matHeaderCellDef> Fecha </th>
                 <td mat-cell *matCellDef="let element"> {{element.date}} </td>
             </ng-container>
-            <ng-container matColumnDef="hour">
+          <!--   <ng-container matColumnDef="hour">
                 <th mat-header-cell *matHeaderCellDef> Hora </th>
                 <td mat-cell *matCellDef="let element"> {{element.hour}} </td>
-            </ng-container>
+            </ng-container> -->
             <ng-container matColumnDef="state">
                 <th mat-header-cell *matHeaderCellDef> Estado </th>
                 <td mat-cell *matCellDef="let element">
                     &nbsp;
-                    <span *ngIf="element.state==true? true : false">Vigente</span>
+                    <span *ngIf="element.state==true? true : false">Vigente<br>{{element.hour}}</span>
                     <span *ngIf="element.state==false? true : false">Pasado</span>
                 </td>
             </ng-container>

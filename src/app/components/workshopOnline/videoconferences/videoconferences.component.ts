@@ -18,7 +18,7 @@ export class VideoconferencesComponent implements OnInit {
   public data: any[] = []
   isLoad= false
 
-  displayedColumns: string[] = ['name', 'speaker','nationality', 'category', 'date', 'hour', 'state', 'link'];
+  displayedColumns: string[] = ['name', 'speaker','nationality', 'date', 'state', 'link'];
   dataSource: MatTableDataSource<any>;
   lenghtData: number;
 
