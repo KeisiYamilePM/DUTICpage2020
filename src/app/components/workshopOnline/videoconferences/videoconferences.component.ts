@@ -1,5 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { OnlineWorkshopsService } from '../../../services/online-workshops.service';
 
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
+import { MatTableDataSource } from '@angular/material/table';
 @Component({
   selector: 'app-videoconferences',
   templateUrl: './videoconferences.component.html',
@@ -7,9 +11,42 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VideoconferencesComponent implements OnInit {
 
-  constructor() { }
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort) sort: MatSort
+
+  
+  public data: any[] = []
+  isLoad= false
+
+  displayedColumns: string[] = ['name', 'speaker','nationality', 'category', 'date', 'hour', 'state', 'link'];
+  dataSource: MatTableDataSource<any>;
+  lenghtData: number;
+
+  constructor(private videoconferencesService: OnlineWorkshopsService) { }
 
   ngOnInit(): void {
+    this.ongetVideoconferencesList()
   }
 
+   
+  applyFilter(filterValue: String) {
+    this.dataSource.filter = filterValue.trim().toLowerCase()
+    if (this.dataSource.paginator) {
+      this.dataSource.paginator.firstPage()
+    }
+  }
+  ongetVideoconferencesList(){
+    this.isLoad= true
+    this.videoconferencesService.getVideoconferencesList().subscribe((data:any)=>{
+      /*console.log('tvunsaaaa: ', data)*/
+      this.data = data
+      this.dataSource = new MatTableDataSource(data)
+      this.dataSource.paginator = this.paginator
+      this.dataSource.sort = this.sort
+      this.isLoad= false
+      this.lenghtData = data.length
+    }, err => {
+      this.isLoad=false
+    })
+  }
 }
