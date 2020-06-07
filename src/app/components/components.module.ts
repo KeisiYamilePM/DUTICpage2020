@@ -5,6 +5,11 @@ import { FormsModule } from '@angular/forms';
 import { NouisliderModule } from 'ng2-nouislider';
 import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { RouterModule } from '@angular/router';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { MatTableModule } from '@angular/material/table';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 import { BasicelementsComponent } from './basicelements/basicelements.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -20,6 +25,7 @@ import { StudentsComponent } from './videosresources/students/students.component
 import { ToolsgoogleComponent } from './videosresources/toolsgoogle/toolsgoogle.component';
 import { NewsComponent } from './virtualteaching/news/news.component';
 import { SubjectDesignComponent } from './virtualteaching/subject-design/subject-design.component';
+
 
 @NgModule({
     declarations: [
@@ -44,7 +50,12 @@ import { SubjectDesignComponent } from './virtualteaching/subject-design/subject
         NgbModule,
         NouisliderModule,
         RouterModule,
-        JwBootstrapSwitchNg2Module
+        JwBootstrapSwitchNg2Module,
+        MatTableModule,
+		MatPaginatorModule,
+        MatSortModule,
+        MatProgressSpinnerModule,
+		MatProgressBarModule,
     ],
     exports:[ ComponentsComponent ]
 })
