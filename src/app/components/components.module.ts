@@ -13,6 +13,13 @@ import { NucleoiconsComponent } from './nucleoicons/nucleoicons.component';
 import { ComponentsComponent } from './components.component';
 import { NotificationComponent } from './notification/notification.component';
 import { NgbdModalBasic } from './modal/modal.component';
+import { TvunsaComponent } from './workshopOnline/tvunsa/tvunsa.component';
+import { VideoconferencesComponent } from './workshopOnline/videoconferences/videoconferences.component';
+import { TeachersComponent } from './videosresources/teachers/teachers.component';
+import { StudentsComponent } from './videosresources/students/students.component';
+import { ToolsgoogleComponent } from './videosresources/toolsgoogle/toolsgoogle.component';
+import { NewsComponent } from './virtualteaching/news/news.component';
+import { SubjectDesignComponent } from './virtualteaching/subject-design/subject-design.component';
 
 @NgModule({
     declarations: [
@@ -22,7 +29,14 @@ import { NgbdModalBasic } from './modal/modal.component';
         TypographyComponent,
         NucleoiconsComponent,
         NotificationComponent,
-        NgbdModalBasic
+        NgbdModalBasic,
+        TvunsaComponent,
+        VideoconferencesComponent,
+        TeachersComponent,
+        StudentsComponent,
+        ToolsgoogleComponent,
+        NewsComponent,
+        SubjectDesignComponent
     ],
     imports: [
         CommonModule,

@@ -8,6 +8,13 @@ import { LandingComponent } from './examples/landing/landing.component';
 import { LoginComponent } from './examples/login/login.component';
 import { ProfileComponent } from './examples/profile/profile.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
+import { NewsComponent } from './components/virtualteaching/news/news.component';
+import { SubjectDesignComponent } from './components/virtualteaching/subject-design/subject-design.component';
+import { TvunsaComponent } from './components/workshopOnline/tvunsa/tvunsa.component';
+import { VideoconferencesComponent } from './components/workshopOnline/videoconferences/videoconferences.component';
+import { TeachersComponent } from './components/videosresources/teachers/teachers.component';
+import { StudentsComponent } from './components/videosresources/students/students.component';
+import { ToolsgoogleComponent } from './components/videosresources/toolsgoogle/toolsgoogle.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'index', pathMatch: 'full' },
@@ -15,7 +22,18 @@ const routes: Routes =[
     { path: 'nucleoicons',          component: NucleoiconsComponent },
     { path: 'examples/landing',     component: LandingComponent },
     { path: 'examples/login',       component: LoginComponent },
-    { path: 'examples/profile',     component: ProfileComponent }
+    { path: 'examples/profile',     component: ProfileComponent },
+
+    { path: 'virtualTeaching/news',     component: NewsComponent },
+    { path: 'virtualTeaching/subjectDesign',     component: SubjectDesignComponent },
+    
+    { path: 'workshopOnline/tvunsa',     component: TvunsaComponent },
+    { path: 'workshopOnline/videoconferences',     component: VideoconferencesComponent },
+
+    { path: 'videoandresources/teachers',     component: TeachersComponent },
+    { path: 'videoandresources/students',     component: StudentsComponent },
+    { path: 'videoandresources/googletools',     component: ToolsgoogleComponent },
+
 ];
 
 @NgModule({
