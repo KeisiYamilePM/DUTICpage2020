@@ -42,8 +42,8 @@
                 <th mat-header-cell *matHeaderCellDef> Estado </th>
                 <td mat-cell *matCellDef="let element">
                     &nbsp;
-                    <span *ngIf="element.state==true? true : false" class="text-success">Vigente</span>
-                    <span *ngIf="element.state==false? true : false" class="text-danger">Pasado</span>
+                    <span *ngIf="element.state==true? true : false" class="badge badge-success">Vigente</span>
+                    <span *ngIf="element.state==false? true : false" class="badge badge-danger">Pasado</span>
                 </td>
             </ng-container>
 
