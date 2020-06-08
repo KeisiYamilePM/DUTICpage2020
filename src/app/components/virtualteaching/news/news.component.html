@@ -1,18 +1,20 @@
 <div style="margin-top: 150px;" class="container">
     <h2>NOTICIAS<br><small>Actualidad</small></h2>
+    <div class="row">
+        <div class="col-4" *ngFor="let news of content">
 
-    <div class="card-columns" *ngFor="let news of content">
+            <div class="card animated fadeIn fast" style="width: 100%;">
+                <!--img src="{{news.img}}" class="card-img-top" alt="..."-->
+                <div class="card-body">
 
-        <div class="card animated fadeIn fast" style="width: 100%;">
-            <!--img src="{{news.img}}" class="card-img-top" alt="..."-->
-            <div class="card-body">
-
-                <h5 class="card-title">{{news.name}}</h5>
-                <p class="card-text">{{news.des}}</p>
-                <p class="card-text">{{news.date}}</p>
-                <a href="{{news.link}}" class="btn btn-primary btn-block" target="_blank">Ver más</a>
+                    <h5 class="card-title">{{news.name}}</h5>
+                    <p class="card-text">{{news.des}}</p>
+                    <p class="card-text">{{news.date}}</p>
+                    <a href="{{news.link}}" class="btn btn-primary btn-block" target="_blank">Ver más</a>
+                </div>
             </div>
-        </div>
 
+        </div>
     </div>
+
 </div>

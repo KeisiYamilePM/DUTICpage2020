@@ -10,6 +10,8 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatTabsModule } from '@angular/material/tabs';
+import {MatDividerModule} from '@angular/material/divider';
 
 import { BasicelementsComponent } from './basicelements/basicelements.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -55,7 +57,9 @@ import { SubjectDesignComponent } from './virtualteaching/subject-design/subject
 		MatPaginatorModule,
         MatSortModule,
         MatProgressSpinnerModule,
-		MatProgressBarModule,
+        MatProgressBarModule,
+        MatTabsModule,
+        MatDividerModule,
     ],
     exports:[ ComponentsComponent ]
 })

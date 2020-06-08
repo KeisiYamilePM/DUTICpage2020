@@ -8,7 +8,7 @@
             <div class="content-center brand mt-4">
                 <img class="n-logo" src="assets/img/dutic.png" alt="">
                 <h1 class="h1-seo"></h1>
-                <h2 class="">Herramientas para la educación no presencial</h2>
+                <h2 class="">HERRAMIENTAS PARA LA <strong>EDUCACIÓN</strong> NO PRESENCIAL</h2>
             </div>
             <!--h6 class="category category-absolute">Designed by
               <a href="https://invisionapp.com/" target="_blank">
@@ -56,23 +56,30 @@
                     </div>
                     <div class="col-6">
                         <h3><strong>ANUNCIOS<br><small>UNSA Y ACTUALIDAD</small></strong></h3>
-                        <mat-list>
-                            <mat-list-item>
-                                <a href="https://drive.google.com/file/d/14pWbEbw9LNvCCv-Br629g-4dpD-0Qk4O/view?usp=sharing" 
-                                class="btn btn-primary btn-block" target="_blank">
-                                    <h5 class="text-wrap">VICERRECTORADO ACADÉMICO: <br>Orientaciones para el trabajo
-                                        virtual</h5>
-                                </a>
-                            </mat-list-item>
-                        </mat-list>
-                        <mat-list *ngFor="let news of content">
-                            <mat-list-item>
-                                <a href="{{news.link}}" class="btn btn-primary btn-block" target="_blank">
-                                    <h5 class="">{{news.name}}</h5>
-                                </a>
-                            </mat-list-item>
-                        </mat-list>
-
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="card card-news animated fadeIn fast" style="width: 100%; background-color: #141E42;">
+                                    <!--img src="{{news.img}}" class="card-img-top" alt="..."-->
+                                    <div class="card-body">
+                                        <h6 class="text-wrap" style="color: white;">VICERRECTORADO ACADÉMICO: <br>Orientaciones para el
+                                            trabajo virtual</h6>
+                                        <a href="https://drive.google.com/file/d/14pWbEbw9LNvCCv-Br629g-4dpD-0Qk4O/view?usp=sharing"
+                                            class="btn btn-primary btn-sm" style="background-color: white;
+                                            color: #141E42; " target="_blank">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4" *ngFor="let news of content">
+                                <div class="card card-news animated fadeIn fast" style="width: 100%; background-color: #141E42;">
+                                    <!--img src="{{news.img}}" class="card-img-top" alt="..."-->
+                                    <div class="card-body">
+                                        <h6 class="card-title" style="color: white;">{{news.name}}</h6>
+                                        <a href="{{news.link}}" class="btn btn-primary btn-sm" style="background-color: white;
+                                        color: #141E42;" target="_blank">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -155,11 +162,11 @@
                 <p>Dirección: Francisco Velasco 129, Parque Industrial Arequipa-Perú</p>
             </div>
             <div class="text-center col-md-12 col-lg-8">
-                <a target="_blank" href="" class="btn btn-neutral btn-icon btn-twitter btn-round btn-lg" rel="tooltip"
+                <a target="_blank" href="https://twitter.com/DuticUnsa" class="btn btn-neutral btn-icon btn-twitter btn-round btn-lg" rel="tooltip"
                     title="Follow us">
                     <i class="fab fa-twitter"></i>
                 </a>
-                <a target="_blank" href="" class="btn btn-neutral btn-icon btn-facebook btn-round btn-lg" rel="tooltip"
+                <a target="_blank" href="https://www.facebook.com/dutic.unsa.7" class="btn btn-neutral btn-icon btn-facebook btn-round btn-lg" rel="tooltip"
                     title="Like us">
                     <i class="fab fa-facebook-square"></i>
                 </a>
