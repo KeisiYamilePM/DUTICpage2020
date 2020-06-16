@@ -8,19 +8,54 @@ export class NewsService {
 
   private content: any[] = [
     {
+      name: "VICERRECTORADO ACADÉMICO: Orientaciones para el trabajo virtual",
+      des: "Los momentos del proceso, pueden abordarse utilizando diferentes herramientas asíncronas y sincrónicas e incluso podría usarse más de una herramienta a la vez; de esta forma adaptamos los recursos didácticos a todas las realidades de nuestro estudiantes, respecto al acceso a la educación virtual y fortalecemos el trabajo autónomo.",
+      img: "assets/img/news/vicerrec.png",
+      date: "",
+      state: true,
+      link: "assets/doc/orientaciones_trabajo_virtual.pdf",
+    },
+    {
+      name: "Experiencias UNSA: Desarrollo de clases prácticas en el aula virtua",
+      des: "Herramientas digitales para la enseñanza es el primer material de un conjunto que viene preparando la Dirección Académica de Planeamiento y Evaluación (DAPE) y la Dirección Académica de Responsabilidad Social (DARS) de la Pontificia Universidad Católica del Perú, en coordinación con la Secretaría Técnica de la Red Peruana de Universidades (RPU)",
+      img: "assets/img/news/simposioUNSA.jpg",
+      date: "16/06/2020",
+      state: true,
+      link: "https://bit.ly/2zCFOAg?fbclid=IwAR3zNFXW22lZHMbImRdzuZYavoCf0XNnFBtBJWlP-_SqcmE_JBOrLEnY51M",
+    },
+    {
       name: "UNESCO Y DOCENCIA VIRTUAL",
       des: "Desde su fundación, las universidades, como cualquier otra institución social, han tenido que enfrentarse a epidemias devastadoras que han impactado en su funcionamiento cotidiano. Y han sobrevivido y continuado con su misión aun con las puertas cerradas. En 1665, la Universidad de Cambridge cerró por causa de una epidemia de peste negra que azotó Inglaterra. Isaac Newton tuvo que volver...",
-      img: "../../../../assets/img/moodleInterm.jpg",
+      img: "assets/img/news/unesco14062020.png",
       date: "30/05/2020",
+      state: true,
       link: "http://www.iesalc.unesco.org/wp-content/uploads/2020/04/COVID-19-060420-ES-2.pdf",
     },
     {
-      name: "OBSERVATORIO MONTERREY",
-      des: "·En este diálogo, expertos del Tecnológico de Monterrey PONTIFICIA UNIVERSIDAD CATOLICA DEL PERU y Universitat Oberta de Catalunya (UOC) conversarán sobre los retos de la educación a distancia ante la pandemia...",
-      img: "../../../../assets/img/moodleAvanzado.jpg",
-      date: "15/06/2020",
-      link: "https://www.facebook.com/210703745629002/posts/3243630179002995/?d=n",
+      name: "Dialogo PUCP y Tecnologico de Monterrey",
+      des: "En este diálogo, expertos del Tecnológico de Monterrey PONTIFICIA UNIVERSIDAD CATOLICA DEL PERU y Universitat Oberta de Catalunya (UOC) conversarán sobre los retos de la educación a distancia ante la pandemia...",
+      img: "assets/img/news/monterrey.png",
+      date: "04/06/2020",
+      state: false,
+      link: "https://www.facebook.com/watch/live/?v=1044527619283099&ref=watch_permalink",
     },
+    {
+      name: "RPU PRESENTA EL CATÁLOGO DE HERRAMIENTAS DIGITALES PARA LA ENSEÑANZA",
+      des: "Herramientas digitales para la enseñanza es el primer material de un conjunto que viene preparando la Dirección Académica de Planeamiento y Evaluación (DAPE) y la Dirección Académica de Responsabilidad Social (DARS) de la Pontificia Universidad Católica del Perú, en coordinación con la Secretaría Técnica de la Red Peruana de Universidades (RPU)",
+      img: "assets/img/news/rpu14062020.jpg",
+      date: "",
+      state: false,
+      link: "http://rpu.edu.pe/2020/05/21/rpu-presenta-catalogo-herramientas-digitales-la-ensenanza/",
+    },
+    {
+      name: "EL CAMBIO DE LA ENSEÑANZA PRESENCIAL A LA REMOTA",
+      des: "La Rédum (Red de Expertos) en colaboración con al Pontificia Universidad Católica del Perú desarrollarán la Conferencia en Línea: “El cambio en la enseñanza presencial remota” a cargo del docente Raúl Santiago de la Universidad de la Rioja (España).Este evenot se realizo el 09/06/2020",
+      img: "assets/img/news/pucp14062020.png",
+      date: "09/06/2020",
+      state: false,
+      link: "https://www.facebook.com/novedadesacademicaspucp/videos/688303838619527/?embtrk=9j3a-R-31018422-R-6c5-R-5c1%2Co46",
+    },
+    
   ];
 
   constructor() { }

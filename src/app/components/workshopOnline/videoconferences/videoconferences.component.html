@@ -1,80 +1,93 @@
-<div style="margin-top: 150px;" class="container">
-    <!-- 
+<div class="style--content" style="padding-top: 150px; padding-bottom: 40px;">
+    <div class="container">
+        <!-- 
     <div class="col-md-6">
         <mat-form-field class="mat-form-field-fluid">
             <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Buscar ...">
         </mat-form-field>
     </div> -->
+        <div class="card--header--style card-header row">
+            <div class="col-md-12 col-xl-6 col-lg-6">
+                <span>VIDEOCONFERENCIAS</span>
+            </div>
+           <!--  <div class="col-md-12 col-xl-6 col-lg-6">
+                <div class=" float-right" fxLayout="row">
+                    <mat-form-field class="mat-form-field-fluid">
+                        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Buscar...">
+                    </mat-form-field>
+                </div>
+            </div> -->
+        </div>
+        <div class="mat-elevation-z8">
 
-    <h2><strong>VIDEOCONFERENCIAS</strong></h2><br>
 
-    <div *ngIf="isLoad">
-        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-    </div>
-    <div class="mat-elevation-z8">
-        <table mat-table [dataSource]="dataSource" matSort matSortDirection="asc">
+            <div *ngIf="isLoad">
+                <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+            </div>
+            <table mat-table [dataSource]="dataSource" matSort matSortDirection="asc">
 
-            <!-- Position Column -->
-            <ng-container matColumnDef="name">
-                <th mat-header-cell *matHeaderCellDef> Nombre </th>
-                <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-            </ng-container>
-            <!-- Weight Column -->
-            <ng-container matColumnDef="speaker">
-                <th mat-header-cell *matHeaderCellDef> Ponente </th>
-                <td mat-cell *matCellDef="let element"> {{element.speaker}} </td>
-            </ng-container>
-            <!-- Name Column -->
-            <ng-container matColumnDef="nationality">
-                <th mat-header-cell *matHeaderCellDef> Nacionalidad </th>
-                <td mat-cell *matCellDef="let element"> {{element.nationality}} </td>
-            </ng-container>
-            <!-- <ng-container matColumnDef="category">
+                <!-- Position Column -->
+                <ng-container matColumnDef="name">
+                    <th mat-header-cell *matHeaderCellDef> Nombre </th>
+                    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                </ng-container>
+                <!-- Weight Column -->
+                <ng-container matColumnDef="speaker">
+                    <th mat-header-cell *matHeaderCellDef> Ponente </th>
+                    <td mat-cell *matCellDef="let element"> {{element.speaker}} </td>
+                </ng-container>
+                <!-- Name Column -->
+                <ng-container matColumnDef="nationality">
+                    <th mat-header-cell *matHeaderCellDef> Nacionalidad </th>
+                    <td mat-cell *matCellDef="let element"> {{element.nationality}} </td>
+                </ng-container>
+                <!-- <ng-container matColumnDef="category">
                 <th mat-header-cell *matHeaderCellDef> Categoria </th>
                 <td mat-cell *matCellDef="let element"> {{element.category}} </td>
             </ng-container> -->
-            <!-- Symbol Column -->
-            <ng-container matColumnDef="date">
-                <th mat-header-cell *matHeaderCellDef> Fecha </th>
-                <td mat-cell *matCellDef="let element"> {{element.date}} </td>
-            </ng-container>
-            <!--   <ng-container matColumnDef="hour">
-                <th mat-header-cell *matHeaderCellDef> Hora </th>
-                <td mat-cell *matCellDef="let element"> {{element.hour}} </td>
-            </ng-container> -->
-            <ng-container matColumnDef="state">
-                <th mat-header-cell *matHeaderCellDef> Estado </th>
-                <td mat-cell *matCellDef="let element">
-                    &nbsp;
-                    <span *ngIf="element.state==true? true : false"><span
-                            class="badge badge-success">Vigente</span><br>{{element.hour}}
-                    </span>
-                    <span *ngIf="element.state==false? true : false" class="badge badge-danger">Pasado</span>
-                </td>
-            </ng-container>
+                <!-- Symbol Column -->
+                <ng-container matColumnDef="organizedBy">
+                    <th mat-header-cell *matHeaderCellDef> Organizado por </th>
+                    <td mat-cell *matCellDef="let element"> {{element.organizedBy}} </td>
+                </ng-container>
+                <ng-container matColumnDef="date">
+                    <th mat-header-cell *matHeaderCellDef> Fecha </th>
+                    <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+                </ng-container>
+                <ng-container matColumnDef="state">
+                    <th mat-header-cell *matHeaderCellDef> Estado </th>
+                    <td mat-cell *matCellDef="let element">
+                        &nbsp;
+                        <span *ngIf="element.state==true? true : false"><span
+                                class="badge badge-success">Vigente</span><br>{{element.hour}}
+                        </span>
+                        <span *ngIf="element.state==false? true : false" class="badge badge-danger">Pasado</span>
+                    </td>
+                </ng-container>
 
-            <ng-container matColumnDef="link">
-                <th mat-header-cell *matHeaderCellDef> Enlace </th>
-                <td mat-cell *matCellDef="let element">
-                    <a mat-menu-item href="{{element.link}}" target="_blank" class="btn btn-primary">
-                        <!--                         <i class="fas fa-eye kt-font-info mr-1"></i>-->
-                        <span *ngIf="element.state==true? true : false">IR</span>
-                        <span *ngIf="element.state==false? true : false">VER</span>
-                    </a>
-                </td>
-            </ng-container>
+                <ng-container matColumnDef="link">
+                    <th mat-header-cell *matHeaderCellDef> Enlace </th>
+                    <td mat-cell *matCellDef="let element">
+                        <a mat-menu-item href="{{element.link}}" target="_blank" class="btn btn-primary">
+                            <!--                         <i class="fas fa-eye kt-font-info mr-1"></i>-->
+                            <span *ngIf="element.state==true? true : false">IR</span>
+                            <span *ngIf="element.state==false? true : false">VER</span>
+                        </a>
+                    </td>
+                </ng-container>
 
-            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 
 
-        </table>
-        <div class="mat-table__message" *ngIf="lenghtData == 0">No hay datos</div><!-- Message for empty data  -->
-        <!-- MATERIAL SPINNER | Url: 'https://material.angular.io/components/progress-spinner/overview' -->
+            </table>
+            <div class="mat-table__message" *ngIf="lenghtData == 0">No hay datos</div><!-- Message for empty data  -->
+            <!-- MATERIAL SPINNER | Url: 'https://material.angular.io/components/progress-spinner/overview' -->
 
-        <!-- MATERIAL PAGINATOR | Binded to dasources -->
-        <!-- See off.documentations 'https://material.angular.io/components/paginator/overview' -->
-        <mat-paginator [pageSize]="10" [pageSizeOptions]="[5, 10, 25]" [showFirstLastButtons]="true">
-        </mat-paginator>
+            <!-- MATERIAL PAGINATOR | Binded to dasources -->
+            <!-- See off.documentations 'https://material.angular.io/components/paginator/overview' -->
+            <!-- <mat-paginator [pageSize]="10" [pageSizeOptions]="[5, 10, 25]" [showFirstLastButtons]="true">
+        </mat-paginator> -->
+        </div>
     </div>
 </div>

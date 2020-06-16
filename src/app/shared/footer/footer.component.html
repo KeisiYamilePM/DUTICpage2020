@@ -1,1 +1,27 @@
-<p>footer works!</p>
+<footer class="footer" data-background-color="black">
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a [routerLink]="['virtualTeaching/subjectDesign']">
+                        Docencia virtual
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['videoconferences']">
+                        Videoconferencias
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['videoandresources/teachers']">
+                        Videos y recursos
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            &copy;
+            {{data | date: 'yyyy'}} - DUTIC. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>

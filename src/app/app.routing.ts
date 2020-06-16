@@ -28,7 +28,7 @@ const routes: Routes =[
     { path: 'virtualTeaching/subjectDesign',     component: SubjectDesignComponent },
     
     { path: 'workshopOnline/tvunsa',     component: TvunsaComponent },
-    { path: 'workshopOnline/videoconferences',     component: VideoconferencesComponent },
+    { path: 'videoconferences',     component: VideoconferencesComponent },
 
     { path: 'videoandresources/teachers',     component: TeachersComponent },
     { path: 'videoandresources/students',     component: StudentsComponent },
@@ -40,7 +40,7 @@ const routes: Routes =[
     imports: [
         CommonModule,
         BrowserModule,
-        RouterModule.forRoot(routes)
+        RouterModule.forRoot(routes, {useHash:true})
     ],
     exports: [
     ],

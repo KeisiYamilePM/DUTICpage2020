@@ -1,50 +1,61 @@
-<div style="margin-top: 150px;" class="container">
-
-    <div class="card">
-        <div class="nav-tabs-navigation">
+<div  class="style--content" style="padding-top: 150px; padding-bottom: 40px;">
+    <div class="container">
+        <div class="nav-tabs-navigation" data-tabs-color="orange">
             <div class="nav-tabs-wrapper">
-                <ngb-tabset [justify]="'center'" class="text-center">
+                <ngb-tabset [justify]="'center'" class="text-justify">
                     <ngb-tab>
                         <ng-template ngbTabTitle>
-                            <i class="fas fa-chalkboard"></i> Estrategias Didácticas
+                            <i class="now-ui-icons design-2_ruler-pencil
+                        Emoticons"></i> Estrategias Didácticas
                         </ng-template>
                         <mat-divider></mat-divider>
                         <ng-template ngbTabContent>
-                            <!-- <div class="row">
-                                <div class="col'4">
-                                    <div class="card card-news animated fadeIn fast" style="width: 100%;">
+
+                            <div class="row mt-4">
+                                <div class="col-8">
+                                    <img src="assets/img/infografia2.jpg" class="card-img-top"
+                                        style="width: 700px; height: 1250px;" alt="...">
+                                </div>
+                                <div class="col-12 col-lg-4 col-md-6 col-sm-12" *ngFor="let strategies of content">
+                                    <div class="card animated fadeIn fast" style="width: 100%;">
+                                        <!--img src="{{strategies.img}}" class="card-img-top" alt="..."-->
                                         <div class="card-body">
-                                            <h6 class="text-wrap">VICERRECTORADO ACADÉMICO: <br>Orientaciones para el
-                                                trabajo virtual</h6>
-                                            <a href="https://drive.google.com/file/d/14pWbEbw9LNvCCv-Br629g-4dpD-0Qk4O/view?usp=sharing"
-                                                class="btn btn-primary btn-sm" target="_blank">Ver más</a>
+
+                                            <h5 class="card-title"><strong>{{strategies.name}}</strong></h5>
+                                            <p class="card-text">{{strategies.des}}</p>
+                                            <p class="card-text">{{strategies.date}}</p>
+                                            <a href="{{strategies.link}}" class="btn btn-primary btn-block"
+                                                target="_blank">Ver más</a>
                                         </div>
                                     </div>
                                 </div>
-                            </div> -->
-                            <p>Aqui van contenidos sobre Estrategias Didácticas </p>
+                            </div>
+                        </ng-template>
+                    </ngb-tab>
+                    <!-- <ngb-tab>
+                        <ng-template ngbTabTitle>
+                            <i class="now-ui-icons files_single-copy-04"></i> Evaluación
+                        </ng-template>
+                        <mat-divider></mat-divider>
+                        <ng-template ngbTabContent class="mt-4">
+                            <div class="card">
+                               <p>Aqui van contenidos sobre evaluación </p>
+                            </div>
                         </ng-template>
                     </ngb-tab>
                     <ngb-tab>
                         <ng-template ngbTabTitle>
-                             Evaluación
+                            <i class="now-ui-icons education_glasses"></i> Retroalimentación
                         </ng-template>
                         <mat-divider></mat-divider>
-                        <ng-template ngbTabContent>
-                            <p>Aqui van contenidos sobre evaluación </p>
+                        <ng-template ngbTabContent class="mt-4">
+                            <div class="card">
+                               <p>Aqui van contenidos sobre Retroalimentación</p>
+                           </div>
                         </ng-template>
-                    </ngb-tab>
-                    <ngb-tab>
-                        <ng-template ngbTabTitle>
-                             Retroalimentación
-                        </ng-template>
-                        <mat-divider></mat-divider>
-                        <ng-template ngbTabContent>
-                            <p>Aqui van contenidos sobre Retroalimentación</p>
-                        </ng-template>
-                    </ngb-tab>
+                    </ngb-tab> -->
                 </ngb-tabset>
             </div>
         </div>
-
     </div>
+</div>

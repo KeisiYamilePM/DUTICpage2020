@@ -3,6 +3,42 @@
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+/*pages styles*/
+.card-header {/*header - card*/ 
+  border-bottom: 0 solid transparent;
+}
+
+.card--header--style{
+  background-color: #27314E;
+  border-radius: 5px;
+  margin: -25px 10px 10px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  box-shadow: 2px 2px 6px #96a3a9;
+  div > span{
+      font-size: 1.60rem;
+      color: white;
+      font-weight: bold;
+  }
+}
+
+.style--content{
+
+  background-color: #D2D3D5;
+  /* background: rgba(210,211,213,1);
+  background: -moz-linear-gradient(-45deg, rgba(210,211,213,1) 0%, rgba(210,211,213,1) 59%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(210,211,213,1)), color-stop(59%, rgba(210,211,213,1)), color-stop(60%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(210,211,213,1) 0%, rgba(210,211,213,1) 59%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(210,211,213,1) 0%, rgba(210,211,213,1) 59%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(210,211,213,1) 0%, rgba(210,211,213,1) 59%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(135deg, rgba(210,211,213,1) 0%, rgba(210,211,213,1) 59%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2d3d5', endColorstr='#ffffff', GradientType=1 );
+  */   
+//  background-color: #3E5B99;   
+//  background-color: #D2D3D5;
+//  border-radius: 25% 25% 25% 25%;
+}
+
 /* animation */
 
 .animated {

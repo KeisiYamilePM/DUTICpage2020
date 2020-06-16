@@ -18,7 +18,7 @@ export class VideoconferencesComponent implements OnInit {
   public data: any[] = []
   isLoad= false
 
-  displayedColumns: string[] = ['name', 'speaker','nationality', 'date', 'state', 'link'];
+  displayedColumns: string[] = ['name', 'speaker','nationality', 'organizedBy', 'date', 'state', 'link'];
   dataSource: MatTableDataSource<any>;
   lenghtData: number;
 
@@ -29,11 +29,10 @@ export class VideoconferencesComponent implements OnInit {
   }
 
    
-  applyFilter(filterValue: String) {
-    this.dataSource.filter = filterValue.trim().toLowerCase()
-    if (this.dataSource.paginator) {
-      this.dataSource.paginator.firstPage()
-    }
+  applyFilter(filterValue: string) {
+    filterValue = filterValue.trim(); // Remove whitespace
+    filterValue = filterValue.toLowerCase(); // Datasource defaults to lowercase matches
+    this.dataSource.filter = filterValue;
   }
   ongetVideoconferencesList(){
     this.isLoad= true
