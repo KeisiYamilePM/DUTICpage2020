@@ -15,6 +15,7 @@ import { VideoconferencesComponent } from './components/workshopOnline/videoconf
 import { TeachersComponent } from './components/videosresources/teachers/teachers.component';
 import { StudentsComponent } from './components/videosresources/students/students.component';
 import { ToolsgoogleComponent } from './components/videosresources/toolsgoogle/toolsgoogle.component';
+import { VirtuallearningComponent } from './components/virtuallearning/virtuallearning.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'index', pathMatch: 'full' },
@@ -26,7 +27,9 @@ const routes: Routes =[
 
     { path: 'virtualTeaching/news',     component: NewsComponent },
     { path: 'virtualTeaching/subjectDesign',     component: SubjectDesignComponent },
-    
+
+    { path: 'virtualLearning',     component: VirtuallearningComponent },
+
     { path: 'workshopOnline/tvunsa',     component: TvunsaComponent },
     { path: 'videoconferences',     component: VideoconferencesComponent },
 

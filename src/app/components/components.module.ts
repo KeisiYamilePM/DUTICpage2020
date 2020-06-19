@@ -27,6 +27,7 @@ import { StudentsComponent } from './videosresources/students/students.component
 import { ToolsgoogleComponent } from './videosresources/toolsgoogle/toolsgoogle.component';
 import { NewsComponent } from './virtualteaching/news/news.component';
 import { SubjectDesignComponent } from './virtualteaching/subject-design/subject-design.component';
+import { VirtuallearningComponent } from './virtuallearning/virtuallearning.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { SubjectDesignComponent } from './virtualteaching/subject-design/subject
         StudentsComponent,
         ToolsgoogleComponent,
         NewsComponent,
-        SubjectDesignComponent
+        SubjectDesignComponent,
+        VirtuallearningComponent
     ],
     imports: [
         CommonModule,

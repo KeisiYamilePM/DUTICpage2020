@@ -21,7 +21,7 @@
           </a>
         </li>
         <li class="nav-item" ngbDropdown>
-          <a class="dropdown-toggle nav-link btn btn-neutral" style="color:#141E42;" ngbDropdownToggle>
+          <a class="dropdown-toggle nav-link btn btn-simple" style="color:#ffffff;" ngbDropdownToggle>
             <i class="now-ui-icons tech_laptop mr-1"></i>
             <p>Docencia VIrtual</p>
           </a>
@@ -29,6 +29,12 @@
             <a class="dropdown-item" [routerLink]="['virtualTeaching/subjectDesign']">Diseño de asignatura</a>
             <a class="dropdown-item" [routerLink]="['virtualTeaching/news']">Noticias</a>
           </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-simple" style="color:#ffffff;" [routerLink]="['virtualLearning']">
+            <i class="now-ui-icons education_hat mr-1"></i>
+            <p>Aprendizaje virtual</p>
+          </a>
         </li>
         <li class="nav-item" >
           <a class="nav-link" [routerLink]="['videoconferences']" style="color:#ffffff;">
