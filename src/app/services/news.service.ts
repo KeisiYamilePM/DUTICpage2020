@@ -16,7 +16,7 @@ export class NewsService {
       link: "assets/doc/orientaciones_trabajo_virtual.pdf",
     },
     {
-      name: "Experiencias UNSA: Desarrollo de clases prácticas en el aula virtua",
+      name: "Experiencias UNSA: Desarrollo de clases prácticas en el aula virtual",
       des: "Herramientas digitales para la enseñanza es el primer material de un conjunto que viene preparando la Dirección Académica de Planeamiento y Evaluación (DAPE) y la Dirección Académica de Responsabilidad Social (DARS) de la Pontificia Universidad Católica del Perú, en coordinación con la Secretaría Técnica de la Red Peruana de Universidades (RPU)",
       img: "assets/img/news/simposioUNSA.jpg",
       date: "16/06/2020",
@@ -40,7 +40,7 @@ export class NewsService {
       link: "https://www.facebook.com/watch/live/?v=1044527619283099&ref=watch_permalink",
     },
     {
-      name: "RPU PRESENTA EL CATÁLOGO DE HERRAMIENTAS DIGITALES PARA LA ENSEÑANZA",
+      name: "RPU presenta el catálogo de herramientas digitales para la enseñanza",
       des: "Herramientas digitales para la enseñanza es el primer material de un conjunto que viene preparando la Dirección Académica de Planeamiento y Evaluación (DAPE) y la Dirección Académica de Responsabilidad Social (DARS) de la Pontificia Universidad Católica del Perú, en coordinación con la Secretaría Técnica de la Red Peruana de Universidades (RPU)",
       img: "assets/img/news/rpu14062020.jpg",
       date: "",
@@ -48,7 +48,7 @@ export class NewsService {
       link: "http://rpu.edu.pe/2020/05/21/rpu-presenta-catalogo-herramientas-digitales-la-ensenanza/",
     },
     {
-      name: "EL CAMBIO DE LA ENSEÑANZA PRESENCIAL A LA REMOTA",
+      name: "El cambio de la enseñanza presencial a la remota",
       des: "La Rédum (Red de Expertos) en colaboración con al Pontificia Universidad Católica del Perú desarrollarán la Conferencia en Línea: “El cambio en la enseñanza presencial remota” a cargo del docente Raúl Santiago de la Universidad de la Rioja (España).Este evenot se realizo el 09/06/2020",
       img: "assets/img/news/pucp14062020.png",
       date: "09/06/2020",
