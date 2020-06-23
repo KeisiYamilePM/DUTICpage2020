@@ -1,5 +1,5 @@
 <div style="padding-top: 150px; margin-bottom: 18px;" class="container">
-    
+
     <div class="card--header--style card-header row">
         <div class="col-md-12 col-xl-12 col-lg-12">
             <span>VIDEO TUTORIALES DEL ESTUDIANTE</span>
@@ -14,7 +14,7 @@
             <p><a href="https://youtu.be/CfeT4x_QSjE" target="_blank">
                     Resolviendo una tarea estudiante</a></p>
         </div>
-    </div>
+    </div>*-
     <div class="card--header--style card-header row mt-4">
         <div class="col-md-12 col-xl-12 col-lg-12">
             <span>MANUALES DEL ESTUDIANTE</span>
@@ -24,12 +24,53 @@
         <div class="col-md-4 col-sm-6 wpb_column block">
             <p><a href="assets/doc/student/2020_Tutotial_Estudiante Ingresando_al_Aula_Virtual_v3Cinco.pdf"
                     target="_blank">Ingresando al aula Estudiante</a></p>
-            <p><a href="assets/doc/teacher/2020_Tutorial_RecuperarContraseña_v3Cinco.pdf"
-                    target="_blank">Recuperar contraseña</a></p>
+            <p><a href="assets/doc/teacher/2020_Tutorial_RecuperarContraseña_v3Cinco.pdf" target="_blank">Recuperar
+                    contraseña</a></p>
             <p><a href="assets/doc/student/2020_Tutotial_Estudiante Cambiando Contraseña_v3Cinco.pdf"
                     target="_blank">Cambiando contraseña</a></p>
-            <p><a href="assets/doc/student/2020_Tutorial_Tareas_v3Cinco.pdf"
-                    target="_blank">Resolviendo Tareas </a></p>
+            <p><a href="assets/doc/student/2020_Tutorial_Tareas_v3Cinco.pdf" target="_blank">Resolviendo Tareas </a></p>
         </div>
     </div>
+    <!-- <div class="card--header--style card-header row mt-4">
+        <div class="col-md-12 col-xl-12 col-lg-12">
+            <span>YOUTUBE API PRUEBA</span>
+        </div>
+    </div> -->
+    <!--  <div class="card mb-3" style="max-width: 100%;">
+        <div class="row no-gutters mb-3" *ngFor="let video of videos">
+            <div class="col-md-4">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/+'{{video.resourceId.videoId}}'"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{video.title}}</h5>
+                    <p class="card-text">{{video.description}}</p>
+                    <button class="btn btn-outline-primary float-right">Ver Manual</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="card-deck">
+        <div class="row">
+            <div class="col-3" *ngFor="let video of videos">
+                <div class="card mb-4" >
+                    <img src="{{video.thumbnails.default.url}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>{{video.title}}</strong></h5>
+                        <p class="card-text">{{video.description}}</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-danger float-left" (click)="onClicVideo(video)">
+                            Video<i class="now-ui-icons media-1_button-play ml-1"></i></button>
+                        <button class="btn btn-primary float-right">
+                            Manual<i class="now-ui-icons files_paper ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
 </div>

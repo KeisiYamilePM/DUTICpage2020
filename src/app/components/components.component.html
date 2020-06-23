@@ -1,17 +1,14 @@
 <div class="wrapper">
-    <div class="page-header clear-filter" filter-color="blue">
-        <div class="page-header-image rellax-header" data-rellax-speed="-7"
+    <div class="page-header page-header-small">
+        <div class="page-header-image rellax-header" data-rellax-speed="-8"
             style="background-image: url('assets/img/header.png');">
-
         </div>
         <div class="container">
-            <div class="content-center brand mt-4">
-
+            <div class="content-center" style="margin-top: 9%;">
                 <!--                 <img class="n-logo" src="assets/img/dutic.png" alt="">
  style="text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;"
                 -->
-                <h1 class="h1-seo"><strong>PROMOVIENDO EL USO <br>DE LAS TIC EN LA</strong></h1>
-                <h2 class=""><strong>ENSEÑANZA - APRENDIZAJE</strong></h2>
+                <h1 class="title">PROMOVIENDO EL USO DE LAS TIC EN LA <br><strong>ENSEÑANZA - APRENDIZAJE</strong></h1>
             </div>
             <!--h6 class="category category-absolute">Designed by
               <a href="https://invisionapp.com/" target="_blank">
@@ -51,10 +48,11 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12 text-center">
+                            <div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center">
                                 <a href="assets/doc/lineamientos.pdf" target="_blank" class="btn btn-primary"
                                     title="Ver documento">
-                                    <strong>LINEAMIENTOS PARA LA ADAPTACIÓN DE LA EDUCACIÓN NO PRESENCIAL</strong>
+                                    <strong class="text-wrap">LINEAMIENTOS - EDUCACIÓN NO
+                                        PRESENCIAL</strong>
                                     <i class="now-ui-icons arrows-1_minimal-right ml-1"></i>
                                     <!-- <i class="fas fa-file-download"></i> -->
                                 </a>
@@ -63,15 +61,18 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <h3><strong>ANUNCIOS<br><small>UNSA Y ACTUALIDAD</small></strong></h3>
-                        <div class="row">
-                            <div class="col-6 col-lg-4 col-md-6 col-sm-6" *ngFor="let news of content">
-                                <div *ngIf="news.state==true? true : false" class="card card-news animated fadeIn fast"
-                                    style="width: 100%; background-color: #141E42;">
-                                    <img src="{{news.img}}" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h6 class="card-title" style="color: white;">{{news.name}}</h6>
-                                        <a href="{{news.link}}" class="btn btn-primary btn-sm" style="background-color: white;
+                        <div class="card-deck">
+                            <div class="row">
+                                <div class="col-6 col-lg-4 col-md-6 col-sm-6" *ngFor="let news of content">
+                                    <div *ngIf="news.state==true? true : false"
+                                        class="card card-news animated fadeIn fast"
+                                        style="width: 100%; background-color: #141E42;">
+                                        <img src="{{news.img}}" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h6 class="card-title" style="color: white;">{{news.name}}</h6>
+                                            <a href="{{news.link}}" class="btn btn-primary btn-sm" style="background-color: white;
                                         color: #141E42;" target="_blank">Ver más</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -80,52 +81,72 @@
                 </div>
             </div>
         </div>
-        <div class="">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 ml-auto mr-auto text-center">
-                        <h3><strong>ACERCA DE <span>NOSOTROS</span></strong></h3>
-                        <p class="subheading text-justify">La Dirección Universitaria de Tecnología
-                            de Información y Comunicación, es un órgano de línea del Vicerrectorado
-                            Académico,
-                            responsable de promover, proponer y coordinar las actividades conducentes a la
-                            actualización
-                            permanente en tecnología educativa.
-                        </p>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto text-center">
+                    <h3><strong>ACERCA DE <span>NOSOTROS</span></strong></h3>
+                    <p class="subheading text-justify">La Dirección Universitaria de Tecnología
+                        de Información y Comunicación, es un órgano de línea del Vicerrectorado
+                        Académico,
+                        responsable de promover, proponer y coordinar las actividades conducentes a la
+                        actualización
+                        permanente en tecnología educativa.
+                    </p>
                 </div>
-                <div class="separator separator-primary"></div>
-                <div class="section-story-overview">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="image-container image-left"
-                                style="background-image: url('assets/img/imagen2.jpg')">
-                                <!-- First image on the left side -->
-                                <p class="blockquote blockquote-primary">"El uso de la plataforma virtual es una gran
-                                    ayuda al docente e impacta directamente en los estudiantes de la UNSA para que estos
-                                    reciban este conocimiento tecnologico"
-                                    <br>
-                                    <br>
-                                    <small>-Dra Patricia Camargo</small>
-                                </p>
+            </div>
+        </div>
+        <div class="section-tabs">
+            <div class="container">
+                <div class="row pl-4">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-12 center-content"><img src="assets/img/mision.png"
+                                   ></div>
+                            <div class="col-lg-8 col-md-8 col-sm-12">
+                                <h4><strong>Misi&oacute;n</strong></h4>
+                                <p>Promover el uso pedagógico de las Tecnologías de la Información y la Comunicación en la
+                                    práctica cotidiana de docentes y estudiantes</p>
                             </div>
-                            <!-- Second image on the left side of the article -->
                         </div>
-                        <div class="col-md-5">
-                            <!-- First image on the right side, above the article -->
-                            <div class="image-container image-right"
-                                style="background-image: url('assets/img/imagen1.jpeg')"></div>
-                            <h4><strong>Misi&oacute;n</strong></h4>
-                            <p>Promover el uso pedagógico de las Tecnologías de la Información y la Comunicación en la
-                                práctica cotidiana de docentes y estudiantes</p>
-                            <h4><strong>Visi&oacute;n</strong></h4>
-                            <p>Ser reconocida como un centro de innovación e investigación pedagógica con tecnología,
-                                que promueve las buenas prácticas docentes mediante procesos asertivos</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-12 center-content"><img src="assets/img/vision.png"
+                                   ></div>
+                            <div class="col-lg-8 col-md-8 col-sm-12">
+                                <h4><strong>Visi&oacute;n</strong></h4>
+                                <p>Ser reconocida como un centro de innovación e investigación pedagógica con tecnología,
+                                    que promueve las buenas prácticas docentes mediante procesos asertivos</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="separator separator-primary"></div>
+        <!-- <div class="section-story-overview">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="image-container image-left" style="background-image: url('assets/img/imagen2.jpg')">
+                            First image on the left side 
+                             <p class="blockquote blockquote-primary">"El uso de la plataforma virtual es una gran
+                                    ayuda al docente e impacta directamente en los estudiantes de la UNSA para que estos
+                                    reciban este conocimiento tecnologico"
+                                    <br>
+                                    <br>
+                                    <small>-Dra Patricia Camargo</small>
+                                </p> 
+                        </div>
+                        Second image on the left side of the article 
+                    </div>
+                    <div class="col-md-5">
+                        First image on the right side, above the article 
+                        <div class="image-container image-right"
+                            style="background-image: url('assets/img/sustentacion.jpg')">
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         <!--   Funciones -->
         <div class="section">
             <div class="container">

@@ -21,7 +21,7 @@ export class NewsService {
       img: "assets/img/news/simposioUNSA.jpg",
       date: "16/06/2020",
       state: true,
-      link: "https://bit.ly/2zCFOAg?fbclid=IwAR3zNFXW22lZHMbImRdzuZYavoCf0XNnFBtBJWlP-_SqcmE_JBOrLEnY51M",
+      link: "",
     },
     {
       name: "UNESCO Y DOCENCIA VIRTUAL",

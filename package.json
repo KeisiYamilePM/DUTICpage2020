@@ -30,6 +30,7 @@
     "@types/jquery": "^3.3.38",
     "ajv": "6.10.0",
     "ajv-keywords": "3.4.0",
+    "animate.css": "^4.1.0",
     "bootstrap": "4.0.0",
     "copy-webpack-plugin": "5.0.1",
     "core-js": "3.6.4",
@@ -42,6 +43,7 @@
     "rellax": "1.4.0",
     "rxjs": "6.5.4",
     "rxjs-compat": "6.5.4",
+    "sweetalert2": "^9.15.1",
     "tslib": "1.11.1",
     "zone.js": "0.10.2"
   },

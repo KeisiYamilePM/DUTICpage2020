@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg bg-primary fixed-top" >
+<nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent" >
     <div class="navbar-translate">
       <a class="navbar-brand" [routerLink]="['/index']" placement="bottom">
-        <img src="assets/img/logos.png">
+        <img src="assets/img/logos3.png" style="width: 400px; height: auto;">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"
@@ -15,14 +15,14 @@
     <div class="collapse navbar-collapse" data-nav-image="assets/img/logos.png" data-color="orange">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['index']">
-<!--             <i class="now-ui-icons education_hat"></i>
- -->            <p>Inicio</p>
+          <a class="nav-link text-center" [routerLink]="['index']">
+            <i class="now-ui-icons location_world mr-1"></i><br>
+            <p>Inicio</p>
           </a>
         </li>
         <li class="nav-item" ngbDropdown>
-          <a class="dropdown-toggle nav-link btn btn-simple" style="color:#ffffff;" ngbDropdownToggle>
-            <i class="now-ui-icons tech_laptop mr-1"></i>
+          <a class="dropdown-toggle nav-link text-center" style="color:#ffffff;" ngbDropdownToggle>
+            <i class="now-ui-icons tech_laptop mr-1"></i><br>
             <p>Docencia VIrtual</p>
           </a>
           <div ngbDropdownMenu routerLinkActive="active">
@@ -31,20 +31,20 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link btn btn-simple" style="color:#ffffff;" [routerLink]="['virtualLearning']">
-            <i class="now-ui-icons education_hat mr-1"></i>
+          <a class="nav-link text-center" style="color:#ffffff;" [routerLink]="['virtualLearning']">
+            <i class="now-ui-icons education_hat mr-1"></i><br>
             <p>Aprendizaje virtual</p>
           </a>
         </li>
         <li class="nav-item" >
-          <a class="nav-link" [routerLink]="['videoconferences']" style="color:#ffffff;">
-            <i class="now-ui-icons location_world mr-1"></i>
-            <p>Videoconferencias</p>
+          <a class="nav-link text-center" [routerLink]="['videoconferences']" style="color:#ffffff;">
+           <i class="now-ui-icons objects_globe mr-1"></i><br>
+           <p>Videoconferencias</p>
           </a>
         </li>
         <li class="nav-item" ngbDropdown>
-          <a class="dropdown-toggle nav-link" style="color:#ffffff;" ngbDropdownToggle>
-            <i class="now-ui-icons media-1_button-play mr-1"></i>
+          <a class="dropdown-toggle nav-link text-center" style="color:#ffffff;" ngbDropdownToggle>
+            <i class="now-ui-icons media-1_button-play mr-1"></i><br>
             <p>Videos y recursos</p>
           </a>
           <div ngbDropdownMenu routerLinkActive="active">
@@ -54,8 +54,8 @@
           </div>
         </li>
         <li class="nav-item" ngbDropdown>
-          <a class="dropdown-toggle nav-link btn btn-neutral" style="color:#141E42;" ngbDropdownToggle>
-            <i class="now-ui-icons arrows-1_share-66 mr-1"></i>
+          <a class="dropdown-toggle nav-link text-center" ngbDropdownToggle>
+            <i class="now-ui-icons arrows-1_share-66 mr-1"></i><br>
             <p>Ingrese al aula virtual</p>
           </a>
           <div ngbDropdownMenu>

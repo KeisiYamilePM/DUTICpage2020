@@ -5,17 +5,17 @@
                 <span>NOTICIAS<br><small>Actualidad</small></span>
             </div>
         </div>
-        <div class="row" >
-            <div class="col-4 col-lg-4 col-md-6 col-sm-12" *ngFor="let news of content">
-                <div class="card animated fadeIn fast scroll" style="width: 100%;">
-                    <img src="{{news.img}}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <a (click)="openInfoNew(news)" class="toggle-info btn"></a>
-                        <h5 class="card-title"><strong>{{news.name}}</strong></h5>
-<!--                         <p class="card-text">{{news.des}}</p>
- -->                        <p class="card-text">{{news.date}}</p>
-                        <!-- href="{{news.link}}"  -->
-                    </div>
+
+        <div class="card-columns text-center" >
+            <div class="card animated fadeIn fast scroll" *ngFor="let news of content" style="width: 100%;">
+                <img src="{{news.img}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    
+                    <h5 class="card-title"><strong>{{news.name}}</strong></h5>
+                    <p class="card-text">{{news.date}}</p>
+                    <button class="btn btn-primary btn-round float-right" (click)="openInfoNew(news)" type="button">
+                        <i class="now-ui-icons arrows-1_minimal-down"></i>
+                    </button>
                 </div>
             </div>
         </div>

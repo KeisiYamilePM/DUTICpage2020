@@ -3,6 +3,11 @@
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+.center-content {
+	display: flex;
+   align-items: center;
+}
+
 /*pages styles*/
 .card-header {/*header - card*/ 
   border-bottom: 0 solid transparent;

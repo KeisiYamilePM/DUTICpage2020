@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NewsService } from '../../../services/news.service';
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-news',
@@ -20,36 +21,25 @@ export class NewsComponent implements OnInit {
     this.content = this.newsService.getNews()
   }
 
-  styleCards(event) {
-    var zindex = 10;
-
-    $("div.card").click(function() {
-
-      var isShowing = false;
-
-      if ($(event.target).hasClass("show")) {
-        isShowing = true
-      }
-
-      if ($("div.cards").hasClass("showing")) {
-        // a card is already in view
-        $("div.card.show").removeClass("show");
-
-        if (isShowing) {
-          // event.target card was showing - reset the grid
-          $("div.cards").removeClass("showing");
-        } else {
-          // event.target card isn't showing - get in with it
-          $(event.target).css({ zIndex: zindex }).addClass("show");
-        }
-        zindex++;
-
-      } else {
-        // no cards in view
-        $("div.cards").addClass("showing");
-        $(event.target).css({ zIndex: zindex }).addClass("show");
-        zindex++;
-      }
-    });
+  openInfoNew(data) {
+    console.log(data)
+    Swal.fire({
+      html: `
+      <div class="row">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+          <img src="${data.img}" class="card-img-top" alt="...">
+        </div>
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+          <h5 class="card-title"><strong>${data.name}</strong></h5>
+          <hr>
+          <p class="card-text text-justify">${data.des}</p>
+          <hr>
+          <a href="${data.link}" target="_blank" class="btn btn-primary btn-block">Ver más</a>
+        </div>
+      </div>
+      `,
+      showConfirmButton: false,
+      width: 900,
+    })
   }
 }
