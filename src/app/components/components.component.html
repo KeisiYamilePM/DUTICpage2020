@@ -8,7 +8,7 @@
                 <!--                 <img class="n-logo" src="assets/img/dutic.png" alt="">
  style="text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;"
                 -->
-                <h1 class="title">PROMOVIENDO EL USO DE LAS TIC EN LA <br><strong>ENSEÑANZA - APRENDIZAJE</strong></h1>
+                <h2 class="title slogan">PROMOVIENDO EL USO DE LAS TIC EN LA <br><strong>ENSEÑANZA - APRENDIZAJE</strong></h2>
             </div>
             <!--h6 class="category category-absolute">Designed by
               <a href="https://invisionapp.com/" target="_blank">
@@ -39,35 +39,32 @@
                             experiencias, herramientas mapas y todo lo
                             necesario para seguir siendo pioneros.
                         </p>
-                        <div class="row">
-                            <div class="col-12">
-                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/MzCFme-7FGc"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center">
-                                <a href="assets/doc/lineamientos.pdf" target="_blank" class="btn btn-primary"
-                                    title="Ver documento">
-                                    <strong class="text-wrap">LINEAMIENTOS - EDUCACIÓN NO
-                                        PRESENCIAL</strong>
-                                    <i class="now-ui-icons arrows-1_minimal-right ml-1"></i>
-                                    <!-- <i class="fas fa-file-download"></i> -->
-                                </a>
-                            </div>
-                        </div>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/MzCFme-7FGc"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <br><hr>
+                        <div class="text-center">
+                            <strong>LINEAMIENTOS PARA LA ADAPTACIÓN DE LA EDUCACIÓN NO
+                                PRESENCIAL</strong><br>
+                            <a href="assets/doc/lineamientos.pdf" target="_blank" class="btn btn-danger"
+                                title="Ver documento">
+                                <strong class="text-wrap">Ver Documento</strong>
+                                <i class="now-ui-icons arrows-1_minimal-right ml-1"></i>
+                                <!-- <i class="fas fa-file-download"></i> -->
+                            </a>
+                        </div><hr>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <h3><strong>ANUNCIOS<br><small>UNSA Y ACTUALIDAD</small></strong></h3>
+                        <h3><strong>NOTICIAS<br><small>UNSA Y ACTUALIDAD</small></strong></h3>
                         <div class="card-deck">
                             <div class="row">
                                 <div class="col-6 col-lg-4 col-md-6 col-sm-6" *ngFor="let news of content">
                                     <div *ngIf="news.state==true? true : false"
                                         class="card card-news animated fadeIn fast"
                                         style="width: 100%; background-color: #141E42;">
-                                        <img src="{{news.img}}" class="card-img-top" alt="...">
+                                        <img src="{{news.img}}" class="card-img-top" alt="..."
+                                            style="width: auto; height: 140px;">
                                         <div class="card-body">
                                             <h6 class="card-title" style="color: white;">{{news.name}}</h6>
                                             <a href="{{news.link}}" class="btn btn-primary btn-sm" style="background-color: white;
@@ -77,9 +74,47 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/MzCFme-7FGc"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe> -->
+
+                        <!-- <div class="row">
+                            <div class="slider">
+                                <div class="slide-track">
+                                    <div class="slide">
+                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
+                                            height="100" width="250" alt="" />
+                                    </div>
+                                    <div class="slide">
+                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
+                                            height="100" width="250" alt="" />
+                                    </div>
+                                    <div class="slide">
+                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+                                            height="100" width="250" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
+            <!-- <div class="container">
+                <div class="row mt-5">
+                    <div class="col-6 pr-4">
+                        
+                    </div>
+                    <div class="col-6 text-center" >
+                        <div class="fb-page" data-href="https://www.facebook.com/DUTIC.UNSA.AQP/" data-tabs="timeline,events"
+                            data-width="800" data-height="450" data-small-header="true"
+                            data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+                            <blockquote cite="https://www.facebook.com/DUTIC.UNSA.AQP/" class="fb-xfbml-parse-ignore"><a
+                                    href="https://www.facebook.com/DUTIC.UNSA.AQP/">DUTIC</a></blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </div>
         <div class="container">
             <div class="row">
@@ -97,25 +132,27 @@
         </div>
         <div class="section-tabs">
             <div class="container">
-                <div class="row pl-4">
+                <div class="row pl-4 pt-3 pb-3">
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="row">
-                            <div class="col-lg-3 col-md-3 col-sm-12 center-content"><img src="assets/img/mision.png"
-                                   ></div>
+                            <div class="col-lg-3 col-md-3 col-sm-12 center-content"><img src="assets/img/mision.png">
+                            </div>
                             <div class="col-lg-8 col-md-8 col-sm-12">
                                 <h4><strong>Misi&oacute;n</strong></h4>
-                                <p>Promover el uso pedagógico de las Tecnologías de la Información y la Comunicación en la
+                                <p>Promover el uso pedagógico de las Tecnologías de la Información y la Comunicación en
+                                    la
                                     práctica cotidiana de docentes y estudiantes</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="row">
-                            <div class="col-lg-3 col-md-3 col-sm-12 center-content"><img src="assets/img/vision.png"
-                                   ></div>
+                            <div class="col-lg-3 col-md-3 col-sm-12 center-content"><img src="assets/img/vision.png">
+                            </div>
                             <div class="col-lg-8 col-md-8 col-sm-12">
                                 <h4><strong>Visi&oacute;n</strong></h4>
-                                <p>Ser reconocida como un centro de innovación e investigación pedagógica con tecnología,
+                                <p>Ser reconocida como un centro de innovación e investigación pedagógica con
+                                    tecnología,
                                     que promueve las buenas prácticas docentes mediante procesos asertivos</p>
                             </div>
                         </div>

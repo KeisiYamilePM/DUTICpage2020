@@ -40,6 +40,7 @@ export class NewsComponent implements OnInit {
       `,
       showConfirmButton: false,
       width: 900,
+      showCloseButton: true,
     })
   }
 }

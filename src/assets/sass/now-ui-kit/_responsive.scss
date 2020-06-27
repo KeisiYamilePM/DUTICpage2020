@@ -259,6 +259,7 @@
         margin-left: 0;
         margin-bottom: 30px;
     }
+    
 }
 
 @media screen and (max-width: 576px){
@@ -290,6 +291,14 @@
             width: 90%;
         }
     }
+  
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px){
+    h1 .slogan{
+        margin-bottom: 5%;
+        font-size: 20px !important;
+    } 
 }
 
 @media screen and (min-width: 991px) and (max-width: 1200px){

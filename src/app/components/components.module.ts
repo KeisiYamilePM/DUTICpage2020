@@ -13,14 +13,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatTabsModule } from '@angular/material/tabs';
 import {MatDividerModule} from '@angular/material/divider';
 
-import { BasicelementsComponent } from './basicelements/basicelements.component';
-import { NavigationComponent } from './navigation/navigation.component';
-import { TypographyComponent } from './typography/typography.component';
-import { NucleoiconsComponent } from './nucleoicons/nucleoicons.component';
 import { ComponentsComponent } from './components.component';
-import { NotificationComponent } from './notification/notification.component';
 import { NgbdModalBasic } from './modal/modal.component';
-import { TvunsaComponent } from './workshopOnline/tvunsa/tvunsa.component';
 import { VideoconferencesComponent } from './workshopOnline/videoconferences/videoconferences.component';
 import { TeachersComponent } from './videosresources/teachers/teachers.component';
 import { StudentsComponent } from './videosresources/students/students.component';
@@ -33,13 +27,7 @@ import { VirtuallearningComponent } from './virtuallearning/virtuallearning.comp
 @NgModule({
     declarations: [
         ComponentsComponent,
-        BasicelementsComponent,
-        NavigationComponent,
-        TypographyComponent,
-        NucleoiconsComponent,
-        NotificationComponent,
         NgbdModalBasic,
-        TvunsaComponent,
         VideoconferencesComponent,
         TeachersComponent,
         StudentsComponent,

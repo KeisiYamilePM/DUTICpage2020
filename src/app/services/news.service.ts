@@ -16,12 +16,12 @@ export class NewsService {
       link: "assets/doc/orientaciones_trabajo_virtual.pdf",
     },
     {
-      name: "Experiencias UNSA: Desarrollo de clases prácticas en el aula virtual",
-      des: "Herramientas digitales para la enseñanza es el primer material de un conjunto que viene preparando la Dirección Académica de Planeamiento y Evaluación (DAPE) y la Dirección Académica de Responsabilidad Social (DARS) de la Pontificia Universidad Católica del Perú, en coordinación con la Secretaría Técnica de la Red Peruana de Universidades (RPU)",
-      img: "assets/img/news/simposioUNSA.jpg",
+      name: "Ciclo gratuito: De lo presencial a lo virtual",
+      des: "Ofrecer a los participantes una formación práctica sobre cómo organizar sus actividades y procesos académicos a través de entornos virtuales. para poder mantener en el corto plazo sus compromisos institucionales y académicos",
+      img: "assets/img/news/presencialavirtual.png",
       date: "16/06/2020",
       state: true,
-      link: "",
+      link: "assets/doc/news/Ciclo_De_lo_presencial_a_lo_virtual_Peru.pdf",
     },
     {
       name: "UNESCO Y DOCENCIA VIRTUAL",

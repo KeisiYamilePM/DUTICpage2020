@@ -10,10 +10,9 @@
             <div class="card animated fadeIn fast scroll" *ngFor="let news of content" style="width: 100%;">
                 <img src="{{news.img}}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    
                     <h5 class="card-title"><strong>{{news.name}}</strong></h5>
                     <p class="card-text">{{news.date}}</p>
-                    <button class="btn btn-primary btn-round float-right" (click)="openInfoNew(news)" type="button">
+                    <button class="btn btn-primary btn-round float-right" (click)="openInfoNew(news)" title="Ver descripción" type="button">
                         <i class="now-ui-icons arrows-1_minimal-down"></i>
                     </button>
                 </div>
