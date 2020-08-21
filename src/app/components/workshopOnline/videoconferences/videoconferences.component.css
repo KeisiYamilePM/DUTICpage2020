@@ -2,10 +2,18 @@ table {
     width: 100%;
 }
 .mat-column-name{
-    flex: 0 0 35%;
-    width: 35%;
+    flex: 0 0 32%;
+    width: 32%;
 }  
 .mat-column-speaker{
     flex: 0 0 20%;
     width: 20%;
-}  
+} 
+.white--box--border{
+    background-color: ghostwhite; 
+    color: #141E42; 
+    border-radius: 20px;
+    font-size: 1.9rem;
+    border: 10px solid #D2AE6D; 
+}
+  

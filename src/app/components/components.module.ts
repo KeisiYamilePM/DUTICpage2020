@@ -22,6 +22,9 @@ import { ToolsgoogleComponent } from './videosresources/toolsgoogle/toolsgoogle.
 import { NewsComponent } from './virtualteaching/news/news.component';
 import { SubjectDesignComponent } from './virtualteaching/subject-design/subject-design.component';
 import { VirtuallearningComponent } from './virtuallearning/virtuallearning.component';
+import { TrainingsComponent } from './trainings/trainings.component';
+import { ContentsComponent } from './trainings/contents/contents.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -34,7 +37,9 @@ import { VirtuallearningComponent } from './virtuallearning/virtuallearning.comp
         ToolsgoogleComponent,
         NewsComponent,
         SubjectDesignComponent,
-        VirtuallearningComponent
+        VirtuallearningComponent,
+        TrainingsComponent,
+        ContentsComponent
     ],
     imports: [
         CommonModule,
@@ -50,7 +55,9 @@ import { VirtuallearningComponent } from './virtuallearning/virtuallearning.comp
         MatProgressBarModule,
         MatTabsModule,
         MatDividerModule,
+        MatDialogModule,
     ],
-    exports:[ ComponentsComponent ]
+    exports:[ ComponentsComponent ],
+    entryComponents: [ContentsComponent,],
 })
 export class ComponentsModule { }

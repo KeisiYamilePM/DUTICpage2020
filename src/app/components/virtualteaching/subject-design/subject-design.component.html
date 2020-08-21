@@ -1,6 +1,89 @@
-<div class="style--content" style="padding-top: 120px; padding-bottom: 40px;">
+<div class="style--content" style="padding-top: 80px; padding-bottom: 40px;">
+    <div class="header--style col-lg-9 col-md-12 col-sm-12 pt-4 pr-5 pb-1 mb-4">
+        <h2 class="font-weight-bold"> DOCENCIA VIRTUAL</h2>
+    </div>
     <div class="container">
-        <div class="nav-tabs-navigation" data-tabs-color="orange">
+        <mat-tab-group dynamicHeight>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <i class="now-ui-icons design-2_ruler-pencil
+                        Emoticons mr-2"></i><strong>SESIONES ONLINE</strong>
+                </ng-template>
+                <div class="mt-4 text-center">
+                    <img src="assets/img/InfografiaPreparacion.jpg" class="card-img-top mat-elevation-z4"
+                        style="width: 700px; height: 1100px;" alt="...">
+                </div>
+            </mat-tab>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <i class="now-ui-icons business_bulb-63
+                        Emoticons mr-2"></i><strong>ESTRATEGIAS DIDÁCTICAS</strong>
+                </ng-template>
+                <div class="row mt-4">
+                    <div class="col-12 col-lg-8 col-md-8 col-sm-12 text-center">
+                        <img src="assets/img/InfografiaDUTIC2.png" class="card-img-top mat-elevation-z4"
+                            style="width: 600px; height: 1400px;" alt="...">
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-12" *ngFor="let strategies of content">
+                        <div class="card animated fadeIn fast" style="width: 100%;">
+                            <img src="assets/img/news/vicerrec.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>{{strategies.name}}</strong></h5>
+                                <p class="card-text">{{strategies.des}}</p>
+                                <p class="card-text">{{strategies.date}}</p>
+                                <a href="{{strategies.link}}" class="btn btn-primary btn-block" target="_blank">Ver
+                                    más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </mat-tab>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <i class="now-ui-icons files_single-copy-04 mr-2"></i><strong>DISEÑO INSTRUCCIONAL</strong>
+                </ng-template>
+                <div class="row mt-4">
+                    <div class="col-12 col-lg-8 col-md-8 col-sm-12 text-center">
+                        <img src="assets/img/MODELO_ADDIE.png" class="card-img-top"
+                            style="width: 1000px; height: 1000px;" alt="...">
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-12 pt-4 text-justify">
+                        <p> <strong>En el marco del DISEÑO INSTRUCCIONAL ADDIE</strong> y en el contexto en
+                            el que estamos viviendo, el diseño de cursos en remoto requiere planificación y
+                            creatividad para diseñar actividades en línea y convertir las tecnologías en
+                            nuestras aliadas en el proceso de aprendizaje.
+                            El diseño instruccional que debe garantizarnos:<br><br>
+                            a) La posibilidad de contextualizar la formación;<br><br>
+                            b) La identificación de las competencias y los objetivos;<br><br>
+                            c) La concreción de las actividades y los recursos<br><br>
+                            d) La evaluación de los aprendizajes.<br><br>
+                            Trabajar con una metodología para planificar y crear todos los recursos
+                            necesarios nos da la oportunidad de ofrecer una educación de calidad. </p>
+                    </div>
+                </div>
+            </mat-tab>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <i class="now-ui-icons emoticons_satisfied mr-2"></i><strong>EXPERIENCIAS</strong>
+                </ng-template>
+                <div class="row mt-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+                        <div class="card animated fadeIn fast" style="width: 100%;">
+                            <img src="assets/img/subjectdesign/exp1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Tecnología Digital para la Educación</strong></h5>
+                                <p class="card-text text-justify">Dr. Alberto Ramirez Martinell</p>
+                                <a href="https://www.uv.mx/personal/albramirez/2020/02/04/actividades_tic/" class="btn btn-primary btn-block"
+                                    target="_blank">Ver
+                                    más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </mat-tab>
+        </mat-tab-group>
+
+       <!--  <div class="nav-tabs-navigation" data-tabs-color="orange">
             <div class="nav-tabs-wrapper">
                 <ngb-tabset [justify]="'center'" class="text-justify">
                     <ngb-tab>
@@ -12,7 +95,7 @@
                         <ng-template ngbTabContent>
                             <div class="row mt-4">
                                 <div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center">
-                                    <img src="assets/img/InfografiaPreparacion.png" class="card-img-top"
+                                    <img src="assets/img/InfografiaPreparacion.jpg" class="card-img-top"
                                         style="width: 700px; height: 1100px;" alt="...">
                                 </div>
                             </div>
@@ -33,7 +116,7 @@
                                 </div>
                                 <div class="col-12 col-lg-4 col-md-6 col-sm-12" *ngFor="let strategies of content">
                                     <div class="card animated fadeIn fast" style="width: 100%;">
-                                        <img src="assets/img/news/vicerrec.png" class="card-img-top" alt="...">
+                                        <img src="assets/img/news/vicerrec.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <h5 class="card-title"><strong>{{strategies.name}}</strong></h5>
                                             <p class="card-text">{{strategies.des}}</p>
@@ -58,18 +141,22 @@
                                         style="width: 1000px; height: 1000px;" alt="...">
                                 </div>
                                 <div class="col-12 col-lg-4 col-md-6 col-sm-12">
-                                    <p> <strong>En el marco del DISEÑO INSTRUCCIONAL ADDIE</strong> y en el contexto en el que estamos viviendo, el diseño de cursos en remoto  requiere planificación y creatividad para diseñar actividades en línea y convertir las tecnologías en nuestras aliadas en el proceso de aprendizaje.
+                                    <p> <strong>En el marco del DISEÑO INSTRUCCIONAL ADDIE</strong> y en el contexto en
+                                        el que estamos viviendo, el diseño de cursos en remoto requiere planificación y
+                                        creatividad para diseñar actividades en línea y convertir las tecnologías en
+                                        nuestras aliadas en el proceso de aprendizaje.
                                         El diseño instruccional que debe garantizarnos:<br><br>
                                         a) La posibilidad de contextualizar la formación;<br><br>
                                         b) La identificación de las competencias y los objetivos;<br><br>
                                         c) La concreción de las actividades y los recursos<br><br>
                                         d) La evaluación de los aprendizajes.<br><br>
-                                        Trabajar con una metodología para planificar y crear todos los recursos necesarios nos da la oportunidad de ofrecer una educación de calidad. </p>
+                                        Trabajar con una metodología para planificar y crear todos los recursos
+                                        necesarios nos da la oportunidad de ofrecer una educación de calidad. </p>
                                 </div>
                             </div>
                         </ng-template>
                     </ngb-tab>
-                    <!--<ngb-tab>
+                    <ngb-tab>
                         <ng-template ngbTabTitle>
                             <i class="now-ui-icons education_glasses"></i> Retroalimentación
                         </ng-template>
@@ -79,9 +166,9 @@
                                <p>Aqui van contenidos sobre Retroalimentación</p>
                            </div>
                         </ng-template>
-                    </ngb-tab> -->
+                    </ngb-tab>
                 </ngb-tabset>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>

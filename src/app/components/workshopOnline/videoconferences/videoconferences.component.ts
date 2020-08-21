@@ -27,7 +27,6 @@ export class VideoconferencesComponent implements OnInit {
   ngOnInit(): void {
     this.ongetVideoconferencesList()
   }
-
    
   applyFilter(filterValue: string) {
     filterValue = filterValue.trim(); // Remove whitespace

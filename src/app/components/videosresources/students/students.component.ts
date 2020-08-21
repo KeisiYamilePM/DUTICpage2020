@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { YoutubeService } from '../../../services/youtube.service';
 import { Video } from '../../../models/youtube';
 import Swal from 'sweetalert2'
+import { HandbookService } from '../../../services/handbook.service';
 
 @Component({
   selector: 'app-students',
@@ -11,13 +12,17 @@ import Swal from 'sweetalert2'
 export class StudentsComponent implements OnInit {
 
   videos: Video[] = []
-
-  constructor(private youtubeService: YoutubeService) { }
+  content: any[] = [];
+ 
+  constructor(
+    private youtubeService: YoutubeService,
+    private handbookService: HandbookService
+    ) { }
 
   ngOnInit(): void {
 
-    this.youtubeService.getVideos().subscribe(resp => {
-      console.log(resp);
+    this.youtubeService.getVideosStudent().subscribe(resp => {
+      //console.log("studeeents",resp);
       var url = "https://www.youtube.com/embed/"
       this.videos = resp;
       /*       this.videos.resourceId.videoId = url + this.videos.resourceId.videoId;
@@ -34,7 +39,18 @@ export class StudentsComponent implements OnInit {
       </iframe>`,
       showConfirmButton: false,
       width: 800,
+      showCloseButton: true,
     })
   }
 
+  onClicHandbook(data) {
+    this.content = this.handbookService.gethandbookStudent()
+    //console.log("infoo",this.content)
+
+    for (let index = 0; index < this.content.length; index++) {
+      if(data.resourceId.videoId==this.content[index].videoId){
+        window.open(this.content[index].handbookId,'_blank')
+      }
+    }
+  }
 }

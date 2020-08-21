@@ -12,10 +12,11 @@ import { TeachersComponent } from './components/videosresources/teachers/teacher
 import { StudentsComponent } from './components/videosresources/students/students.component';
 import { ToolsgoogleComponent } from './components/videosresources/toolsgoogle/toolsgoogle.component';
 import { VirtuallearningComponent } from './components/virtuallearning/virtuallearning.component';
+import { TrainingsComponent } from './components/trainings/trainings.component';
 
 const routes: Routes =[
-    { path: '', redirectTo: 'index', pathMatch: 'full' },
-    { path: 'index',                component: ComponentsComponent },
+    { path: '', redirectTo: 'homepage', pathMatch: 'full' },
+    { path: 'homepage',                component: ComponentsComponent },
 
     { path: 'virtualTeaching/news',     component: NewsComponent },
     { path: 'virtualTeaching/subjectDesign',     component: SubjectDesignComponent },
@@ -26,6 +27,9 @@ const routes: Routes =[
     { path: 'videoandresources/teachers',     component: TeachersComponent },
     { path: 'videoandresources/students',     component: StudentsComponent },
     { path: 'videoandresources/googletools',     component: ToolsgoogleComponent },
+
+    { path: 'virtualTeaching/trainings',     component: TrainingsComponent },
+
 
 ];
 

@@ -22,7 +22,6 @@ export class NewsComponent implements OnInit {
   }
 
   openInfoNew(data) {
-    console.log(data)
     Swal.fire({
       html: `
       <div class="row">

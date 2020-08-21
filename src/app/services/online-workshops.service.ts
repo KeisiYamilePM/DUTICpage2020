@@ -1,149 +1,125 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
+import { Videoconference } from '../models/videoconferences';
 
 @Injectable({
   providedIn: 'root'
 })
 export class OnlineWorkshopsService {
 
-  private tvunsa: any[] = [
-    {
-      name: "Lineamientos y Acceso al Aula Virtual",
-      speaker: "Mg. Elizabeth Vidal",
-      nationality: "España",
-      category: "Educación",
-      organizedBy: "DUTIC TVUNSA",
-      date: "30/05/2020",
-      hour: "",
-      state: false,
-      link: "https://www.youtube.com/watch?v=4YUV9j2UYXI",
-    },
-    {
-      name: "Compartiendo Material",
-      speaker: "Mg. Elizabeth Vidal",
-      nationality: "España",
-      category: "Educación",
-      organizedBy: "DUTIC TVUNSA",
-      date: "30/05/2020",
-      hour: "",
-      state: false,
-      link: "https://www.youtube.com/watch?v=bFku0u1i888",
-    },
-    {
-      name: "Comunicación: foros, mensajes, videollamadas",
-      speaker: "Sr. Jorge Vizcarra",
-      nationality: "España",
-      category: "Educación",
-      organizedBy: "DUTIC TVUNSA",
-      date: "30/05/2020",
-      hour: "",
-      state: false,
-      link: "https://www.youtube.com/watch?v=2duDsc5rr_U",
-    },
-    {
-      name: "Estudiantes, foros y tareas",
-      speaker: "",
-      nationality: "España",
-      category: "Educación",
-      organizedBy: "DUTIC TVUNSA",
-      date: "30/05/2020",
-      hour: "",
-      state: false,
-      link: "https://www.youtube.com/watch?v=CpQGpltSLa4",
-    },
-    {
-      name: "Evaluaciones",
-      speaker: "Mg. Elizabeth Vidal",
-      nationality: "España",
-      category: "Educación",
-      organizedBy: "DUTIC TVUNSA",
-      date: "30/05/2020",
-      hour: "",
-      state: false,
-      link: "https://www.youtube.com/watch?v=CpQGpltSLa4",
-    },
-  ];
-
   private videoconferences: any[] = [
     {
-      name: "Lineamientos y Acceso al Aula Virtual",
-      speaker: "Mg. Elizabeth Vidal",
+      name: "Herramientas digitales y secuencia didáctica en clase",
+      speaker: "Jorge Bossio Montes De Oca, Alvaro Tobaru Hamada, Magna Guerreo Celis, Antonio Andrade Pinelo",
       nationality: "Perú",
       category: "Educación",
-      organizedBy: "DUTIC TVUNSA",
-      date: "30/05/2020",
+      organizedBy: "Ministerio de Educación",
+      date: "21/07/2020",
       hour: "",
       state: false,
-      link: "https://www.youtube.com/watch?v=4YUV9j2UYXI",
+      link: "https://www.facebook.com/watch/live/?v=292920861948206&ref=watch_permalink",
     },
     {
-      name: "Compartiendo Material",
-      speaker: "Mg. Elizabeth Vidal",
+      name: "Metodologías de la enseñanza",
+      speaker: "Gumercindo Bartra",
       nationality: "Perú",
       category: "Educación",
-      organizedBy: "DUTIC TVUNSA",
-      date: "30/05/2020",
+      organizedBy: "Ministerio de Educación",
+      date: "16/06/2020",
       hour: "",
       state: false,
-      link: "https://www.youtube.com/watch?v=bFku0u1i888",
+      link: "https://www.facebook.com/watch/live/?v=604981423770178&ref=watch_permalink",
     },
     {
-      name: "Comunicación: foros, mensajes, videollamadas",
-      speaker: "Sr. Jorge Vizcarra",
-      nationality: "Perú",
+      name: "Herramientas y modelos para el seguimiento y evaluación del aprendizaje en entornos virtuales",
+      speaker: "Ciclo de lo Presencial a lo Virtual",
+      nationality: "España",
       category: "Educación",
-      organizedBy: "DUTIC TVUNSA",
-      date: "30/05/2020",
-      hour: "",
+      organizedBy: "UNIR",
+      date: "09/07/2020",
+      hour: "13:00 a 14:15",
       state: false,
-      link: "https://www.youtube.com/watch?v=2duDsc5rr_U",
+      link: "https://unir.adobeconnect.com/pqvanby173ay/",
     },
     {
-      name: "Estudiantes, foros y tareas",
-      speaker: "",
-      nationality: "Perú",
+      name: "Herramientas de enseñanza y  gestión académica virtuales",
+      speaker: "Ciclo de lo Presencial a lo Virtual",
+      nationality: "España",
       category: "Educación",
-      organizedBy: "DUTIC TVUNSA",
-      date: "30/05/2020",
-      hour: "",
+      organizedBy: "UNIR",
+      date: "07/07/2020",
+      hour: "13:00 a 14:15",
       state: false,
-      link: "https://www.youtube.com/watch?v=CpQGpltSLa4",
+      link: "https://unir.adobeconnect.com/pcex1n1gcu71/",
     },
     {
-      name: "Evaluaciones",
-      speaker: "Mg. Elizabeth Vidal",
-      nationality: "Perú",
+      name: "Metodología para aprender online y enseñar de manera eficaz",
+      speaker: "Ciclo de lo Presencial a lo Virtual",
+      nationality: "España",
       category: "Educación",
-      organizedBy: "DUTIC TVUNSA",
-      date: "30/05/2020",
-      hour: "",
+      organizedBy: "UNIR",
+      date: "02/07/2020",
+      hour: "13:00 a 14:15",
       state: false,
-      link: "https://www.youtube.com/watch?v=CpQGpltSLa4",
+      link: "https://unir.adobeconnect.com/pshzl6w53nd1/",
     },
     {
-      name: "Educación Universitaria en tiempos de pandemia: Estrategias de superación",
-      speaker: "Dr. Ángel Hernando Gómez",
+      name: "Como organizar un plan eficaz de transición de la formación presencial a la virtual",
+      speaker: "Ciclo de lo Presencial a lo Virtual",
+      nationality: "España",
+      category: "Educación",
+      organizedBy: "UNIR",
+      date: "30/06/2020",
+      hour: "13:00 a 14:15",
+      state: false,
+      link: "https://unir.adobeconnect.com/piri9wjo2t7x/",
+    },
+    {
+      name: "Recursos y estrategias para el aprendizaje en linea",
+      speaker: "Dra. Claudia Pontón Ramos",
+      nationality: "Mexico",
+      category: "Educación",
+      organizedBy: "INEDU",
+      date: "12/06/2020",
+      hour: "13:00 a 14:15",
+      state: false,
+      link: "https://www.facebook.com/watch/live/?v=879479509204838&ref=watch_permalink",
+    },
+    {
+      name: "Evaluación del aprendizaje en entornos virtuales y remotos",
+      speaker: "Dr. Adolfo Ignacio Calderón Flores",
+      nationality: "Brasil",
+      category: "Educación",
+      organizedBy: "INEDU",
+      date: "05/06/2020",
+      hour: "13:00 a 14:15",
+      state: false,
+      link: "https://www.facebook.com/watch/live/?v=682591869246352&ref=watch_permalink",
+    },
+    {
+      name: "Evaluación del aprendizaje en entornos virtuales y remotos",
+      speaker: "Dr. Francisco José García Peñalvo",
       nationality: "España",
       category: "Educación",
       organizedBy: "INEDU",
-      date: "25/05/2020",
+      date: "03/06/2020",
       hour: "",
       state: false,
-      link: "https://www.facebook.com/tvunsa/videos/700496077187054/",
+      link: "https://www.facebook.com/watch/live/?v=607747663167940&ref=watch_permalink",
     },
     {
-      name: "Educación Universitaria en tiempos de pandemia: Estrategias de superación",
-      speaker: "Dr. Francisco Javier Vázquez Ramos",
-      nationality: "España",
+      name: "Evaluación del aprendizaje en entornos virtuales y remotos",
+      speaker: "Dra. Frida Díaz Barriga",
+      nationality: "Mexico",
       category: "Educación",
       organizedBy: "INEDU",
-      date: "27/05/2020",
+      date: "01/06/2020",
       hour: "",
       state: false,
-      link: "https://www.facebook.com/tvunsa/videos/277792936692614/",
+      link: "https://www.facebook.com/watch/live/?v=258652365212130&ref=watch_permalink",
     },
     {
-      name: "Educación Universitaria en tiempos de pandemia: Estrategias de superación",
+      name: "Diseño y desarrollo de sesiones online",
       speaker: "Dra. Juliana Elisa Raffaglelli",
       nationality: "España",
       category: "Educación",
@@ -154,17 +130,86 @@ export class OnlineWorkshopsService {
       link: "https://www.facebook.com/tvunsa/videos/3519694388045792/",
     },
     {
-      name: "Evaluacién del aprendizaje en entornos virtuales y remotos",
-      speaker: "Dr. Adolfo Ignacio Calderón Flores",
-      nationality: "Brasil",
+      name: "Diseño y desarrollo de sesiones online",
+      speaker: "Dr. Francisco Javier Vázquez Ramos",
+      nationality: "España",
       category: "Educación",
       organizedBy: "INEDU",
-      date: "05/06/2020",
-      hour: "13:00 a 14:15",
+      date: "27/05/2020",
+      hour: "",
       state: false,
-      link: "https://www.facebook.com/tvunsa/videos/3519694388045792/",
+      link: "https://www.facebook.com/tvunsa/videos/277792936692614/",
     },
     {
+      name: "Diseño y desarrollo de sesiones online",
+      speaker: "Dr. Ángel Hernando Gómez",
+      nationality: "España",
+      category: "Educación",
+      organizedBy: "INEDU",
+      date: "25/05/2020",
+      hour: "",
+      state: false,
+      link: "https://www.facebook.com/tvunsa/videos/700496077187054/",
+    },
+    {
+      name: "Evaluaciones",
+      speaker: "Mg. Elizabeth Vidal",
+      nationality: "Perú",
+      category: "Educación",
+      organizedBy: "DUTIC TVUNSA",
+      date: "30/05/2020",
+      hour: "",
+      state: false,
+      link: "https://www.youtube.com/watch?v=CpQGpltSLa4",
+    },
+    {
+      name: "Estudiantes, foros y tareas",
+      speaker: "",
+      nationality: "Perú",
+      category: "Educación",
+      organizedBy: "DUTIC TVUNSA",
+      date: "30/05/2020",
+      hour: "",
+      state: false,
+      link: "https://www.youtube.com/watch?v=CpQGpltSLa4",
+    },
+    {
+      name: "Comunicación: foros, mensajes, videollamadas",
+      speaker: "Sr. Jorge Vizcarra",
+      nationality: "Perú",
+      category: "Educación",
+      organizedBy: "DUTIC TVUNSA",
+      date: "30/05/2020",
+      hour: "",
+      state: false,
+      link: "https://www.youtube.com/watch?v=2duDsc5rr_U",
+    }, 
+    {
+      name: "Compartiendo Material",
+      speaker: "Mg. Elizabeth Vidal",
+      nationality: "Perú",
+      category: "Educación",
+      organizedBy: "DUTIC TVUNSA",
+      date: "30/05/2020",
+      hour: "",
+      state: false,
+      link: "https://www.youtube.com/watch?v=bFku0u1i888",
+    },
+    {
+      name: "Lineamientos y Acceso al Aula Virtual",
+      speaker: "Mg. Elizabeth Vidal",
+      nationality: "Perú",
+      category: "Educación",
+      organizedBy: "DUTIC TVUNSA",
+      date: "30/05/2020",
+      hour: "",
+      state: false,
+      link: "https://www.youtube.com/watch?v=4YUV9j2UYXI",
+    },
+  ];
+
+  /*
+  {
       name: "Recursos y estrategias para el aprendizaje en línea",
       speaker: "Dra. María Soledad Ramírez Montoya",
       nationality: "México",
@@ -173,7 +218,7 @@ export class OnlineWorkshopsService {
       date: "08/05/2020",
       hour: "13:00 a 14:15",
       state: false,
-      link: "https://www.facebook.com/tvunsa/videos/3519694388045792/",
+      link: "",
     },
     {
       name: "Recursos y estrategias para el aprendizaje en línea",
@@ -197,16 +242,27 @@ export class OnlineWorkshopsService {
       state: false,
       link: "",
     },
-  ];
-
+  */
   constructor() { }
 
-  getTvunsaList(): Observable<any[]> {
-    return of(this.tvunsa);
-  }
-
-  getVideoconferencesList(): Observable<any[]> {
+  getVideoconferencesList(): Observable<any> {
     return of(this.videoconferences);
   }
 
+  searchByCategory(search:string){
+    let videoCategoryArray: Videoconference[] = [];
+
+      if (search == "education"){
+        videoCategoryArray = this.videoconferences.filter(videoconference => videoconference.category == "Educación")
+        return videoCategoryArray;
+      }
+  }
+  searchByCountry(search:string){
+    let videoCategoryArray: Videoconference[] = [];
+
+      if (search == "mexico"){
+        videoCategoryArray = this.videoconferences.filter(videoconference => videoconference.nationality == "México")
+        return videoCategoryArray;
+      }
+  }
 }

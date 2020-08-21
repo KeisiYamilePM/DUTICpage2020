@@ -1,0 +1,20 @@
+table {
+    width: 100%;
+}
+.mat-column-nameTheme{
+    flex: 0 0 60%;
+    width: 60%;
+}  
+.mat-column-state{
+    text-align: center;
+} 
+.mat-column-date{
+    text-align: center;
+} 
+.white--box--border{
+    background-color: white; 
+    color: #141E42; 
+    border-radius: 20px;
+    font-size: 1.3rem;
+    border: 5px solid #141E42; 
+}

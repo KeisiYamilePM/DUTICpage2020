@@ -1,61 +1,87 @@
-<div style="margin-top: 150px;" class="container">
-        <div class="card--header--style card-header row">
-                <div class="col-md-12 col-xl-12 col-lg-12">
-                        <span>VIDEO TUTORIALES HERRAMIENTAS GOOGLE</span>
-                </div>
+<div style="margin-top: 80px;" class="style--content">
+
+        <div class="header--style col-lg-10 col-md-12 col-sm-12 pt-4 pr-5 pb-1 mb-4">
+                <h2 class="font-weight-bold">HERRAMIENTAS DE GOOGLE</h2>
         </div>
-        <div class="row mb-4">
-                <div class="col-12">
-                        <p><a href="https://youtu.be/4MPNsS50gqk" target="_blank">
-                                        Google calendar, meet</a></p>
-
-                        <p><a href="https://youtu.be/_WGnxtKh-Vs" target="_blank">
-                                        Google Drive</a></p>
-
-                        <p><a href="https://www.youtube.com/watch?v=Z2ql_xw7p8A" target="_blank">
-                                        Documentos de Google: Principales Opciones y Herramientas colaborativas</a></p>
-
-                        <p><a href="https://www.youtube.com/watch?v=Kv-dyUBV0_k" target="_blank">
-                                        Presentaciones de Google: Principales Opciones y Herramientas Colaborativas</a>
-                        </p>
-
-                        <p><a href="https://youtu.be/9pQbolFaRa8" target="_blank">
-                                        Formularios de Google: Tutorial Completo</a></p>
-
-                        <p><a href="https://youtu.be/t6lRyo2nOIo" target="_blank">
-                                        YouTube: Creación y Personalizacion de Canal. Subir Videos</a></p>
+        <div class="container">
+                <!-- <div class="row mt-4">
+                        <div class="col-md-12 col-xl-6 col-lg-6">
+                                <h3><strong>MANUALES</strong></h3>
+                        </div>
                 </div>
-        </div>
-        <div class="card--header--style card-header row mt-4">
-                <div class="col-md-12 col-xl-12 col-lg-12">
-                        <span>MANUALES HERRAMIENTAS GOOGLE</span>
+                <p><a href="assets/doc/google/2020_CALENDARIO_DE_GOOGLE.pdf" target="_blank">
+                        CALENDARIO DE GOOGLE</a></p>
+                <div class="card-deck">
+                        <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-12" *ngFor="let video of videos">
+                                        <div class="card mb-4">
+                                                <img src="{{video.thumbnails.medium.url}}" class="card-img-top"
+                                                        alt="..." (click)="onClicVideo(video)">
+                                                <div class="card-body">
+                                                        <h5 class="card-title"><strong>{{video.title}}</strong></h5>
+                                                        <p class="card-text">{{video.description}}</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                        <button class="btn btn-danger float-left"
+                                                                (click)="onClicVideo(video)">
+                                                                Video<i
+                                                                        class="now-ui-icons media-1_button-play ml-1"></i></button>
+                                                        <button class="btn btn-primary float-right"
+                                                                (click)="onClicHandbook(video)">
+                                                                Manual<i class="now-ui-icons files_paper ml-1"></i>
+                                                        </button>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div> -->
+                <div class="mt-4">
+                        <div class="col-md-12 col-xl-12 col-lg-12">
+                                <h4><strong>VIDEOS</strong></h4>
+                        </div>
                 </div>
-        </div>
-        <div class="row mb-4">
-                <div class="col-12">
-                        <p><a href="assets/doc/google/2020_CALENDARIO_DE_GOOGLE.pdf" target="_blank">
-                                        CALENDARIO DE GOOGLE</a></p>
+                <div class="row mb-4">
+                        <div class="col-12">
+                                <p><a href="https://www.youtube.com/watch?v=u2o6gOUA0jI&t" target="_blank">
+                                                Crear una videoconferencia en Google Calendar y Google Meet</a></p>
 
+                                <p><a href="https://youtu.be/_WGnxtKh-Vs" target="_blank">
+                                                Google Drive</a></p>
+
+                                <p><a href="https://www.youtube.com/watch?v=Z2ql_xw7p8A" target="_blank">
+                                                Documentos de Google: Principales Opciones y Herramientas
+                                                colaborativas</a></p>
+
+                                <p><a href="https://www.youtube.com/watch?v=Kv-dyUBV0_k" target="_blank">
+                                                Presentaciones de Google: Principales Opciones y Herramientas
+                                                Colaborativas</a>
+                                </p>
+
+                                <p><a href="https://youtu.be/9pQbolFaRa8" target="_blank">
+                                                Formularios de Google: Tutorial Completo</a></p>
+
+                                <p><a href="https://youtu.be/t6lRyo2nOIo" target="_blank">
+                                                YouTube: Creación y Personalizacion de Canal. Subir Videos</a></p>
+                        </div>
+                </div>
+                <div class="mt-4">
+                        <div class="col-md-12 col-xl-12 col-lg-12">
+                                <h4><strong>MANUALES</strong></h4>
+                        </div>
                         <p><a href="assets/doc/google/2020_Google_Drive.pdf" target="_blank">
                                         Google Drive</a></p>
 
                         <p><a href="assets/doc/google/2020_Google_Hangouts_Meet.pdf" target="_blank">
                                         Google Hangouts Meet</a></p>
-                        <!-- 
-            <p><a href="assets/doc/google/HANGOUTS DE GOOGLE.pdf"
-                    target="_blank">
-                    2020_HANGOUTS DE GOOGLE</a></p> -->
+
 
                         <p><a href="assets/doc/google/2020_TutorialDocumentosGoogle.pdf" target="_blank">
                                         Tutorial Documentos Google</a></p>
 
-
-                        <!-- <p><a href="assets/doc/google/2020_TutorialPresentacionesGoogle.pdf.pdf"
-                    target="_blank">
-                    Tutorial Presentaciones Google</a></p> -->
-
                         <p><a href="assets/doc/google/2020_Youtube.pdf" target="_blank">
                                         Tutorial Youtube</a></p>
+                        <p><a href="assets/doc/google/2020_CALENDARIO_DE_GOOGLE.pdf" target="_blank">
+                                        CALENDARIO DE GOOGLE</a></p>
                 </div>
         </div>
 </div>

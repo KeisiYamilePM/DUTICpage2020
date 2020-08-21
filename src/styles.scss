@@ -59,6 +59,23 @@ $animationSpeed: 10s;
 	}
 } */
 
+/* Header tittle style*/
+.header--style{
+  background: rgba(70,87,103,1);
+background: -moz-linear-gradient(-45deg, rgba(70,87,103,1) 0%, rgba(70,87,103,1) 64%, rgba(241,241,242,1) 64%, rgba(255,255,255,1) 64%, rgba(241,241,242,1) 65%, rgba(241,241,242,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(70,87,103,1)), color-stop(64%, rgba(70,87,103,1)), color-stop(64%, rgba(241,241,242,1)), color-stop(64%, rgba(255,255,255,1)), color-stop(65%, rgba(241,241,242,1)), color-stop(100%, rgba(241,241,242,1)));
+background: -webkit-linear-gradient(-45deg, rgba(70,87,103,1) 0%, rgba(70,87,103,1) 64%, rgba(241,241,242,1) 64%, rgba(255,255,255,1) 64%, rgba(241,241,242,1) 65%, rgba(241,241,242,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(70,87,103,1) 0%, rgba(70,87,103,1) 64%, rgba(241,241,242,1) 64%, rgba(255,255,255,1) 64%, rgba(241,241,242,1) 65%, rgba(241,241,242,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(70,87,103,1) 0%, rgba(70,87,103,1) 64%, rgba(241,241,242,1) 64%, rgba(255,255,255,1) 64%, rgba(241,241,242,1) 65%, rgba(241,241,242,1) 100%);
+background: linear-gradient(135deg, rgba(70,87,103,1) 0%, rgba(70,87,103,1) 64%, rgba(241,241,242,1) 64%, rgba(255,255,255,1) 64%, rgba(241,241,242,1) 65%, rgba(241,241,242,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#465767', endColorstr='#f1f1f2', GradientType=1 );
+  color: ghostwhite;
+  h2{
+    -webkit-text-stroke: 1px #465767;
+  }
+}
+
+
 .center-content {
 	display: flex;
    align-items: center;
@@ -85,7 +102,7 @@ $animationSpeed: 10s;
 
 .style--content{
 
-  background-color: #D2D3D5;
+  background-color: #F1F1F2;
   /* background: rgba(210,211,213,1);
   background: -moz-linear-gradient(-45deg, rgba(210,211,213,1) 0%, rgba(210,211,213,1) 59%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 100%);
   background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(210,211,213,1)), color-stop(59%, rgba(210,211,213,1)), color-stop(60%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));

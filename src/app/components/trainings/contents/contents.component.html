@@ -1,0 +1,59 @@
+
+<div class="row">
+    <div class="col-lg-8 col-md-8 col-sm-12">
+        <h2 class="white--box--border p-3 font-weight-bold">{{this.dataContent[0].name}}</h2>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+<!--         <p><strong>{{this.dataContent[0].des}}</strong></p>
+ -->        <button class="btn btn-danger" (click)="onClickSilabo()">
+            Ver Sílabo<i class="now-ui-icons arrows-1_minimal-right ml-1"></i>
+        </button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <p><strong>Horario turno mañana: 10:00 hrs. a 12:00 hrs.</strong></p>
+        <p><strong>Horario turno tarde: 15:00 hrs. a 17:00 hrs.</strong></p>
+        <p style="color: red;"><i>*Considerar que la sesión en ambos horarios es la misma</i></p>
+    </div>
+</div>
+<div class="mat-elevation-z8">
+    <div *ngIf="isLoad">
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </div>
+    <table mat-table [dataSource]="dataSource" matSort matSortDirection="asc">
+
+        <ng-container matColumnDef="nameTheme">
+            <th mat-header-cell *matHeaderCellDef style="background-color: silver;"><strong>SESIONES</strong></th>
+            <td mat-cell *matCellDef="let element"> {{element.nameTheme}} </td>
+        </ng-container>
+        <ng-container matColumnDef="date">
+            <th mat-header-cell *matHeaderCellDef style="background-color: silver;"><strong>FECHA</strong></th>
+            <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+        </ng-container>
+        <!-- <ng-container matColumnDef="state">
+            <th mat-header-cell *matHeaderCellDef> Estado </th>
+            <td mat-cell *matCellDef="let element">
+                &nbsp;
+                <span *ngIf="element.state==true? true : false"><span
+                        class="badge badge-success">Vigente</span><br> {{element.hour}} 
+                </span>
+                <span *ngIf="element.state==false? true : false" class="badge badge-danger">Pasado</span>
+            </td>
+        </ng-container> -->
+        <!--  <ng-container matColumnDef="link">
+            <th mat-header-cell *matHeaderCellDef> Enlace </th>
+            <td mat-cell *matCellDef="let element">
+                <a mat-menu-item href="{{element.link}}" *ngIf="element.state==true? true : false" target="_blank" class="btn btn-primary">
+                    <span>VER</span>
+                </a>
+            </td>
+        </ng-container> -->
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+
+    </table>
+    <div class="mat-table__message" *ngIf="lenghtData == 0">No hay datos</div>
+</div>
