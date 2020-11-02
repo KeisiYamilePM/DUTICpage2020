@@ -9,22 +9,32 @@
             <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Buscar ...">
         </mat-form-field>
     </div> -->
-        <!-- <div class="card--header--style card-header row">
-            <div class="col-md-12 col-xl-6 col-lg-6 text-wrap">
-                <span>VIDEOCONFERENCIAS</span>
-            </div>
-        </div> -->
-           <!--  <div class="col-md-12 col-xl-6 col-lg-6">
+        <!--  <div class="col-md-12 col-xl-6 col-lg-6">
                 <div class=" float-right" fxLayout="row">
                     <mat-form-field class="mat-form-field-fluid">
                         <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Buscar...">
                     </mat-form-field>
                 </div>
             </div> -->
-
+        <!-- <div class="row">
+            <div class="col-4">
+                <mat-form-field class="mat-form-field-fluid" appearance="outline">
+                    <mat-label>Categoria</mat-label>
+                    <input matInput [(ngModel)]="title">
+                </mat-form-field>
+            </div>
+            <div class="col-4">
+                <mat-form-field appearance="outline">
+                    <mat-label>Nacionalidad</mat-label>
+                    <mat-select>
+                        <mat-option value="option">Option</mat-option>
+                        <mat-option value="option">Option2</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+ -->
         <div class="mat-elevation-z8">
-
-
             <div *ngIf="isLoad">
                 <mat-progress-bar mode="indeterminate"></mat-progress-bar>
             </div>

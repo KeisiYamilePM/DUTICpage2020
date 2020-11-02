@@ -13,6 +13,8 @@ import { StudentsComponent } from './components/videosresources/students/student
 import { ToolsgoogleComponent } from './components/videosresources/toolsgoogle/toolsgoogle.component';
 import { VirtuallearningComponent } from './components/virtuallearning/virtuallearning.component';
 import { TrainingsComponent } from './components/trainings/trainings.component';
+import { TrainingStudentsComponent } from './components/trainings/training-students/training-students.component';
+import { NewsContentComponent } from './components/virtualteaching/news-content/news-content.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'homepage', pathMatch: 'full' },
@@ -29,7 +31,9 @@ const routes: Routes =[
     { path: 'videoandresources/googletools',     component: ToolsgoogleComponent },
 
     { path: 'virtualTeaching/trainings',     component: TrainingsComponent },
+    { path: 'virtualLearning/trainings',     component: TrainingStudentsComponent },
 
+    { path: 'virtualTeaching/news/content',     component: NewsContentComponent },
 
 ];
 

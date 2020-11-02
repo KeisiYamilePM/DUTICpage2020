@@ -33,13 +33,23 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous"
-        src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0&appId=772377859606015&autoLogAppEvents=1"
-        nonce="AOcAI8LW"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179248781-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+    </script>
+
 </head>
 
 <body class="sidebar-collapse">
     <app-root></app-root>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0&appId=772377859606015&autoLogAppEvents=1"
+        nonce="AOcAI8LW"></script>
 </body>
 
 </html>

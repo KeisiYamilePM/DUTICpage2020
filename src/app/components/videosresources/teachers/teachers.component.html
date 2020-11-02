@@ -4,16 +4,30 @@
                 <h2 class="font-weight-bold">TUTORIALES DEL DOCENTE</h2>
         </div>
         <div class="container">
-                <!-- <div class="row mt-4">
+                <!-- 
+                <div class="row mt-4">
                         <div class="col-md-12 col-xl-6 col-lg-6">
-                                <h3><strong>MANUALES</strong></h3>
+                                <h3><strong>GUÍAS</strong></h3>
                         </div>
-                </div>
-                <p><a href="assets/doc/teacher/RECOMENDACIONES_EVALUACION_DEL_APRENDIZAJE_NO_PRESENCIAL.pdf"
-                                target="_blank">RECOMENDACIONES PARA LA EVALUACIÓN DEL APRENDIZAJE MODALIDAD NO
-                                PRESENCIAL</a>
-                </p>
+                </div> -->
+                <div class="row">
+                        <div class="col">
+                                <p class="font-weight-bold mr-2">RECOMENDACIONES PARA LA EVALUACIÓN DEL APRENDIZAJE
+                                        MODALIDAD NO
+                                        PRESENCIAL</p>
+                        </div>
+                        <div class="col">
+                                <a href="assets/doc/teacher/RECOMENDACIONES_EVALUACION_DEL_APRENDIZAJE_NO_PRESENCIAL.pdf"
+                                        target="_blank" class="btn text-center btn-primary" title="Ver documento">
+                                        <strong class="text-wrap">VER DOCUMENTO</strong>
+                                        <i class="now-ui-icons arrows-1_minimal-right ml-1"></i>
+                                </a>
+                        </div>
 
+                </div>
+
+                <!-- 
+        
                 <div class="row mb-4">
                         <div class="col-12 wpb_column block">
                                 <p><a href="assets/doc/teacher/2020_Tutorial_CopiaDeSeguridadDeCurso_v3Cinco.pdf"
@@ -26,21 +40,23 @@
                                                 target="_blank">Restauración de curso</a></p>
 
                         </div>
-                </div>
+                </div> -->
                 <mat-tab-group dynamicHeight>
                         <mat-tab>
                                 <ng-template mat-tab-label>
                                         <i class="now-ui-icons files_single-copy-04 mr-2"></i><strong>GESTIÓN DEL
                                                 AULA</strong>
                                 </ng-template>
-                                <div class="card-deck mt-4">
+                                <div class="mt-4">
                                         <div class="row">
-                                                <div class="col-lg-4 col-md-4 col-sm-12" *ngFor="let video of videosM">
+                                                <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let video of videosM">
                                                         <div class="card mb-4">
-                                                                <img src="{{video.thumbnails.medium.url}}" class="card-img-top"
-                                                                        alt="..." (click)="onClicVideo(video)">
+                                                                <img src="{{video.thumbnails.medium.url}}"
+                                                                        class="card-img-top" alt="..."
+                                                                        (click)="onClicVideo(video)">
                                                                 <div class="card-body">
-                                                                        <h5 class="card-title"><strong>{{video.title}}</strong></h5>
+                                                                        <h5 class="card-title">
+                                                                                <strong>{{video.title}}</strong></h5>
                                                                         <p class="card-text">{{video.description}}</p>
                                                                 </div>
                                                                 <div class="card-footer">
@@ -50,7 +66,8 @@
                                                                                         class="now-ui-icons media-1_button-play ml-1"></i></button>
                                                                         <button class="btn btn-primary float-right"
                                                                                 (click)="onClicHandbook(video)">
-                                                                                Manual<i class="now-ui-icons files_paper ml-1"></i>
+                                                                                Manual<i
+                                                                                        class="now-ui-icons files_paper ml-1"></i>
                                                                         </button>
                                                                 </div>
                                                         </div>
@@ -63,14 +80,16 @@
                                         <i class="now-ui-icons files_single-copy-04 mr-2"></i><strong>DISEÑO DEL
                                                 AULA</strong>
                                 </ng-template>
-                                <div class="card-deck mt-4">
+                                <div class="mt-4">
                                         <div class="row">
-                                                <div class="col-lg-4 col-md-4 col-sm-12" *ngFor="let video of videosD">
+                                                <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let video of videosD">
                                                         <div class="card mb-4">
-                                                                <img src="{{video.thumbnails.medium.url}}" class="card-img-top"
-                                                                        alt="..." (click)="onClicVideo(video)">
+                                                                <img src="{{video.thumbnails.medium.url}}"
+                                                                        class="card-img-top" alt="..."
+                                                                        (click)="onClicVideo(video)">
                                                                 <div class="card-body">
-                                                                        <h5 class="card-title"><strong>{{video.title}}</strong></h5>
+                                                                        <h5 class="card-title">
+                                                                                <strong>{{video.title}}</strong></h5>
                                                                         <p class="card-text">{{video.description}}</p>
                                                                 </div>
                                                                 <div class="card-footer">
@@ -80,7 +99,8 @@
                                                                                         class="now-ui-icons media-1_button-play ml-1"></i></button>
                                                                         <button class="btn btn-primary float-right"
                                                                                 (click)="onClicHandbook(video)">
-                                                                                Manual<i class="now-ui-icons files_paper ml-1"></i>
+                                                                                Manual<i
+                                                                                        class="now-ui-icons files_paper ml-1"></i>
                                                                         </button>
                                                                 </div>
                                                         </div>
@@ -90,16 +110,19 @@
                         </mat-tab>
                         <mat-tab>
                                 <ng-template mat-tab-label>
-                                        <i class="now-ui-icons files_single-copy-04 mr-2"></i><strong>EVALUACIÓN</strong>
+                                        <i
+                                                class="now-ui-icons files_single-copy-04 mr-2"></i><strong>EVALUACIÓN</strong>
                                 </ng-template>
-                                <div class="card-deck mt-4">
+                                <div class="mt-4">
                                         <div class="row">
-                                                <div class="col-lg-4 col-md-4 col-sm-12" *ngFor="let video of videosE">
+                                                <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let video of videosE">
                                                         <div class="card mb-4">
-                                                                <img src="{{video.thumbnails.medium.url}}" class="card-img-top"
-                                                                        alt="..." (click)="onClicVideo(video)">
+                                                                <img src="{{video.thumbnails.medium.url}}"
+                                                                        class="card-img-top" alt="..."
+                                                                        (click)="onClicVideo(video)">
                                                                 <div class="card-body">
-                                                                        <h5 class="card-title"><strong>{{video.title}}</strong></h5>
+                                                                        <h5 class="card-title">
+                                                                                <strong>{{video.title}}</strong></h5>
                                                                         <p class="card-text">{{video.description}}</p>
                                                                 </div>
                                                                 <div class="card-footer">
@@ -109,7 +132,8 @@
                                                                                         class="now-ui-icons media-1_button-play ml-1"></i></button>
                                                                         <button class="btn btn-primary float-right"
                                                                                 (click)="onClicHandbook(video)">
-                                                                                Manual<i class="now-ui-icons files_paper ml-1"></i>
+                                                                                Manual<i
+                                                                                        class="now-ui-icons files_paper ml-1"></i>
                                                                         </button>
                                                                 </div>
                                                         </div>
@@ -117,9 +141,9 @@
                                         </div>
                                 </div>
                         </mat-tab>
-                </mat-tab-group> -->
+                </mat-tab-group>
 
-                <div class="mt-4">
+                <!-- <div class="mt-4">
                         <div class="col-md-12 col-xl-12 col-lg-12">
                                 <h3><strong>VIDEOS</strong></h3>
                         </div>
@@ -178,9 +202,8 @@
                                 target="_blank">RECOMENDACIONES PARA LA EVALUACIÓN DEL APRENDIZAJE MODALIDAD NO
                                 PRESENCIAL</a>
                 </p>
-
                 <div class="row mb-4">
-                        <div class="col-md-4 col-sm-6 wpb_column block">
+                        <div class="col-md-6 col-sm-6 wpb_column block">
 
                                 <h5><strong>GESTIÓN</strong></h5>
 
@@ -211,7 +234,7 @@
                                                 target="_blank">Restauración de curso</a></p>
 
                         </div>
-                        <div class="col-md-4 col-sm-6 wpb_column">
+                        <div class="col-md-6 col-sm-6 wpb_column">
                                 <h5><strong>DISEÑO DE AULA</strong></h5>
 
                                 <p><a href="assets/doc/teacher/2020_Tutorial_SubiendoArchivos_v3Cinco.pdf"
@@ -227,7 +250,7 @@
                                                 target="_blank">Creando un
                                                 foro</a></p>
                         </div>
-                        <div class="col-md-4 col-sm-6 wpb_column">
+                        <div class="col-md-6 col-sm-6 wpb_column">
                                 <h5><strong>EVALUACIÓN</strong></h5>
 
                                 <p><a href="assets/doc/teacher/2020_Tutorial_CreandoCuestionarioyBancodePreguntas_v3Cinco.pdf"
@@ -238,5 +261,5 @@
                                                 calificador</a></p>
                         </div>
                 </div>
+        </div> -->
         </div>
-</div>

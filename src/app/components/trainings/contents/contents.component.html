@@ -1,20 +1,19 @@
-
 <div class="row">
     <div class="col-lg-8 col-md-8 col-sm-12">
         <h2 class="white--box--border p-3 font-weight-bold">{{this.dataContent[0].name}}</h2>
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-12 text-center">
-<!--         <p><strong>{{this.dataContent[0].des}}</strong></p>
- -->        <button class="btn btn-danger" (click)="onClickSilabo()">
-            Ver Sílabo<i class="now-ui-icons arrows-1_minimal-right ml-1"></i>
-        </button>
-    </div>
 </div>
 <div class="row">
-    <div class="col-12">
-        <p><strong>Horario turno mañana: 10:00 hrs. a 12:00 hrs.</strong></p>
-        <p><strong>Horario turno tarde: 15:00 hrs. a 17:00 hrs.</strong></p>
+    <div class="col-lg-8 col-md-8 col-sm-12">
+        <p><strong>Horario primer turno: 14:00 hrs. a 16:00 hrs.</strong></p>
+        <p><strong>Horario segundo turno: 18:00 hrs. a 20:00 hrs.</strong></p>
         <p style="color: red;"><i>*Considerar que la sesión en ambos horarios es la misma</i></p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+        <!--         <p><strong>{{this.dataContent[0].des}}</strong></p>
+         --> <button class="btn btn-danger" (click)="onClickSilabo()">
+            Ver Sílabo<i class="now-ui-icons arrows-1_minimal-right ml-1"></i>
+        </button>
     </div>
 </div>
 <div class="mat-elevation-z8">

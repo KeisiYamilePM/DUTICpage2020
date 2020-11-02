@@ -4,6 +4,7 @@ import { OnlineWorkshopsService } from '../../../services/online-workshops.servi
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
+
 @Component({
   selector: 'app-videoconferences',
   templateUrl: './videoconferences.component.html',
@@ -13,7 +14,6 @@ export class VideoconferencesComponent implements OnInit {
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort
-
   
   public data: any[] = []
   isLoad= false

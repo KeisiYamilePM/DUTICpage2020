@@ -25,7 +25,8 @@ import { VirtuallearningComponent } from './virtuallearning/virtuallearning.comp
 import { TrainingsComponent } from './trainings/trainings.component';
 import { ContentsComponent } from './trainings/contents/contents.component';
 import { MatDialogModule } from '@angular/material/dialog';
-
+import { TrainingStudentsComponent } from './trainings/training-students/training-students.component';
+import { NewsContentComponent } from './virtualteaching/news-content/news-content.component';
 
 @NgModule({
     declarations: [
@@ -39,7 +40,9 @@ import { MatDialogModule } from '@angular/material/dialog';
         SubjectDesignComponent,
         VirtuallearningComponent,
         TrainingsComponent,
-        ContentsComponent
+        ContentsComponent,
+        TrainingStudentsComponent,
+        NewsContentComponent,
     ],
     imports: [
         CommonModule,

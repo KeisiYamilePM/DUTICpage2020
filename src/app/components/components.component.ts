@@ -3,6 +3,7 @@ import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 import { NgbAccordionConfig } from '@ng-bootstrap/ng-bootstrap';
 import * as Rellax from 'rellax';
 import { NewsService } from '../services/news.service';
+import * as AOS from 'aos';
 
 @Component({
     selector: 'app-components',
@@ -56,7 +57,7 @@ export class ComponentsComponent implements OnInit, OnDestroy {
         body.classList.add('index-page');
 
         this.ongetNewsList();
-
+        AOS.init();
     }
     ngOnDestroy() {
         var navbar = document.getElementsByTagName('nav')[0];

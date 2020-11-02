@@ -47,13 +47,13 @@ export class TrainingsComponent implements OnInit {
 
   onClicLinkMoodle(data) {
     if (data == 'moodleI') {
-      window.open('https://forms.gle/mAbxrUB7rqhmFLaV7','_blank')
+      window.open('https://forms.gle/Hj4HU7Pkjd3nth447','_blank')
     } else if (data == 'moodleII') {
-      window.open('https://forms.gle/iHfyydBnSz2HBzyZA','_blank')
+      window.open('https://forms.gle/KW4RDR9M8crVNpRb9','_blank')
     } else if (data == 'moodleIII') {
-      window.open('https://forms.gle/Kc1HvebA5xG2M9259','_blank')
+      window.open('https://forms.gle/ATZKF51g8ThMPaer9','_blank')
     } else if (data == 'hgoogle') {
-      window.open('https://forms.gle/7AZ9mmjrHfpBxypc8','_blank')
+      window.open('https://forms.gle/Qv7qkxzXZRYTh78Y8','_blank')
     }
   }
   
