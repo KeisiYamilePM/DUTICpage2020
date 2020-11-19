@@ -27,14 +27,17 @@
             <div class="col-12" style="background-color: #141e42;">
                 <ngb-carousel>
                     <ng-template ngbSlide>
-                        <a href="https://dutic.unsa.edu.pe/#/virtualTeaching/news/content">
+                        <!--href="https://dutic.unsa.edu.pe/#/virtualTeaching/news/content"-->
+                        <a [routerLink]="['/virtualTeaching/news/content']">
                             <img class="d-block img-fluid" src="assets/img/news/disemont2.jpg" alt="First slide"></a>
                         <div class="carousel-caption d-none d-md-block">
                         </div>
                     </ng-template>
                     <ng-template ngbSlide>
-                        <a href="https://dutic.unsa.edu.pe/#/virtualTeaching/trainings">
-                            <img class="d-block img-fluid" src="assets/img/trainings/formato.jpg" alt="Second slide"></a>
+                        <!--href="https://dutic.unsa.edu.pe/#/virtualTeaching/trainings" -->
+                        <a [routerLink]="['/virtualTeaching/trainings']">
+                            <img class="d-block img-fluid" src="assets/img/trainings/formato.jpg"
+                                alt="Second slide"></a>
                         <div class="carousel-caption d-none d-md-block">
                         </div>
                     </ng-template>
@@ -55,7 +58,7 @@
             </div>
         </div>
     </div>
-    <div class="pt-3 pb-3">
+    <div class="pt-4 pb-3">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
@@ -91,8 +94,38 @@
                     <hr>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <h3><strong>NOTICIAS<br><small>UNSA Y ACTUALIDAD</small></strong></h3>
-                    <div class="card-deck">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card text-white bg-primary mb-3">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 col-sm-12">
+                                            <img class="d-block mb-3" src="assets/newsletter/boletin3.svg">
+                                        </div>
+                                        <div class="col-lg-6 col-md-12 col-sm-12">
+                                            <h5 class="card-title font-weight-bold">INFORMATIC</h5>
+                                            <p class="card-text">Promoviendo el uso de las TIC en la enseñanza y
+                                                aprendizaje</p>
+                                            <a [routerLink]="['/news/newsletter']" class="btn btn-light"
+                                                title="Boletin informativo">
+                                                <strong class="text-wrap">IR A BOLETÍN INFORMATIVO</strong>
+                                                <i class="now-ui-icons arrows-1_minimal-right ml-1"></i>
+                                                <!-- <i class="fas fa-file-download"></i> -->
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <h3><strong>NOTICIAS<br><small>UNSA Y ACTUALIDAD</small></strong></h3>
+                        </div>
+                    </div>
+
+                    <div class="card-deck" style="margin-right: 15px!important">
                         <div class="row">
                             <div class="col-6 col-lg-4 col-md-6 col-sm-6" *ngFor="let news of content">
                                 <div *ngIf="news.state==true? true : false" class="card card-news animated fadeIn fast"
@@ -173,7 +206,7 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-3 col-sm-12 center-content"><img src="assets/img/mision.png">
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12" >
+                        <div class="col-lg-8 col-md-8 col-sm-12">
                             <h4><strong>Misi&oacute;n</strong></h4>
                             <p>Promover el uso pedagógico de las Tecnologías de la Información y la Comunicación en
                                 la práctica cotidiana de docentes y estudiantes</p>
@@ -184,7 +217,7 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-3 col-sm-12 center-content"><img src="assets/img/vision.png">
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12" >
+                        <div class="col-lg-8 col-md-8 col-sm-12">
                             <h4><strong>Visi&oacute;n</strong></h4>
                             <p>Ser reconocida como un centro de innovación e investigación pedagógica con
                                 tecnología,

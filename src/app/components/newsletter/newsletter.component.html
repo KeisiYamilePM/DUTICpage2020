@@ -1,0 +1,44 @@
+<div style="padding-top: 100px;" class="style--content backfondo">
+    <!--div class="header--style col-lg-9 col-md-12 col-sm-12 pt-4 pr-5 pb-1 mb-4">
+        <h2 class="font-weight-bold">BOLETIN INFORMATIVO</h2>
+    </div-->
+
+    <div class="container">
+        <div class="backgrey">
+            <h2 class="font-weight-bold text-center p-3">{{entryName}}</h2>
+        </div>
+        <div class="row pb-4  p-3">
+            <div class="col-lg-3 col-md-4 col-sm-12 p-4 mb-3 list-group backgrey">
+                <h3>Publicaciones</h3>
+                <div *ngFor="let entry of content">
+                    <button type="button" class="list-group-item list-group-item-action btn btn-primary" (click)="takeentry(entry)" >{{entry.name}}</button>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-8 col-sm-12">
+                <iframe src="assets/newsletter/BOLETIN_INFORMATIVO.pdf" frameborder="0" scrolling="no" width="820"
+                    height="1160"></iframe>
+                <!--<pdf-viewer [src]="assets/newsletter/BOLETIN_INFORMATIVO.pdf" [render-text]="true" style="display: block;"></pdf-viewer>-->
+            </div>
+        </div>
+    </div>
+    <!--<div class="container">
+        <div class="mb-4">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Buscar entrada" #searchText>
+                <button (click)="searchEntry(searchText.value)"
+                    class="btn btn-primary my-2 my-sm-0" type="button">Buscar</button>
+            </form>
+        </div>
+        <div class="card-columns">
+            <div class="card animated fadeIn fast scroll" *ngFor="let entry of content" style="width: 100%;">
+                <img style="width: 220px; height: auto;" src="{{entry.img}}" class="card-img-top mx-auto d-block"
+                    alt="...">
+                <div class="card-body">
+                    <small class="text-muted card-text text-left">{{entry.categoryName}} | {{entry.date}}</small>
+                    <h6 class="card-title"><strong>{{entry.name}}</strong></h6>
+                    <h6 class="card-text">{{entry.des}}</h6>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</div>

@@ -16,13 +16,14 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule} from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-
+import { MatStepperModule } from '@angular/material/stepper';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 @NgModule({
     declarations: [
         AppComponent,
         NavbarComponent,
-        FooterComponent
+        FooterComponent,
     ],
     imports: [
         BrowserAnimationsModule,
@@ -37,7 +38,9 @@ import { MatIconModule } from '@angular/material/icon';
         MatSelectModule,
         MatInputModule,
         MatButtonModule,
-        MatIconModule
+        MatIconModule,
+        MatStepperModule,
+        PdfViewerModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

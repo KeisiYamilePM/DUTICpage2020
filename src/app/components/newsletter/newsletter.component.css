@@ -1,0 +1,8 @@
+.backgrey {
+    background-color: rgba(49, 49, 49, 0.555);
+    color: white;
+}
+.backfondo{
+    background-image: url("assets/newsletter/fondo_boletin.jpg");
+    background-size: 100% 100%; 
+}

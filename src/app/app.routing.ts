@@ -15,6 +15,7 @@ import { VirtuallearningComponent } from './components/virtuallearning/virtualle
 import { TrainingsComponent } from './components/trainings/trainings.component';
 import { TrainingStudentsComponent } from './components/trainings/training-students/training-students.component';
 import { NewsContentComponent } from './components/virtualteaching/news-content/news-content.component';
+import { NewsletterComponent } from './components/newsletter/newsletter.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'homepage', pathMatch: 'full' },
@@ -34,6 +35,8 @@ const routes: Routes =[
     { path: 'virtualLearning/trainings',     component: TrainingStudentsComponent },
 
     { path: 'virtualTeaching/news/content',     component: NewsContentComponent },
+
+    { path: 'news/newsletter',     component: NewsletterComponent },
 
 ];
 
