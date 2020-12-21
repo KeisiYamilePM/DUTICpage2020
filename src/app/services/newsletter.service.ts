@@ -10,10 +10,10 @@ export class NewsletterService {
       name: "INFORMATIC - Noviembre I",
       id: "0",
       category: "Sociales",
-      file: "assets/newsletter/BOLETIN_INFORMATIVO.pdf",
+      file: "assets/newsletter/BOLETIN_INFORMATIVO_UNSA.pdf",
       date: "Nov 1,2020",
     },
-    {
+    /*{
       name: "INFORMATIC - Noviembre II",
       id: "1",
       category: "Ingenierias",
@@ -40,7 +40,7 @@ export class NewsletterService {
       category: "Biomedicas",
       file: "assets/newsletter/lineamientos.pdf",
       date: "Nov 1,2020",
-    },
+    },*/
   ]
   constructor() { }
 

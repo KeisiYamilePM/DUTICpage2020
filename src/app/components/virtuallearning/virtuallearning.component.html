@@ -3,6 +3,20 @@
         <h2 class="font-weight-bold"> APRENDIZAJE VIRTUAL</h2>
     </div>
     <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="font-weight-bold mr-2">CAPACITACIÓN TECNOLOGÍAS EDUCATIVAS PARA ESTUDIANTES AGUSTINOS</p>
+            </div>
+            <div class="col">
+                <a [routerLink]="['/virtualLearning/news/content']"
+                     class="btn text-center btn-primary" title="Ver contenido">
+                    <strong class="text-wrap">VER CONTENIDO</strong>
+                    <i class="now-ui-icons arrows-1_minimal-right ml-1"></i>
+                </a>
+            </div>
+
+        </div>
+
         <mat-tab-group dynamicHeight>
             <mat-tab>
                 <ng-template mat-tab-label>
@@ -47,7 +61,8 @@
                             aprendizajes individuales y el desarrollo de habilidades
                             comunicativas, así como para el desarrollo de destrezas que le
                             permiten ser más recursivo, autónomo y proactivos para la toma
-                            de decisiones.</p>
+                            de decisiones.
+                        </p>
                     </div>
                 </div>
             </mat-tab>
@@ -82,14 +97,16 @@
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 text-center">
                                 <div class="card animated fadeIn fast" style="width: 100%;">
-                                    <img src="assets/img/virtualearning/unsainvestiga.jpg" class="card-img-top" alt="...">
+                                    <img src="assets/img/virtualearning/unsainvestiga.jpg" class="card-img-top"
+                                        alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title"><strong>VIDEOS DE INVESTIGACIÓN CIENTÍFICA Y TECNOLÓGICA</strong></h5>
+                                        <h5 class="card-title"><strong>VIDEOS DE INVESTIGACIÓN CIENTÍFICA Y
+                                                TECNOLÓGICA</strong></h5>
                                         <p class="card-text text-justify">Videos de eventos, presentación de proyectos
                                             de investigación, avances de investigación, visita de investigadores y otros
                                         </p>
-                                        <a href="http://vri.unsa.edu.pe/videos-investigacion" class="btn btn-primary btn-block"
-                                            target="_blank">Ver
+                                        <a href="http://vri.unsa.edu.pe/videos-investigacion"
+                                            class="btn btn-primary btn-block" target="_blank">Ver
                                             más</a>
                                     </div>
                                 </div>

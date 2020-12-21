@@ -43,7 +43,7 @@ export class HandbookService {
     },
     {
       videoId: "hh8EZazzzzs", //recurso url
-      handbookId: "",
+      handbookId: "no",
     },
     {
       videoId: "ouCI7TFVOAg",
@@ -71,7 +71,7 @@ export class HandbookService {
     },
     {
       videoId: "0oc6n3BojQc", //creando una tarea
-      handbookId: "",
+      handbookId: "no",
     },
     {
       videoId: "LsXd7o2lkmc", //Cuestionario y Banco de Preguntas para Docentes
@@ -79,19 +79,19 @@ export class HandbookService {
     },
     {
       videoId: "7wXTT5dBL_I", //actividad taller en moodle parte 1
-      handbookId: "",
+      handbookId: "no",
     },
     {
       videoId: "6djJbNaeKWA", //actividad taller en moodle parte 2
-      handbookId: "",
+      handbookId: "no",
     },
     {
       videoId: "c2bG_2pHl0Q", //calificacion avanzada en moodle rubricas
-      handbookId: "",
+      handbookId: "no",
     },
     {
       videoId: "R7pI4hd4JA0", //evaluacion con rubricas en moodle
-      handbookId: "",
+      handbookId: "no",
     },
   ]
   private handbookGoogle: any[] = [
@@ -106,11 +106,11 @@ export class HandbookService {
     },
     {
       videoId: "Kv-dyUBV0_k", //presentaciones de google
-      handbookId: "",
+      handbookId: "no",
     },
     {
       videoId: "9pQbolFaRa8", //formulario de google
-      handbookId: "",
+      handbookId: "no",
     },
     {
       videoId: "t6lRyo2nOIo",

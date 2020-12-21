@@ -28,6 +28,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { TrainingStudentsComponent } from './trainings/training-students/training-students.component';
 import { NewsContentComponent } from './virtualteaching/news-content/news-content.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
+import { NewsContentLearnComponent } from './virtuallearning/news-content-learn/news-content-learn.component';
+import { PinturilloComponent } from './pinturillo/pinturillo.component';
 
 @NgModule({
     declarations: [
@@ -45,6 +47,8 @@ import { NewsletterComponent } from './newsletter/newsletter.component';
         TrainingStudentsComponent,
         NewsContentComponent,
         NewsletterComponent,
+        NewsContentLearnComponent,
+        PinturilloComponent,
     ],
     imports: [
         CommonModule,

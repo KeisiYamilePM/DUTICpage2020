@@ -27,7 +27,7 @@
                                                                 (click)="onClicVideo(video)">
                                                                 Video<i
                                                                         class="now-ui-icons media-1_button-play ml-1"></i></button>
-                                                        <button class="btn btn-primary float-right"
+                                                        <button *ngIf="verify(video.resourceId.videoId)" class="btn btn-primary float-right"
                                                                 (click)="onClicHandbook(video)">
                                                                 Manual<i class="now-ui-icons files_paper ml-1"></i>
                                                         </button>

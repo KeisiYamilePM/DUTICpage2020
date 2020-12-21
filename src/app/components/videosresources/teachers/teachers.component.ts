@@ -16,6 +16,7 @@ export class TeachersComponent implements OnInit {
   videosE: Video[] = [];
 
   content: any[] = [];
+  contentV: any[] = [];
 
   constructor(private youtubeService: YoutubeService,
     private handbookService: HandbookService
@@ -73,6 +74,23 @@ export class TeachersComponent implements OnInit {
     for (let index = 0; index < this.content.length; index++) {
       if(data.resourceId.videoId==this.content[index].videoId){
         window.open(this.content[index].handbookId,'_blank')
+      }
+    }
+  }
+
+  verify(videoId):boolean{
+    console.log("seraaaa", videoId)
+    this.contentV = this.handbookService.gethandbookTeacher()
+    for (let index = 0; index < this.contentV.length; index++) {
+      if(videoId == this.contentV[index].videoId){
+        if(this.contentV[index].handbookId == "no"){
+          console.log("false")
+          return false
+        }
+        else {           
+          console.log("true")
+          return true
+        }
       }
     }
   }
