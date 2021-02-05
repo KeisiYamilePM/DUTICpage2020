@@ -17,7 +17,7 @@ import { TrainingStudentsComponent } from './components/trainings/training-stude
 import { NewsContentComponent } from './components/virtualteaching/news-content/news-content.component';
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
 import { NewsContentLearnComponent } from './components/virtuallearning/news-content-learn/news-content-learn.component';
-import { PinturilloComponent } from './components/pinturillo/pinturillo.component';
+import { InnovaticComponent } from './components/innovatic/innovatic.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'homepage', pathMatch: 'full' },
@@ -41,9 +41,7 @@ const routes: Routes =[
 
     { path: 'news/newsletter',     component: NewsletterComponent },
 
-
-    { path: 'pinturillo',     component: PinturilloComponent },
-
+    { path: 'innovaticIII',     component: InnovaticComponent },
 
 ];
 

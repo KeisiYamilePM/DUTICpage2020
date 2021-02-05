@@ -1,23 +1,27 @@
-<div style="padding-top: 90px;" class="style--content backfondo">
+<div style="padding-top: 90px;" class="style--content">
     <!--div class="header--style col-lg-9 col-md-12 col-sm-12 pt-4 pr-5 pb-1 mb-4">
         <h2 class="font-weight-bold">BOLETIN INFORMATIVO</h2>
     </div-->
 
-    <div class="container">
-        <div class="backgrey">
-            <h4 class="font-weight-bold text-center p-3">{{entryName}}</h4>
-        </div>
-        <div class="row pb-4  p-3">
-            <div class="col-lg-3 col-md-4 col-sm-12 p-4 mb-1 list-group backgrey">
-                <h4>Publicaciones</h4>
+    <div class="container backgrey">
+        <div class="row p-3">
+            <div class="col-12">
+                <!--h4 class="font-weight-bold text-center">BOLETÍN INFORMATIVO DUTIC</h4-->
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 pl-4 pr-4 list-group">
+                <h4>Publicaciones 2021</h4>
                 <div *ngFor="let entry of content">
-                    <button type="button" class="list-group-item list-group-item-action btn btn-primary" (click)="takeentry(entry)" >{{entry.name}}</button>
+                    <button type="button" class="list-group-item list-group-item-action btn btn-primary mb-4"
+                        (click)="takeentry(entry)">{{entry.name}}</button>
                 </div>
             </div>
             <div class="col-lg-9 col-md-8 col-sm-12">
-                <iframe src="assets/newsletter/BOLETIN_INFORMATIVO_UNSA.pdf" frameborder="0" scrolling="no" width="820"
-                    height="1160"></iframe>
-                <!--<pdf-viewer [src]="assets/newsletter/BOLETIN_INFORMATIVO.pdf" [render-text]="true" style="display: block;"></pdf-viewer>-->
+                <!--iframe class="iframe-responsivo" src="assets/newsletter/Boletin_DUTIC_Febrero_compressed.pdf"
+                    frameborder="0" scrolling="no"></iframe-->
+                <!--pdf-viewer [src]="assets/newsletter/BOLETIN_INFORMATIVO.pdf" [render-text]="true" style="display: block;"></pdf-viewer-->
+                <div class='embed-responsive' style='padding-bottom:150%'>
+                    <iframe src='assets/newsletter/BoletinDUTIC_Febrero_compressed.pdf' type='application/pdf' width='100%' height='100%'></iframe>
+                </div>
             </div>
         </div>
     </div>

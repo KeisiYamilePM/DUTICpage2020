@@ -1,7 +1,7 @@
 .section{
     padding: 70px 0;
     position: relative;
-    background: $white-color;
+    background: #DEDEDE;
 
     .row + .category{
         margin-top: $margin-base-vertical;
@@ -269,7 +269,7 @@
     .hero-images-container,
     .hero-images-container-1,
     .hero-images-container-2{
-        margin-top: -38vh;
+        margin-top: -30vh;
     }
 
     .hero-images-container{

@@ -7,9 +7,9 @@ export class NewsletterService {
 
   private content: any[] = [
     {
-      name: "INFORMATIC - Noviembre I",
+      name: "INFORMATIC - Febrero",
       id: "0",
-      category: "Sociales",
+      category: "General",
       file: "assets/newsletter/BOLETIN_INFORMATIVO_UNSA.pdf",
       date: "Nov 1,2020",
     },

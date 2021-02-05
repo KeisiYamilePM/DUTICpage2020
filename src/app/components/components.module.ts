@@ -29,7 +29,7 @@ import { TrainingStudentsComponent } from './trainings/training-students/trainin
 import { NewsContentComponent } from './virtualteaching/news-content/news-content.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import { NewsContentLearnComponent } from './virtuallearning/news-content-learn/news-content-learn.component';
-import { PinturilloComponent } from './pinturillo/pinturillo.component';
+import { InnovaticComponent } from './innovatic/innovatic.component';
 
 @NgModule({
     declarations: [
@@ -48,7 +48,7 @@ import { PinturilloComponent } from './pinturillo/pinturillo.component';
         NewsContentComponent,
         NewsletterComponent,
         NewsContentLearnComponent,
-        PinturilloComponent,
+        InnovaticComponent,
     ],
     imports: [
         CommonModule,
