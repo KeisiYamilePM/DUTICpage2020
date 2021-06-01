@@ -13,7 +13,8 @@ export class StudentsComponent implements OnInit {
 
   videos: Video[] = []
   content: any[] = [];
- 
+  contentV: any[] = [];
+
   constructor(
     private youtubeService: YoutubeService,
     private handbookService: HandbookService
@@ -22,7 +23,7 @@ export class StudentsComponent implements OnInit {
   ngOnInit(): void {
 
     this.youtubeService.getVideosStudent().subscribe(resp => {
-      //console.log("studeeents",resp);
+      console.log("studeeents",resp);
       var url = "https://www.youtube.com/embed/"
       this.videos = resp;
       /*       this.videos.resourceId.videoId = url + this.videos.resourceId.videoId;
@@ -50,6 +51,22 @@ export class StudentsComponent implements OnInit {
     for (let index = 0; index < this.content.length; index++) {
       if(data.resourceId.videoId==this.content[index].videoId){
         window.open(this.content[index].handbookId,'_blank')
+      }
+    }
+  }
+  verify(videoId):boolean{
+    //console.log("seraaaa", videoId)
+    this.contentV = this.handbookService.gethandbookStudent()
+    for (let index = 0; index < this.contentV.length; index++) {
+      if(videoId == this.contentV[index].videoId){
+        if(this.contentV[index].handbookId == "no"){
+          //console.log("false")
+          return false
+        }
+        else {           
+          //console.log("true")
+          return true
+        }
       }
     }
   }

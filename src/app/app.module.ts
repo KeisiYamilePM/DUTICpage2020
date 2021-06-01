@@ -17,7 +17,8 @@ import { MatInputModule} from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatStepperModule } from '@angular/material/stepper';
-import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+//import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 
 @NgModule({
     declarations: [
@@ -40,9 +41,11 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
         MatButtonModule,
         MatIconModule,
         MatStepperModule,
-        PdfViewerModule,
+       // NgxExtendedPdfViewerModule
     ],
     providers: [],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+platformBrowserDynamic().bootstrapModule(AppModule);

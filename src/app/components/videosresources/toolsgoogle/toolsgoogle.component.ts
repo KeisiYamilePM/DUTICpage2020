@@ -12,6 +12,7 @@ import { HandbookService } from '../../../services/handbook.service';
 export class ToolsgoogleComponent implements OnInit {
 
   videos: Video[] = [];
+  videosH: Video[] = [];
   content: any[] = [];
   contentV: any[] = [];
 
@@ -20,15 +21,27 @@ export class ToolsgoogleComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
+    this.onGetVideosGoogle()
+    this.onGetVideosTools()
+  }
+  onGetVideosGoogle(){
     this.youtubeService.getVideosGoogle().subscribe(resp => {
-      console.log(resp);
+      /*console.log(resp);*/
       var url = "https://www.youtube.com/embed/"
       this.videos = resp;
       /*       this.videos.resourceId.videoId = url + this.videos.resourceId.videoId;
        */
     });
   }
-
+  onGetVideosTools(){
+    this.youtubeService.getVideosTools().subscribe(resp => {
+      //console.log(resp);
+      var url = "https://www.youtube.com/embed/"
+      this.videosH = resp;
+      /*       this.videos.resourceId.videoId = url + this.videos.resourceId.videoId;
+       */
+    });
+  }
   onClicVideo(data) {
     Swal.fire({
       html: ` 
@@ -51,7 +64,7 @@ export class ToolsgoogleComponent implements OnInit {
     }
   }
   verify(videoId):boolean{
-    console.log("seraaaa", videoId)
+    //console.log("seraaaa", videoId)
     this.contentV = this.handbookService.gethandbookGoogle()
     for (let index = 0; index < this.contentV.length; index++) {
       if(videoId == this.contentV[index].videoId){

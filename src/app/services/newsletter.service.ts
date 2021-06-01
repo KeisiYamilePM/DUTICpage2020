@@ -7,19 +7,35 @@ export class NewsletterService {
 
   private content: any[] = [
     {
+      name: "INFORMATIC - Mayo",
+      id: "3",
+      category: "General",
+      file: "assets/doc/lineamientos.pdf",
+      date: "Mar 15,2021",
+    },
+    {
+      name: "INFORMATIC - Abril",
+      id: "2",
+      category: "General",
+      file: "assets/doc/lineamientos.pdf",
+      date: "Mar 15,2021",
+    },
+    {
+      name: "INFORMATIC - Marzo",
+      id: "1",
+      category: "General",
+      file: "assets/doc/lineamientos.pdf",
+      date: "Mar 15,2021",
+    },
+    {
       name: "INFORMATIC - Febrero",
       id: "0",
       category: "General",
-      file: "assets/newsletter/BOLETIN_INFORMATIVO_UNSA.pdf",
-      date: "Nov 1,2020",
+      file: "assets/newsletter/BoletinDUTIC_Febrero_compressed.pdf",
+      date: "Feb 10,2021",
     },
-    /*{
-      name: "INFORMATIC - Noviembre II",
-      id: "1",
-      category: "Ingenierias",
-      file: "assets/newsletter/lineamientos.pdf",
-      date: "Nov 1,2020",
-    },
+    
+    /*
     {
       name: "INFORMATIC - Diciembre I",
       id: "2",

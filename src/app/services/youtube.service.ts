@@ -13,13 +13,20 @@ export class YoutubeService {
   private youtubeURL = "https://www.googleapis.com/youtube/v3"; 
   private apikey = "AIzaSyBZjOjowZu_rBbgTjAgLqT39cd8CMdVirU";
   private playlisteGoogle = "PLqtSFRmgPpYGM6jyjddP1-rtpZkwnPyRf";
-  private playlistStudent = "PLqtSFRmgPpYHdIFtSiLRtMMSDtc3_Tg7b";
+  //private playlistStudent2020 = "PLqtSFRmgPpYHdIFtSiLRtMMSDtc3_Tg7b";
+  private playlistStudent = "PLqtSFRmgPpYEUaoEjb7egx1XSaR6WilrM";
+
   private playlistTeacher = "PLqtSFRmgPpYEijcskh8nRdD1DhBY7k9JU";
 
-  private playlistTeacherManagement = "PLqtSFRmgPpYHVUDvKoDXu7z5CupI_UKyK";
+  //private playlistTeacherManagement2020 = "PLqtSFRmgPpYHVUDvKoDXu7z5CupI_UKyK";
+  private playlistTeacherManagement = "PLqtSFRmgPpYF1SWFrcdYaVzE8QlEDMn1F";
+
   private playlistTeacherDesign = "PLqtSFRmgPpYGDUdl_5tXPqZXAhEogn2Ld";
   private playlistTeacherEvaluation = "PLqtSFRmgPpYHav3atEVw1C7ev1e-GhLZq";
 
+  private playlistTools = "PLqtSFRmgPpYHsDEOTtLmottSvjN315r4j";
+
+  private playlistworkshop = "PLqtSFRmgPpYEQsU82qIClMGMuTRULDv8B";
 
   private nextpageToken = "";
 
@@ -121,6 +128,43 @@ export class YoutubeService {
       .set('part','snippet')
       .set('key', this.apikey)
       .set('playlistId', this.playlistTeacherEvaluation)
+      .set('maxResults','20')
+
+    return this.http.get<YoutubeResponse>(url, {params})
+      .pipe(
+        map( resp => {
+          return resp.items;
+        }),
+        map( items=>{
+          return items.map( video => video.snippet)
+        })
+      )
+  }
+  getVideosTools(){
+    var url = this.youtubeURL+'/playlistItems'
+    const params = new HttpParams()
+      .set('part','snippet')
+      .set('key', this.apikey)
+      .set('playlistId', this.playlistTools)
+      .set('maxResults','20')
+
+    return this.http.get<YoutubeResponse>(url, {params})
+      .pipe(
+        map( resp => {
+          return resp.items;
+        }),
+        map( items=>{
+          return items.map( video => video.snippet)
+        })
+      )
+  }
+
+  getVideosWorkshop(){
+    var url = this.youtubeURL+'/playlistItems'
+    const params = new HttpParams()
+      .set('part','snippet')
+      .set('key', this.apikey)
+      .set('playlistId', this.playlistworkshop)
       .set('maxResults','20')
 
     return this.http.get<YoutubeResponse>(url, {params})

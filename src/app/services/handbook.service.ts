@@ -7,23 +7,43 @@ export class HandbookService {
 
   private handbookStudent: any[] = [
     {
-      videoId: "cpBgMV08km8",
-      handbookId: "assets/doc/student/2020_Tutotial_Estudiante_Ingresando_al_Aula_Virtual_v3Cinco.pdf",
+      videoId: "E0wyTT2Ngpg",
+      handbookId: "assets/doc/TUTORIAL_Ingresando a la plataforma_c.pdf",
     },
     {
-      videoId: "eI6UQniaoco",
-      handbookId: "assets/doc/student/2020_Tutotial_Estudiante_Cambiando_Contraseña_v3Cinco.pdf",
+      videoId: "xxSDV82R5v0",
+      handbookId: "assets/doc/TUTORIAL_Ingresando a mi perfil en el Aula virtual_c.pdf",
     },
     {
-      videoId: "CfeT4x_QSjE",
-      handbookId: "assets/doc/student/2020_Tutorial_Tareas_v3Cinco.pdf",
+      videoId: "W5gUO9K4cqI",
+      handbookId: "assets/doc/student/TUTORIAL_Ingresando a mis cursos_Estudiante_c.pdf",
+    },
+    {
+      videoId: "Tv-k0w4d2ug",
+      handbookId: "assets/doc/student/TUTORIAL_Marcar Asistencia_c.pdf",
+    },
+    {
+      videoId: "FbpmveY-Ti4",
+      handbookId: "assets/doc/student/TUTORIAL_Resolviendo Cuestionario en el Aula virtual_c.pdf",
+    },
+    {
+      videoId: "bnQFTRKuayk",
+      handbookId: "assets/doc/student/TUTORIAL_Revisar Foro_Estudiante_c.pdf",
+    },
+    {
+      videoId: "USyCjt1C_oM",
+      handbookId: "TUTORIAL_Revisar y enviar tareas_ Estudiante_c.pdf",
     },
   ]
 
   private handbookTeacher: any[] = [
     {
-      videoId: "cpBgMV08km8",
-      handbookId: "assets/doc/teacher/2020_Tutotial_Docente_Ingresando_al_Aula_Virtual_v3Cinco.pdf",
+      videoId: "E0wyTT2Ngpg",
+      handbookId: "assets/doc/TUTORIAL_Ingresando a la plataforma_c.pdf",
+    },
+    {
+      videoId: "xxSDV82R5v0",
+      handbookId: "assets/doc/TUTORIAL_Ingresando a mi perfil en el Aula virtual_c.pdf",
     },
     {
       videoId: "eI6UQniaoco",
@@ -119,6 +139,14 @@ export class HandbookService {
     {
       videoId:"u2o6gOUA0jI",
       handbookId: "assets/doc/google/2020_Google_Hangouts_Meet.pdf",
+    },
+    {
+      videoId:"1Hd5nNR5MJM",
+      handbookId: "assets/doc/google/2021_Manual_Mentimeter.pdf",
+    },
+    {
+      videoId:"sBeLgsVBSbo",
+      handbookId: "assets/doc/google/TUTORIAL_Creacion_y_uso_de_QRs_c.pdf",
     },
   ]
 

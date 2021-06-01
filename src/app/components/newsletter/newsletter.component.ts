@@ -11,7 +11,7 @@ export class NewsletterComponent implements OnInit {
   content: any[] = []
   entryName: string
   entryFile: any
-
+  entryId: any = 3
 
   constructor(private newsletterService: NewsletterService,) { 
   }
@@ -32,7 +32,9 @@ export class NewsletterComponent implements OnInit {
 
   takeentry(entry:any){
     this.entryName = entry.name
-    //this.entryFile = this.sanitizer.bypassSecurityTrustResourceUrl(entry.file)
-    console.log("nombre filee", this.entryFile)
+    this.entryFile = entry.file
+    this.entryId = entry.id
+    
+    console.log(" filee", this.entryId)
   }
 }

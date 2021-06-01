@@ -8,13 +8,13 @@ export class NewsService {
 
   private content: any[] = [
     {
-      name: "Diálogo: Laboratorios Remotos",
-      des: "En la séptima edición de la iniciativa “Diálogos”, tres especialistas del Tecnológico de Monterrey, Pontificia Universidad Católica del Perú (PUCP) y Universitat Oberta de Catalunya (UOC) conversarán sobre  la educación a distancia y el uso de laboratorios en estos tiempos de emergencia sanitaria.",
-      img: "assets/img/news/labsremotos.jpg",
-      date: "Tecnológico de Monterrey, Pontificia Universidad Católica del Perú (PUCP) y Universitat Oberta de Catalunya (UOC) jueves 17 de septiembre de 2020, 9:00 AM, hora de México (GMT-5)",
+      name: "PMESUT pone a disposición recursos digitales sobre educación virtual",
+      des: "PMESUT pone a disposición recursos digitales sobre educación virtual.",
+      img: "assets/img/virtualearning/pmsut.jpg",
+      date: "",
       state: true,
       isnew: false,
-      link: "https://observatorio.tec.mx/dialogos-del-observatorio?fbclid=IwAR0p4kH-7LIvjhH_GzmWZwI_wEmbBJ4U3Tcpg0XW8t0JqCt6_t5FhTgDe8M",
+      link: "https://www.pmesut.gob.pe/biblioteca-virtual",
     },
     {
       name: "VICERRECTORADO ACADÉMICO: Orientaciones para el trabajo virtual",
@@ -35,6 +35,16 @@ export class NewsService {
       link: "http://www.iesalc.unesco.org/wp-content/uploads/2020/04/COVID-19-060420-ES-2.pdf",
     },
     
+    
+    {
+      name: "Diálogo: Laboratorios Remotos",
+      des: "En la séptima edición de la iniciativa “Diálogos”, tres especialistas del Tecnológico de Monterrey, Pontificia Universidad Católica del Perú (PUCP) y Universitat Oberta de Catalunya (UOC) conversarán sobre  la educación a distancia y el uso de laboratorios en estos tiempos de emergencia sanitaria.",
+      img: "assets/img/news/labsremotos.jpg",
+      date: "Tecnológico de Monterrey, Pontificia Universidad Católica del Perú (PUCP) y Universitat Oberta de Catalunya (UOC) jueves 17 de septiembre de 2020, 9:00 AM, hora de México (GMT-5)",
+      state: false,
+      isnew: false,
+      link: "https://observatorio.tec.mx/dialogos-del-observatorio?fbclid=IwAR0p4kH-7LIvjhH_GzmWZwI_wEmbBJ4U3Tcpg0XW8t0JqCt6_t5FhTgDe8M",
+    },
     {
       name: "La tecnología como herramienta en el desarrollo de la educación en Arequipa",
       des: "Analizar la importancia del rol adquirido por la tecnología como herramienta en el desarrollo de la educación básica y superior durante la emergencia sanitaria y recopilar información que permita mejorar la enseñanza virtual en Arequipa.",

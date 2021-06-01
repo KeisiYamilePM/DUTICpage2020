@@ -5,13 +5,13 @@
 </div>
 <div class="row">
     <div class="col-lg-8 col-md-8 col-sm-12">
-        <p><strong>Horario primer turno: 14:00 hrs. a 16:00 hrs.</strong></p>
-        <p><strong>Horario segundo turno: 18:00 hrs. a 20:00 hrs.</strong></p>
-        <p style="color: red;"><i>*Considerar que la sesión en ambos horarios es la misma</i></p>
+        <p><strong>{{this.dataContent[0].turn1}}</strong></p>
+        <p><strong>{{this.dataContent[0].turn2}}</strong></p>
+        <p style="color: red;"><i>{{this.dataContent[0].coment}}</i></p>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12 text-center">
         <!--         <p><strong>{{this.dataContent[0].des}}</strong></p>
-         --> <button class="btn btn-danger" (click)="onClickSilabo()">
+         --> <button *ngIf="verify(this.dataContent[0].silabo)" class="btn btn-danger" (click)="onClickSilabo()">
             Ver Sílabo<i class="now-ui-icons arrows-1_minimal-right ml-1"></i>
         </button>
     </div>

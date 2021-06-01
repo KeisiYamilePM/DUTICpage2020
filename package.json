@@ -41,6 +41,8 @@
     "jw-bootstrap-switch-ng2": "2.0.5",
     "ng2-nouislider": "1.7.13",
     "ng2-pdf-viewer": "^6.3.2",
+    "ngx-doc-viewer": "^1.4.1",
+    "ngx-extended-pdf-viewer": "^8.0.0-beta.6",
     "nouislider": "9.2.0",
     "popper.js": "1.14.7",
     "rellax": "1.4.0",

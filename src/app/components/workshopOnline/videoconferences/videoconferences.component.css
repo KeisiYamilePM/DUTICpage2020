@@ -1,6 +1,9 @@
 table {
     width: 100%;
 }
+.mat-header-cell{
+    text-align: center;
+}
 .mat-column-name{
     flex: 0 0 32%;
     width: 32%;

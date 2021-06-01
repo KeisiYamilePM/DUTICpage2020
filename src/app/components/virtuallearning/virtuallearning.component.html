@@ -8,8 +8,8 @@
                 <p class="font-weight-bold mr-2">CAPACITACIÓN TECNOLOGÍAS EDUCATIVAS PARA ESTUDIANTES AGUSTINOS</p>
             </div>
             <div class="col">
-                <a [routerLink]="['/virtualLearning/news/content']"
-                     class="btn text-center btn-primary" title="Ver contenido">
+                <a [routerLink]="['/virtualLearning/news/content']" class="btn text-center btn-primary"
+                    title="Ver contenido">
                     <strong class="text-wrap">VER CONTENIDO</strong>
                     <i class="now-ui-icons arrows-1_minimal-right ml-1"></i>
                 </a>
@@ -18,6 +18,66 @@
         </div>
 
         <mat-tab-group dynamicHeight>
+
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <i class="now-ui-icons tech_laptop mr-2"></i><strong>MATERIAL DIGITAL UNSA</strong>
+                </ng-template>
+                <div class="row mt-4">
+                    <div class="col-lg-5 col-md-12 col-sm-12 text-center">
+                        <div class="card animated fadeIn fast" style="width: 100%;">
+                            <a href="http://bibliotecavirtual.unsa.edu.pe:8009/" target="_blank">
+                                <img src="assets/img/biblioteca.jpg" class="card-img-top mat-elevation-z4"
+                                    style="width: 700px; height: auto;" alt="...">
+                            </a>
+                            <div class="card-footer">
+                                <a href="http://bibliotecavirtual.unsa.edu.pe:8009/" class="btn btn-primary float-left"
+                                    target="_blank">Ir a biblioteca <i
+                                        class="now-ui-icons files_single-copy-04 mr-2"></i></a>
+                                <a href="https://www.youtube.com/watch?v=mXE2_Kk4WiM" class="btn btn-danger float-right"
+                                    target="_blank">Ir a
+                                    videotutorial<i class="now-ui-icons media-1_button-play ml-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-sm-12 col-md-12">
+                        <div class="row mt-3">
+                            <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+                                <div class="card animated fadeIn fast" style="width: 100%;">
+                                    <img src="assets/img/virtualearning/repositorio.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><strong></strong></h5>
+                                        <p class="card-text text-justify">El Repositorio Institucional Digital, tiene
+                                            como objetivo facilitar y mejorar la visibilidad de la producción cientifica
+                                            y académica de la Universidad permitiendo el acceso abierto a sus contenidos
+                                            y garantizando la preservación y conservación de dicha producción, además de
+                                            aumentar el impacto del legado Institucional.</p>
+                                        <a href="http://repositorio.unsa.edu.pe/" class="btn btn-primary btn-block"
+                                            target="_blank">Ver
+                                            más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+                                <div class="card animated fadeIn fast" style="width: 100%;">
+                                    <img src="assets/img/virtualearning/unsainvestiga.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><strong>VIDEOS DE INVESTIGACIÓN CIENTÍFICA Y
+                                                TECNOLÓGICA</strong></h5>
+                                        <p class="card-text text-justify">Videos de eventos, presentación de proyectos
+                                            de investigación, avances de investigación, visita de investigadores y otros
+                                        </p>
+                                        <a href="http://vri.unsa.edu.pe/videos-investigacion"
+                                            class="btn btn-primary btn-block" target="_blank">Ver
+                                            más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </mat-tab>
             <mat-tab>
                 <ng-template mat-tab-label>
                     <i class="now-ui-icons files_single-copy-04 mr-2"></i><strong>APRENDIZAJE VIRTUAL</strong>
@@ -68,48 +128,95 @@
             </mat-tab>
             <mat-tab>
                 <ng-template mat-tab-label>
-                    <i class="now-ui-icons tech_laptop mr-2"></i><strong>MATERIAL DIGITAL UNSA</strong>
+                    <i class="now-ui-icons tech_laptop mr-2"></i><strong>APRENDIZAJE EXTRAORDINARIO</strong><span
+                        class="badge badge-success ml-2">Nuevo</span>
                 </ng-template>
                 <div class="row mt-4">
-                    <div class="col-lg-5 col-md-12 col-sm-12 text-center">
-                        <a href="http://bibliotecavirtual.unsa.edu.pe:8009/" target="_blank">
-                            <img src="assets/img/biblioteca.jpg" class="card-img-top mat-elevation-z4"
-                                style="width: 700px; height: auto;" alt="...">
-                        </a>
+                    <div class="col-12 text-center">
+                        <h3>ESCENARIO VIRTUAL PARA APRENDER A COMPARTIR CON PERSONAS CON DISCAPACIDAD</h3>
                     </div>
-                    <div class="col-lg-7 col-sm-12 col-md-12">
-                        <div class="row mt-3">
-                            <div class="col-lg-6 col-md-6 col-sm-12 text-center">
-                                <div class="card animated fadeIn fast" style="width: 100%;">
-                                    <img src="assets/img/virtualearning/repositorio.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title"><strong></strong></h5>
-                                        <p class="card-text text-justify">El Repositorio Institucional Digital, tiene
-                                            como objetivo facilitar y mejorar la visibilidad de la producción cientifica
-                                            y académica de la Universidad permitiendo el acceso abierto a sus contenidos
-                                            y garantizando la preservación y conservación de dicha producción, además de
-                                            aumentar el impacto del legado Institucional.</p>
-                                        <a href="http://repositorio.unsa.edu.pe/" class="btn btn-primary btn-block"
-                                            target="_blank">Ver
-                                            más</a>
-                                    </div>
-                                </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-justify">
+                        <p>Ampliamos nuestro espacio virtual, colocando a disposición de toda la comunidad agustina
+                            información, conceptos, herramientas digitales; que mejoren la comprensión, el entendimiento
+                            y comunicación entre docentes, estudiantes, administrativos que tengan o no alguna
+                            discapacidad.<br>
+                            Vamos a conocer los medios de comunicación, equipos, software, apps.<br>
+                            De forma que docentes, estudiantes y administrativos sepamos cómo tratar y comunicarnos con
+                            personas con discapacidad.<br>
+                            Fomentar comunidades de aprendizaje en contextos con mayor amplitud de inclusión.<br>
+                            Podemos SENTIR TODOS lo que Todos podemos SENTIR.<br>
+                            Nuestra discapacidad de no ver lo que otros ven, de no oír lo que otros oyen, de no entender
+                            lo que todos necesitamos entender, puede cambiar si con solo 1 minuto más de cada dia,
+                            cerraramos los ojos, nos tapamos los oídos y procuramos <strong>“Comunicarnos con
+                                Todos”</strong>, Habremos
+                            aprendido a romper esos modelos mentales, barreras; que nos dejan sin sentir la vida de
+                            todos.<br>
+                            Aprendamos a convivir
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 col-md-12">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/soOibYyARQw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 ">
+                        <div class="card mb-4">
+                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/HFwY2h7VVdY"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Dignidad Humana, Discapacidad y Cultura Inclusiva en
+                                        la Educación Superior</strong></h5>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 text-center">
-                                <div class="card animated fadeIn fast" style="width: 100%;">
-                                    <img src="assets/img/virtualearning/unsainvestiga.jpg" class="card-img-top"
-                                        alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title"><strong>VIDEOS DE INVESTIGACIÓN CIENTÍFICA Y
-                                                TECNOLÓGICA</strong></h5>
-                                        <p class="card-text text-justify">Videos de eventos, presentación de proyectos
-                                            de investigación, avances de investigación, visita de investigadores y otros
-                                        </p>
-                                        <a href="http://vri.unsa.edu.pe/videos-investigacion"
-                                            class="btn btn-primary btn-block" target="_blank">Ver
-                                            más</a>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 ">
+                        <div class="card mb-4">
+                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/d96zmWutlCI"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Como usa su celular una persona ciega</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 ">
+                        <div class="card mb-4">
+                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/h3DyyditlBA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Kinesika una App para personas sordas y personas
+                                        mudas</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 ">
+                        <div class="card mb-4">
+                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/TQweaww8bwM"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Power Point y Word para estudiantes con
+                                        discapacidad</strong>
+                                </h5>
+                                <p class="card-text">Haga que los documentos de Word sean accesibles para personas
+                                    con discapacidades</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://support.microsoft.com/es-es/topic/haga-que-los-documentos-de-word-sean-accesibles-para-personas-con-discapacidades-d9bf3683-87ac-47ea-b91a-78dcacb3c66d"
+                                    class="btn text-center btn-primary" title="Ver contenido">
+                                    <strong class="text-wrap">Ver más</strong>
+                                    <i class="now-ui-icons arrows-1_minimal-right ml-1"></i>
+                                </a>
                             </div>
                         </div>
                     </div>

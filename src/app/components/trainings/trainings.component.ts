@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ContentsComponent } from './contents/contents.component';
 import { MatDialog } from '@angular/material/dialog';
+import { YoutubeService } from 'app/services/youtube.service';
+import { Video } from 'app/models/youtube';
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-trainings',
@@ -13,11 +16,36 @@ export class TrainingsComponent implements OnInit {
   descFlagMoodleII: boolean;
   descFlagMoodleIII: boolean;
   descFlagHGoogle: boolean;
+  descFlagTools: boolean;
 
-  constructor(private dialog: MatDialog,
+  videos: Video[] = []
+  content: any[] = [];
+ 
+  constructor(
+    private dialog: MatDialog,
+    private youtubeService: YoutubeService,
     ) { }
 
   ngOnInit(): void {
+    this.youtubeService.getVideosWorkshop().subscribe(resp => {
+      //console.log("studeeents",resp);
+      var url = "https://www.youtube.com/embed/"
+      this.videos = resp;
+      /*       this.videos.resourceId.videoId = url + this.videos.resourceId.videoId;
+       */
+    });
+  }
+  onClicVideo(data) {
+    Swal.fire({
+      html: ` 
+      <iframe width="100%" height="500" src="https://www.youtube.com/embed/${data.resourceId.videoId}"
+      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+      </iframe>`,
+      showConfirmButton: false,
+      width: 800,
+      showCloseButton: true,
+    })
   }
 
   OnClickDescriptionMoodleI(){
@@ -44,16 +72,24 @@ export class TrainingsComponent implements OnInit {
     else
       this.descFlagHGoogle = true
   }
+  OnClickDescriptionTools(){
+    if (this.descFlagTools == true)
+      this.descFlagTools = false
+    else
+      this.descFlagTools = true
+  }
 
   onClicLinkMoodle(data) {
     if (data == 'moodleI') {
-      window.open('https://forms.gle/Hj4HU7Pkjd3nth447','_blank')
+      window.open('','_blank')
     } else if (data == 'moodleII') {
-      window.open('https://forms.gle/KW4RDR9M8crVNpRb9','_blank')
+      window.open('https://forms.gle/mFerqkw2kxDpGY1M6','_blank')
     } else if (data == 'moodleIII') {
-      window.open('https://forms.gle/ATZKF51g8ThMPaer9','_blank')
+      window.open('','_blank')
     } else if (data == 'hgoogle') {
-      window.open('https://forms.gle/Qv7qkxzXZRYTh78Y8','_blank')
+      window.open('','_blank')
+    } else if (data == 'tool') {
+      window.open('https://forms.gle/N3v1g2o3tusVDu6Q6','_blank')
     }
   }
   

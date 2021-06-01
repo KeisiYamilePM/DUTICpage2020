@@ -40,12 +40,15 @@ export class ContentsComponent implements OnInit {
       this.getMoodleII();
     } else if (this.data == 'moodleIII') {
       this.getMoodleIII();
-    } else if (this.data == 'hgoogle'){
+    } else if (this.data == 'hgoogle') {
       this.getHGoogle();
+    } else if (this.data == 'tools') {
+      this.getTools();
     }
+
   }
 
-  getMoodleI(){
+  getMoodleI() {
     this.isLoad = true
     this.trainingsService.getMoodleI().subscribe((data: any) => {
       /*       console.log('moodlei pruebaaaaaaa: ', data[0].theme)
@@ -61,7 +64,7 @@ export class ContentsComponent implements OnInit {
       this.isLoad = false
     })
   }
-  getMoodleII(){
+  getMoodleII() {
     this.isLoad = true
     this.trainingsService.getMoodleII().subscribe((data: any) => {
       /*       console.log('moodlei pruebaaaaaaa: ', data[0].theme)
@@ -77,7 +80,7 @@ export class ContentsComponent implements OnInit {
       this.isLoad = false
     })
   }
-  getMoodleIII(){
+  getMoodleIII() {
     this.isLoad = true
     this.trainingsService.getMoodleIII().subscribe((data: any) => {
       /*       console.log('moodlei pruebaaaaaaa: ', data[0].theme)
@@ -93,7 +96,7 @@ export class ContentsComponent implements OnInit {
       this.isLoad = false
     })
   }
-  getHGoogle(){
+  getHGoogle() {
     this.isLoad = true
     this.trainingsService.getHGoogle().subscribe((data: any) => {
       /*       console.log('moodlei pruebaaaaaaa: ', data[0].theme)
@@ -109,9 +112,36 @@ export class ContentsComponent implements OnInit {
       this.isLoad = false
     })
   }
+  getTools() {
+    this.isLoad = true
+    this.trainingsService.getTools().subscribe((data: any) => {
+      /*       console.log('moodlei pruebaaaaaaa: ', data[0].theme)
+       */
+      this.dataContent = data
+      this.dataSource = new MatTableDataSource(data[0].theme)
 
-  onClickSilabo(){
-    window.open(this.dataContent[0].silabo,'_blank')
+      this.dataSource.paginator = this.paginator
+      this.dataSource.sort = this.sort
+      this.isLoad = false
+      this.lenghtData = data.length
+    }, err => {
+      this.isLoad = false
+    })
   }
 
+  onClickSilabo() {
+    window.open(this.dataContent[0].silabo, '_blank')
+  }
+
+  verify(data): boolean {
+    //console.log("seraaaa", videoId)
+    if (data == "no") {
+      //console.log("false")
+      return false
+    }
+    else {
+      //console.log("true")
+      return true
+    }
+  }
 }
