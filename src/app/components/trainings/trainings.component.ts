@@ -85,9 +85,9 @@ export class TrainingsComponent implements OnInit {
     } else if (data == 'moodleII') {
       window.open('https://forms.gle/mFerqkw2kxDpGY1M6','_blank')
     } else if (data == 'moodleIII') {
-      window.open('','_blank')
+      window.open('https://docs.google.com/forms/d/e/1FAIpQLSdpRe3sR2NzJVqZ5XVshFdo1dF9_kIv80qb174psqn84fM_LA/viewform','_blank')
     } else if (data == 'hgoogle') {
-      window.open('','_blank')
+      window.open('https://docs.google.com/forms/d/e/1FAIpQLSe2ZT89U0GK4YtGrINEO9Ku6NMSBtuRWABFnC8m9JPCZAU6bA/viewform','_blank')
     } else if (data == 'tool') {
       window.open('https://forms.gle/N3v1g2o3tusVDu6Q6','_blank')
     }
