@@ -121,16 +121,24 @@ export class HandbookService {
       handbookId: "assets/doc/google/2020_Google_Drive.pdf",
     },
     {
-      videoId: "Z2ql_xw7p8A",
+      videoId: "",
       handbookId: "assets/doc/google/2020_TutorialDocumentosGoogle.pdf",
     },
     {
       videoId: "Kv-dyUBV0_k", //presentaciones de google
-      handbookId: "no",
+      handbookId: "assets/doc/google/2020_TutorialPresentacionesGoogle_v3.5_compressed.pdf",
     },
     {
       videoId: "9pQbolFaRa8", //formulario de google
-      handbookId: "no",
+      handbookId: "assets/doc/google/FORMULARIO DE GOOGLE_c.pdf",
+    },
+    {
+      videoId: "EwrebA2ZBa4",
+      handbookId: "assets/doc/google/2020_TutorialDocumentosGoogle_v3.5_c.pdf",
+    },
+    {
+      videoId: "yniA6nDYIPo",
+      handbookId: "assets/doc/google/CALENDARIO DE GOOGLE_c.pdf",
     },
     {
       videoId: "t6lRyo2nOIo",
@@ -147,6 +155,22 @@ export class HandbookService {
     {
       videoId:"sBeLgsVBSbo",
       handbookId: "assets/doc/google/TUTORIAL_Creacion_y_uso_de_QRs_c.pdf",
+    },
+    {
+      videoId:"B5dzxEd_WdM",
+      handbookId: "assets/doc/google/TUTORIAL_corubrics_c.pdf",
+    },
+    {
+      videoId:"FGzPly7R5zQ",
+      handbookId: "assets/doc/google/Tutorial_KAHOOT_c.pdf",
+    },
+    {
+      videoId:"gxJR3f3BNco",
+      handbookId: "assets/doc/google/TUTORIAL_Quizizz_c.pdf",
+    },
+    {
+      videoId:"0iePnFYgZCo",
+      handbookId: "assets/doc/google/Manual Trello_c.pdf",
     },
   ]
 
