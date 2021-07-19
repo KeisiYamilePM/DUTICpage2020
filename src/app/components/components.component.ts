@@ -11,8 +11,9 @@ import * as AOS from 'aos';
     styles: [`
     ngb-progressbar {
         margin-top: 5rem;
-    }
-    `]
+    }    
+    `],
+    styleUrls: ['./components.component.scss']
 })
 
 export class ComponentsComponent implements OnInit, OnDestroy {
