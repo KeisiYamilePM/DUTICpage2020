@@ -26,7 +26,7 @@ export class ToolsgoogleComponent implements OnInit {
   }
   onGetVideosGoogle(){
     this.youtubeService.getVideosGoogle().subscribe(resp => {
-      /*console.log(resp);*/
+      console.log(resp);
       var url = "https://www.youtube.com/embed/"
       this.videos = resp;
       /*       this.videos.resourceId.videoId = url + this.videos.resourceId.videoId;
@@ -35,7 +35,7 @@ export class ToolsgoogleComponent implements OnInit {
   }
   onGetVideosTools(){
     this.youtubeService.getVideosTools().subscribe(resp => {
-      //console.log(resp);
+      /*console.log(resp);*/
       var url = "https://www.youtube.com/embed/"
       this.videosH = resp;
       /*       this.videos.resourceId.videoId = url + this.videos.resourceId.videoId;

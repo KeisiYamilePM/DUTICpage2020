@@ -21,7 +21,7 @@ import { InnovaticComponent } from './components/innovatic/innovatic.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'homepage', pathMatch: 'full' },
-    { path: 'homepage',                component: ComponentsComponent },
+    { path: 'homepage',     component: ComponentsComponent },
 
     { path: 'virtualTeaching/news',     component: NewsComponent },
     { path: 'virtualTeaching/subjectDesign',     component: SubjectDesignComponent },
@@ -42,7 +42,6 @@ const routes: Routes =[
     { path: 'news/newsletter',     component: NewsletterComponent },
 
     { path: 'innovaticIII',     component: InnovaticComponent },
-
 ];
 
 @NgModule({
