@@ -19,6 +19,9 @@ import { NewsletterComponent } from './components/newsletter/newsletter.componen
 import { NewsContentLearnComponent } from './components/virtuallearning/news-content-learn/news-content-learn.component';
 import { InnovaticComponent } from './components/innovatic/innovatic.component';
 
+import { CulturalsiteComponent} from './components/bicentenary/culturalsite/culturalsite.component';
+import { CuriositiesComponent} from './components/bicentenary/curiosities/curiosities.component';
+import { LibraryComponent} from './components/bicentenary/library/library.component';
 const routes: Routes =[
     { path: '', redirectTo: 'homepage', pathMatch: 'full' },
     { path: 'homepage',     component: ComponentsComponent },
@@ -42,6 +45,10 @@ const routes: Routes =[
     { path: 'news/newsletter',     component: NewsletterComponent },
 
     { path: 'innovaticIII',     component: InnovaticComponent },
+
+    { path: 'bicentenario/paradero-cultural', component: CulturalsiteComponent},
+    { path: 'bicentenario/curiosidades', component: CuriositiesComponent},
+    { path: 'bicentenario/biblioteca', component: LibraryComponent},
 ];
 
 @NgModule({

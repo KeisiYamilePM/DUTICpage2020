@@ -12,6 +12,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatTabsModule } from '@angular/material/tabs';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 
 import { ComponentsComponent } from './components.component';
 import { NgbdModalBasic } from './modal/modal.component';
@@ -30,6 +32,10 @@ import { NewsContentComponent } from './virtualteaching/news-content/news-conten
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import { NewsContentLearnComponent } from './virtuallearning/news-content-learn/news-content-learn.component';
 import { InnovaticComponent } from './innovatic/innovatic.component';
+import { BicentenaryComponent } from './bicentenary/bicentenary.component';
+import { CulturalsiteComponent } from './bicentenary/culturalsite/culturalsite.component';
+import { LibraryComponent } from './bicentenary/library/library.component';
+import { CuriositiesComponent } from './bicentenary/curiosities/curiosities.component';
 
 @NgModule({
     declarations: [
@@ -49,6 +55,10 @@ import { InnovaticComponent } from './innovatic/innovatic.component';
         NewsletterComponent,
         NewsContentLearnComponent,
         InnovaticComponent,
+        BicentenaryComponent,
+        CulturalsiteComponent,
+        LibraryComponent,
+        CuriositiesComponent,
     ],
     imports: [
         CommonModule,
@@ -64,6 +74,8 @@ import { InnovaticComponent } from './innovatic/innovatic.component';
         MatProgressBarModule,
         MatTabsModule,
         MatDividerModule,
+        MatCardModule,
+        MatButtonModule,
         MatDialogModule,
     ],
     exports:[ ComponentsComponent ],
