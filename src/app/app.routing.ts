@@ -47,8 +47,8 @@ const routes: Routes =[
     { path: 'innovaticIII',     component: InnovaticComponent },
 
     { path: 'bicentenario/paradero-cultural', component: CulturalsiteComponent},
-    { path: 'bicentenario/curiosidades', component: CuriositiesComponent},
-    { path: 'bicentenario/biblioteca', component: LibraryComponent},
+    { path: 'bicentenario/paradero-cultural/curiosidades', component: CuriositiesComponent},
+    { path: 'bicentenario/paradero-cultural/biblioteca', component: LibraryComponent},
 ];
 
 @NgModule({
