@@ -4,6 +4,8 @@ import { NgbAccordionConfig } from '@ng-bootstrap/ng-bootstrap';
 import * as Rellax from 'rellax';
 import { NewsService } from '../services/news.service';
 import * as AOS from 'aos';
+import { NgbdModalBasic } from './modal/modal.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
     selector: 'app-components',
@@ -11,8 +13,9 @@ import * as AOS from 'aos';
     styles: [`
     ngb-progressbar {
         margin-top: 5rem;
-    }
-    `]
+    }    
+    `],
+    styleUrls: ['./components.component.scss']
 })
 
 export class ComponentsComponent implements OnInit, OnDestroy {
@@ -33,10 +36,16 @@ export class ComponentsComponent implements OnInit, OnDestroy {
     public isCollapsed2 = true;
 
     state_icon_primary = true;
-    
-    content:any[]=[];
 
-    constructor(private renderer: Renderer2, config: NgbAccordionConfig, private newsService: NewsService) {
+    content: any[] = [];
+
+    constructor(
+        private renderer: Renderer2, 
+        config: NgbAccordionConfig, 
+        private newsService: NewsService,
+        private dialog: MatDialog,
+
+        ) {
         config.closeOthers = true;
         config.type = 'info';
     }
@@ -57,7 +66,9 @@ export class ComponentsComponent implements OnInit, OnDestroy {
         body.classList.add('index-page');
 
         this.ongetNewsList();
+        //this.openModal();
         AOS.init();
+
     }
     ngOnDestroy() {
         var navbar = document.getElementsByTagName('nav')[0];
@@ -65,7 +76,15 @@ export class ComponentsComponent implements OnInit, OnDestroy {
         var body = document.getElementsByTagName('body')[0];
         body.classList.remove('index-page');
     }
-    ongetNewsList(){
+    ongetNewsList() {
         this.content = this.newsService.getNews();
-      }
+    }   
+    
+    openModal() {
+        console.log('Este es el modelo: ')
+        const dialogRef = this.dialog.open(NgbdModalBasic, {
+          width: '70%',
+          height: '460px',
+        })
+    }
 }

@@ -10,27 +10,27 @@ export class NgbdModalBasic {
 
     constructor(private modalService: NgbModal) {}
 
-    open(content, type, modalDimension) {
-        if (modalDimension === 'sm' && type === 'modal_mini') {
+    /*open(content, type, modalDimension) {
+        /*if (modalDimension === 'sm' && type === 'modal_mini') {
             this.modalService.open(content, { windowClass: 'modal-mini modal-primary', size: 'sm' }).result.then((result) => {
                 this.closeResult = `Closed with: ${result}`;
             }, (reason) => {
                 this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
             });
-        } else if (modalDimension == undefined && type === 'Login') {
+        } else *if (modalDimension == undefined ) {
           this.modalService.open(content, { windowClass: 'modal-login modal-primary' }).result.then((result) => {
               this.closeResult = `Closed with: ${result}`;
           }, (reason) => {
               this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
           });
-        } else {
+        } /*else {
             this.modalService.open(content).result.then((result) => {
                 this.closeResult = `Closed with: ${result}`;
             }, (reason) => {
                 this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
             });
-        }
-
+        }*/
+/*
     }
 
     private getDismissReason(reason: any): string {
@@ -41,5 +41,5 @@ export class NgbdModalBasic {
         } else {
             return  `with: ${reason}`;
         }
-    }
+    }*/
 }
