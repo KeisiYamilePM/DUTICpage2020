@@ -30,7 +30,7 @@
     height: 100%;
     z-index: 0;
     opacity: 0.3;
-    background:       url("https://i.ibb.co/NZr6RfY/bicentenario-fondo.jpg") no-repeat center center;
+    background:url("https://i.ibb.co/NZr6RfY/bicentenario-fondo.jpg") no-repeat center center;
     background-size: cover;
 }
 
@@ -64,8 +64,13 @@
 
 }
 .content-text{
-    padding-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 .content-info{
     padding-top: 30px;
+}
+
+.p-row{
+    padding: 40px 25px 40px 25px;
 }
