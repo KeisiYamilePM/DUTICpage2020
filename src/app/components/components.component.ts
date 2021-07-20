@@ -66,7 +66,7 @@ export class ComponentsComponent implements OnInit, OnDestroy {
         body.classList.add('index-page');
 
         this.ongetNewsList();
-        this.openModal();
+        //this.openModal();
         AOS.init();
 
     }
