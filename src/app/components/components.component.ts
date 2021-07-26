@@ -6,6 +6,7 @@ import { NewsService } from '../services/news.service';
 import * as AOS from 'aos';
 import { NgbdModalBasic } from './modal/modal.component';
 import { MatDialog } from '@angular/material/dialog';
+import Swal from 'sweetalert2'
 
 @Component({
     selector: 'app-components',
@@ -40,12 +41,12 @@ export class ComponentsComponent implements OnInit, OnDestroy {
     content: any[] = [];
 
     constructor(
-        private renderer: Renderer2, 
-        config: NgbAccordionConfig, 
+        private renderer: Renderer2,
+        config: NgbAccordionConfig,
         private newsService: NewsService,
         private dialog: MatDialog,
 
-        ) {
+    ) {
         config.closeOthers = true;
         config.type = 'info';
     }
@@ -67,6 +68,7 @@ export class ComponentsComponent implements OnInit, OnDestroy {
 
         this.ongetNewsList();
         //this.openModal();
+        //this.openInfoNew();
         AOS.init();
 
     }
@@ -78,13 +80,30 @@ export class ComponentsComponent implements OnInit, OnDestroy {
     }
     ongetNewsList() {
         this.content = this.newsService.getNews();
-    }   
-    
+    }
+
     openModal() {
         console.log('Este es el modelo: ')
         const dialogRef = this.dialog.open(NgbdModalBasic, {
-          width: '70%',
-          height: '460px',
+            width: '70%',
+            height: '460px',
+        })
+    }
+    openInfoNew() {
+        Swal.fire({
+            html: `
+          <div class="row">
+            <div class="col-12 col-lg-12 col-md-12 col-sm-12">
+              <img src="assets/img/bicentenary/TARJETA_BICENTENARIO.jpg" class="card-img-top" alt="...">
+           
+              <a [routerLink]="['/bicentenario/paradero-cultural']" class="btn btn-primary">Ver más</a>
+              
+            </div>
+          </div>
+          `,
+            showConfirmButton: false,
+            width: 900,
+            showCloseButton: true,
         })
     }
 }
