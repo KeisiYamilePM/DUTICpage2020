@@ -44,7 +44,7 @@ const routes: Routes =[
 
     { path: 'news/newsletter',     component: NewsletterComponent },
 
-    { path: 'innovaticIII',     component: InnovaticComponent },
+    { path: 'EPEITE',     component: InnovaticComponent },
 
     { path: 'bicentenario/paradero-cultural', component: CulturalsiteComponent},
     { path: 'bicentenario/paradero-cultural/curiosidades', component: CuriositiesComponent},
