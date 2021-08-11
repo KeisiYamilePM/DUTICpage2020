@@ -1,9 +1,9 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { OnlineWorkshopsService } from '../../../services/online-workshops.service';
 
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
+import { OnlineWorkshopsService } from 'app/services/online-workshops.service';
 
 @Component({
   selector: 'app-videoconferences',

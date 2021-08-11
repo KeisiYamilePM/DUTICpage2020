@@ -32,10 +32,13 @@ import { NewsContentComponent } from './virtualteaching/news-content/news-conten
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import { NewsContentLearnComponent } from './virtuallearning/news-content-learn/news-content-learn.component';
 import { InnovaticComponent } from './innovatic/innovatic.component';
-import { BicentenaryComponent } from './bicentenary/bicentenary.component';
-import { CulturalsiteComponent } from './bicentenary/culturalsite/culturalsite.component';
-import { LibraryComponent } from './bicentenary/library/library.component';
-import { CuriositiesComponent } from './bicentenary/curiosities/curiosities.component';
+import { CulturalsiteComponent } from './culturalsite/culturalsite.component';
+import { LibraryComponent } from './culturalsite/library/library.component';
+import { CuriositiesComponent } from './culturalsite/curiosities/curiosities.component';
+import { ActivitiesComponent } from './activities/activities.component';
+import { DigitalArtComponent } from './activities/digital-art/digital-art.component';
+import { GamesComponent } from './activities/games/games.component';
+import { KnowledgeComponent } from './activities/knowledge/knowledge.component';
 
 @NgModule({
     declarations: [
@@ -55,10 +58,13 @@ import { CuriositiesComponent } from './bicentenary/curiosities/curiosities.comp
         NewsletterComponent,
         NewsContentLearnComponent,
         InnovaticComponent,
-        BicentenaryComponent,
         CulturalsiteComponent,
         LibraryComponent,
         CuriositiesComponent,
+        ActivitiesComponent,
+        DigitalArtComponent,
+        GamesComponent,
+        KnowledgeComponent,
     ],
     schemas: [
         CUSTOM_ELEMENTS_SCHEMA,

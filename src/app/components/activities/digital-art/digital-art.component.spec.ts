@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BicentenaryComponent } from './bicentenary.component';
+import { DigitalArtComponent } from './digital-art.component';
 
-describe('BicentenaryComponent', () => {
-  let component: BicentenaryComponent;
-  let fixture: ComponentFixture<BicentenaryComponent>;
+describe('DigitalArtComponent', () => {
+  let component: DigitalArtComponent;
+  let fixture: ComponentFixture<DigitalArtComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BicentenaryComponent ]
+      declarations: [ DigitalArtComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BicentenaryComponent);
+    fixture = TestBed.createComponent(DigitalArtComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

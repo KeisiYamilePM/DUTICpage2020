@@ -7,7 +7,7 @@ import { ComponentsComponent } from './components/components.component';
 
 import { NewsComponent } from './components/virtualteaching/news/news.component';
 import { SubjectDesignComponent } from './components/virtualteaching/subject-design/subject-design.component';
-import { VideoconferencesComponent } from './components/workshopOnline/videoconferences/videoconferences.component';
+
 import { TeachersComponent } from './components/videosresources/teachers/teachers.component';
 import { StudentsComponent } from './components/videosresources/students/students.component';
 import { ToolsgoogleComponent } from './components/videosresources/toolsgoogle/toolsgoogle.component';
@@ -18,10 +18,16 @@ import { NewsContentComponent } from './components/virtualteaching/news-content/
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
 import { NewsContentLearnComponent } from './components/virtuallearning/news-content-learn/news-content-learn.component';
 import { InnovaticComponent } from './components/innovatic/innovatic.component';
+import { VideoconferencesComponent } from './components/workshopOnline/videoconferences/videoconferences.component';
+import { CulturalsiteComponent} from './components/culturalsite/culturalsite.component';
+import { CuriositiesComponent} from './components/culturalsite/curiosities/curiosities.component';
+import { LibraryComponent} from './components/culturalsite/library/library.component';
+import { ActivitiesComponent } from './components/activities/activities.component';
+import { DigitalArtComponent } from './components/activities/digital-art/digital-art.component';
+import { GamesComponent } from './components/activities/games/games.component';
+import { KnowledgeComponent } from './components/activities/knowledge/knowledge.component';
 
-import { CulturalsiteComponent} from './components/bicentenary/culturalsite/culturalsite.component';
-import { CuriositiesComponent} from './components/bicentenary/curiosities/curiosities.component';
-import { LibraryComponent} from './components/bicentenary/library/library.component';
+
 const routes: Routes =[
     { path: '', redirectTo: 'homepage', pathMatch: 'full' },
     { path: 'homepage',     component: ComponentsComponent },
@@ -46,9 +52,15 @@ const routes: Routes =[
 
     { path: 'EPEITE',     component: InnovaticComponent },
 
-    { path: 'bicentenario/paradero-cultural', component: CulturalsiteComponent},
-    { path: 'bicentenario/paradero-cultural/curiosidades', component: CuriositiesComponent},
-    { path: 'bicentenario/paradero-cultural/biblioteca', component: LibraryComponent},
+    { path: 'paradero-cultural', component: CulturalsiteComponent},
+    { path: 'paradero-cultural/curiosidades', component: CuriositiesComponent},
+    { path: 'paradero-cultural/biblioteca', component: LibraryComponent},
+
+    { path: 'dutic-activities', component: ActivitiesComponent},
+    { path: 'dutic-activities/digital-art', component: DigitalArtComponent},
+    { path: 'dutic-activities/games', component: GamesComponent},
+    { path: 'dutic-activities/knowledge', component: KnowledgeComponent},
+
 ];
 
 @NgModule({

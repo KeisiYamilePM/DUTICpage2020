@@ -8,7 +8,7 @@
       <div class="col-md-12 text-center">
         <mat class="mt-0 mb-3 text-white mat-display-1">Paradero Cultural Virtual</mat>
         <div class="breadcrumbs">
-          <mat class="mb-0 mat-body"><a href="#" class="text-white">Bicentenario</a> <span
+          <mat class="mb-0 mat-body"><a [routerLink]="['/paradero-cultural']" class="text-white">Inicio</a> <span
               class="text-white">&nbsp;&nbsp;/&nbsp;&nbsp;</span> <span class="color-b">Paradero cultural</span></mat>
         </div>
       </div>
@@ -44,7 +44,7 @@
               </p>
             </mat-card-content>
             <mat-card-actions>
-              <a [routerLink]="['/bicentenario/paradero-cultural/curiosidades']"><button
+              <a [routerLink]="['/paradero-cultural/curiosidades']"><button
                   class="btn btn-primary font-weight-bold">Ver Datos</button></a>
             </mat-card-actions>
           </mat-card>
@@ -68,7 +68,7 @@
               </p>
             </mat-card-content>
             <mat-card-actions>
-              <a [routerLink]="['/bicentenario/paradero-cultural/biblioteca']"><button
+              <a [routerLink]="['/paradero-cultural/biblioteca']"><button
                   class="btn btn-danger font-weight-bold">Ver Biblioteca</button></a>
             </mat-card-actions>
           </mat-card>
