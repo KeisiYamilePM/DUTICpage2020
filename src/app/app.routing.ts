@@ -26,6 +26,8 @@ import { ActivitiesComponent } from './components/activities/activities.componen
 import { DigitalArtComponent } from './components/activities/digital-art/digital-art.component';
 import { GamesComponent } from './components/activities/games/games.component';
 import { KnowledgeComponent } from './components/activities/knowledge/knowledge.component';
+import { NoveltiesComponent } from './components/culturalsite/novelties/novelties.component';
+import { ProgramComponent } from './components/culturalsite/program/program.component';
 
 
 const routes: Routes =[
@@ -55,6 +57,8 @@ const routes: Routes =[
     { path: 'paradero-cultural', component: CulturalsiteComponent},
     { path: 'paradero-cultural/curiosidades', component: CuriositiesComponent},
     { path: 'paradero-cultural/biblioteca', component: LibraryComponent},
+    { path: 'paradero-cultural/novelties', component: NoveltiesComponent},
+    { path: 'paradero-cultural/activities', component: ProgramComponent},
 
     { path: 'dutic-activities', component: ActivitiesComponent},
     { path: 'dutic-activities/digital-art', component: DigitalArtComponent},

@@ -39,6 +39,8 @@ import { ActivitiesComponent } from './activities/activities.component';
 import { DigitalArtComponent } from './activities/digital-art/digital-art.component';
 import { GamesComponent } from './activities/games/games.component';
 import { KnowledgeComponent } from './activities/knowledge/knowledge.component';
+import { NoveltiesComponent } from './culturalsite/novelties/novelties.component';
+import { ProgramComponent } from './culturalsite/program/program.component';
 
 @NgModule({
     declarations: [
@@ -65,6 +67,8 @@ import { KnowledgeComponent } from './activities/knowledge/knowledge.component';
         DigitalArtComponent,
         GamesComponent,
         KnowledgeComponent,
+        NoveltiesComponent,
+        ProgramComponent,
     ],
     schemas: [
         CUSTOM_ELEMENTS_SCHEMA,
