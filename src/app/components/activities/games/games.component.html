@@ -1,5 +1,5 @@
-<div style="padding-top: 80px; " class="wrapper">
-    <section class="inner-header bg-opacity main-font mat-elevation-z10"
+<div style="padding-top: 56px; " class="wrapper">
+    <!-- <section class="inner-header bg-opacity main-font mat-elevation-z10"
         style="padding-top: 6rem; padding-bottom: 6rem;">
         <div class="container">
             <div class="row">
@@ -11,5 +11,412 @@
     </section>
     <section>
         <p>CONTENIDO</p>
+        <iframe src="https://challonge.com/es/jq62kcv9/module" width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+    </section> -->
+
+    <br>
+    <section>
+        <ngb-carousel *ngIf="images">
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <a [routerLink]=""><img [src]="images[0]" alt="Random first slide" (click)="scroll(games)"></a>
+              </div>
+              <!-- <div class="carousel-caption">
+                <h3>10 seconds between slides...</h3>
+                <p>This carousel uses customized default values.</p>
+              </div> -->
+            </ng-template>
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <a [routerLink]=""><img [src]="images[1]" alt="Random second slide" (click)="scroll(competition)"></a>
+              </div>
+              <!-- <div class="carousel-caption">
+                <h3>No mouse events...</h3>
+                <p>This carousel doesn't pause or resume on mouse events</p>
+              </div> -->
+            </ng-template>
+          </ngb-carousel>
     </section>
+    <br><br><br>
+    <section #competition>
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-md-12 title-main">
+                    <mat class="mat-headline">JUEGOS</mat>
+                </div> -->
+
+                <div class="text-center col-md-12">
+                    <mat class="mat-display-1" style="color: rgb(20, 30, 63);"><b>CONCURSO</b></mat>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-md-12">
+                    <mat-tab-group mat-align-tabs="center" [color]="'primary'" [backgroundColor]="'primary'">
+                        <mat-tab>
+                            <ng-template mat-tab-label>
+                                <i class="now-ui-icons files_single-copy-04
+                                Emoticons mr-2"></i>
+                              FORMATO
+                            </ng-template>
+                            <br>
+                            <br>   
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">DEL EVENTO</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <br><br>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Este es un evento celebrado para promover la participación de la comunidad Agustina. 
+                                            Aprovechando el año significativo que estamos celebrando por el bicentenario de nuestro país 
+                                            y en las situaciones que nos encontramos por la pandemia del COVID, encontramos oportuno realizar 
+                                            actividades de competencia que muy aparte de entretener, ayuden al estudiante a estimular sus habilidades 
+                                            cognitivas y el aprendizaje a través de los juegos.
+                                            <br><br> 
+                                            Este evento involucra a la comunidad Agustina de todas las facultades, ya que son actividades que no están 
+                                            ligadas especialmente a una escuela.
+                                            
+                                            Con el desarrollo del evento deseamos promover la competencia sana y justa que se daba en las olimpiadas 
+                                            presenciales ya hace 2 años.
+
+                                        </mat>
+                                        
+                                    </div>
+    
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 20px;">
+                                        <img src="http://lee.fcsh.espol.edu.ec/sites/default/files/imagen%203.png" alt="Ajedrez en chess.com" class="mat-elevation-z8">
+                                    </div>
+                                </div>
+                                <br><br><br>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">REGLAS DEL EVENTO</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <br><br>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            <ul>
+                                                <li>La participación esta restringida a solo estudiantes de la UNSA.</li>
+                                                <li>Todo participante debe haber estado matriculado en el perido 2021-A.</li>
+                                                <li>Se permite la inscripción en más de 1 juego.</li>
+                                                <li>Toda la información de los juegos y su jugabilidad se encuentran en la sección de <a [routerLink]="" (click)="scroll(games)"><b>juegos.</b></a></li>
+                                                <li>Los premios a los ganadores serán entregados en un máximo de una semana luego de haber culminado las olimpiadas.</li>
+                                            </ul> 
+                                        </mat>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">FASES DEL EVENTO</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            El evento se realizará en dos fases, una primera fase de rondas de eliminación y otra fase también de rondas de eliminación seguido de semifinales y final. La información de los participantes y los enfrentamientos estará disponible en la pestaña “participantes” y “torneo”. 
+                                            <br><br>
+                                            <b>La primera fase se realizará</b> el día 23 de agosto desde las 9:00hrs. la información de los participantes y su hora de participación estará en la pestaña de “participantes”, allí también encontrará la sala meet donde deberá ingresar 5 min antes de hora pactada.
+                                            <b>La segunda fase se realizará</b> el día 24 de agosto desde las 9:00hrs. De igual forma toda la información sobre su participación se encontrará en la pestaña de “participantes”, importante estar al tanto ya que se ira actualizando mientras se realicen las eliminaciones.
+
+                                        </mat>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">REGISTRO AL EVENTO</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Desde el siguiente formulario podrá registrarse en los juegos que desee participar.
+                                            Las inscripciones estarán abiertas desde el día martes 17 de agosto del 2021 a partir de las 9:00hrs. 
+                                            hasta el día jueves 19 de agosto del 2021 a las 9:00hrs.
+                                            <br><br>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnnJX8pUgv4n2usVYgMUulk-1n4QtTC6Lh-AWIyhDiC7jTIQ/viewform?usp=sf_link" target="_blank"><b>Formulario para registro al evento.</b></a>
+                                        </mat>
+                                    </div>
+
+                                    <div class="col-md-8 offset-md-2" style="padding-bottom: 20px;">
+                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnnJX8pUgv4n2usVYgMUulk-1n4QtTC6Lh-AWIyhDiC7jTIQ/viewform?usp=sf_link" target="_blank"><img src="https://tiempodenegocios.com/wp-content/uploads/2017/07/Google-Forms.jpg" alt="Ajedrez en chess.com" class="mat-elevation-z8"></a>
+                                    </div>
+                                </div>
+                                <br>
+                                
+                            </div>
+
+                          </mat-tab>
+                          <mat-tab>
+                            <ng-template mat-tab-label>
+                                <i class="now-ui-icons objects_diamond
+                                Emoticons mr-2"></i>
+                              PREMIOS
+                            </ng-template>
+                            <br><br>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">PREMIOS</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <br><br>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Los siguientes premios se entregarán a todos los ganadores de los distintos juegos, como se indica en las reglas, el plazo máximo de entrega será la semana siguiente a la culminación del evento.
+                                            <br><br>
+                                            <ul>
+                                                <li> Se otorgará Diplomas por participación.</li>
+                                                <li>A los dos primeros puestos se otorgará Certificado indicando puesto de clasificación.</li>
+                                                <li>Presencia en la web: los concursantes podrán ver una mención honrosa en la página web de DUTIC indicando cuál escuela y facultad obtuvieron mayor cantidad de ganadores.</li>
+                                                <li>El primer puesto de las categorías podrá acceder a Becas de alguna institución que pueda acceder DUTIC (ej. INFOUNSA o Centro de Idiomas).</li>
+                                                <li>El segundo puesto de las categorías podrá acceder a Semibecas de alguna institución que pueda acceder DUTIC (ej. INFOUNSA o Centro de Idiomas).</li>
+
+                                            </ul>
+
+                                        </mat>
+                                        
+                                    </div>
+
+                                    <div class="col-md-8 offset-md-2" style="padding-bottom: 20px;">
+                                        <img src="https://i.ibb.co/NZrqb3b/pngegg.png" alt="podio con 3 primeros puestos">
+                                    </div>
+
+                                </div>
+                            </div>
+                          </mat-tab>
+                          <mat-tab>
+                            <ng-template mat-tab-label>
+                                <i class="now-ui-icons sport_user-run
+                                Emoticons mr-2"></i>
+                            PARTICIPANTES
+                            </ng-template>
+                            <br><br>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">LISTA DE PARTICIPANTES</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <br><br>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Se ha definido 4 tablas para los juegos de ajedrez, tetris, programación y trivia respectivamente, cada tabla muestra la información de los concursantes registrados,
+                                            además de la hora y fecha de su participación y de la sala meet donde deberá ingresar 5 min. antes para validar e iniciar su participación.
+                                            
+                                        </mat>
+                                    <br><br>  
+                                    </div>
+                                    <div class="col-md-12" style="padding-bottom: 35px;">
+                                        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRgfLwoTPhy09MlyFShqVdgJ-zh_Q4c9GcQCbtmnq8yE0Ho-8E-6gn-H2Pycrf2McPvb6399tT5k23s/pubhtml?widget=true&amp;headers=false" width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>    
+                                    </div>
+                                    
+                                    <div class="col-md-12" style="padding-bottom: 35px;">
+                                        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRqaef1lwW1XnFs4HgS83mpRn2H2XKahLKB6BwdkvQGTMHKptmv1_jBaKOJLAHmSyuanDHgwAYziYBM/pubhtml?widget=true&amp;headers=false" width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>    
+                                    </div>
+
+                                    <div class="col-md-12" style="padding-bottom: 35px;">
+                                        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRdAPc-jBgd0NIUByMbHYmvex1-ASN1mphJysGVp-pAwZztW2R1dRK9qeztDzNMWeUsL6c5kyRPmBi9/pubhtml?widget=true&amp;headers=false" width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>    
+                                    </div>
+
+                                    <div class="col-md-12" style="padding-bottom: 35px;">
+                                        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP0k14mkLBCDN0Uo7YznUCFlxQkpuvconsLCI0VtL8l8gLseKJlJ2v8NNZMILG2Z4WVWW7YtH1fSuu/pubhtml?widget=true&amp;headers=false" width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>    
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                          </mat-tab>
+                          <mat-tab>
+                            <ng-template mat-tab-label>
+                                <i class="now-ui-icons design_vector
+                                Emoticons mr-2"></i>
+                            TORNEO
+                            </ng-template>
+                            <br><br>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">GRUPOS PARA EL TORNEO</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <br><br>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Se ha definido 4 grupos para el seguimiento y la clasificación en vivo de los concursantes en cada juego. En cada grupo se muestra los concursantes y ganadores de cada grupo o llave,
+                                            cada vez que inicia un grupo o llave se marca un recuadro azul alrededor.
+                                            
+                                        </mat>
+                                    <br><br>  
+                                    </div>
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">GRUPO AJEDREZ</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <div class="col-md-12" style="padding-bottom: 30px;">
+                                        <iframe src="https://challonge.com/es/7qrktunr/module" width="100%" height="550" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+                                    </div>
+                                    <br>
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">GRUPO TETRIS</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <div class="col-md-12" style="padding-bottom: 30px;">
+                                        <iframe src="https://challonge.com/es/jq62kcv9/module" width="100%" height="550" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+                                    </div>
+                                    <br>
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">GRUPO PROGRAMACIÓN</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <div class="col-md-12" style="padding-bottom: 30px;">
+                                        <iframe src="https://challonge.com/es/jq62kcv9/module" width="100%" height="550" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+                                    </div>
+                                    <br>
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">GRUPO TRIVIA</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <div class="col-md-12" style="padding-bottom: 30px;">
+                                        <iframe src="https://challonge.com/es/jq62kcv9/module" width="100%" height="550" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+                                    </div>
+                                    <br>
+                                </div>
+
+                            </div>
+                          </mat-tab>
+                          <mat-tab>
+                            <ng-template mat-tab-label>
+                                <i class="now-ui-icons sport_trophy
+                                Emoticons mr-2"></i>
+                            GANADORES
+                            </ng-template>
+                            ...
+                          </mat-tab>
+                      </mat-tab-group>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <br><br>
+    <div class="container">
+        <hr>
+    </div>
+    <br><br>
+    <section #games>
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-md-12 title-main">
+                    <mat class="mat-headline">JUEGOS</mat>
+                </div> -->
+
+                <div class="text-center col-md-12">
+                    <mat class="mat-display-1" style="color: rgb(20, 30, 66);"><b>JUEGOS</b></mat>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-md-12">
+                    <mat-tab-group mat-align-tabs="center" [color]="'primary'" [backgroundColor]="'primary'">
+                        <mat-tab>
+                            <ng-template mat-tab-label>
+                                <i class="now-ui-icons business_bulb-63
+                                Emoticons mr-2"></i>
+                              AJEDREZ
+                            </ng-template>
+                            <br>
+                            <br>   
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">¿QUÉ ES EL AJEDREZ?</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <br><br>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            El ajedrez es un juego entre dos contrincantes en el que cada uno dispone al inicio de 16 piezas móviles 
+                                            que se colocan sobre un tablero, dividido en 64 casillas o escaques. En su versión de competición, está 
+                                            considerado como un deporte​ aunque en la actualidad tiene claramente una dimensión social, educativa​ y terapéutica.
+                                            <br><br>
+                                            Este deporte, tal como se conoce actualmente, surgió en Europa durante el siglo XV,​ como evolución del juego persa shatranj, 
+                                            que a su vez surgió a partir del más antiguo chaturanga, que se practicaba en la India en el siglo VI. La tradición de organizar 
+                                            competiciones de ajedrez empezó en el siglo XVI. El primer campeonato oficial del mundo de ajedrez se organizó en 1886. 
+                                            El ajedrez está considerado por el Comité Olímpico Internacional como un deporte, y las competiciones internacionales están reguladas por la FIDE. 
+                                        </mat>
+                                        
+                                    </div>
+    
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 20px;">
+                                        <img src="https://assets.spartangeek.com/cc/jugar-ajedrez-gratis.png?mtime=20210121124555&focal=none" alt="Ajedrez en chess.com" class="mat-elevation-z8">
+                                    </div>
+                                </div>
+                                <br><br>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">BENEFICIOS DE PRACTICARLO</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            El ajedrez es uno de los pocos deporte tradicional que se puede seguir jugando durante el confinamiento, así que es importante promoverlo. Además de distraernos y divertirnos, tienen grandes beneficios para el desarrollo mental. 
+                                            Entre sus beneficios destacan, la mejora las habilidades de estrategia, matemáticas y memorísticas, las cuales ayudan a tomar decisiones más rápidas y precisas. Es un deporte ideal para todos los estudiantes.
+                                            <br><br>
+                                            Según estudios todos deben saber lo esencial en cuanto a este juego tradicional, es parte del individuo explotar su creatividad para obtener resultados positivos como lo es el pasar oponentes cada vez más competitivos y 
+                                            a través de estos tener experiencias como resultados al problema que implica el juego el cual es la competencia de estrategias.
+                                        </mat>
+                                    </div>
+                                </div>
+                                <br><br>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">JUGABILIDAD</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            ...
+                                        </mat>
+                                    </div>
+                                </div>
+                            </div>
+
+                          </mat-tab>
+                          <mat-tab>
+                            <ng-template mat-tab-label>
+                                <i class="now-ui-icons tech_controller-modern
+                                Emoticons mr-2"></i>
+                              TETRIS
+                            </ng-template>
+                            ...
+                          </mat-tab>
+                          <mat-tab>
+                            <ng-template mat-tab-label>
+                                <i class="now-ui-icons objects_globe
+                                Emoticons mr-2"></i>
+                            PROGRAMACIÓN
+                            </ng-template>
+                            ...
+                          </mat-tab>
+                          <mat-tab>
+                            <ng-template mat-tab-label>
+                                <i class="now-ui-icons objects_spaceship
+                                Emoticons mr-2"></i>
+                            TRIVIA
+                            </ng-template>
+                            ...
+                          </mat-tab>
+                      </mat-tab-group>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    
 </div>
