@@ -1,0 +1,76 @@
+.color-a{
+    color: rgb(20, 30, 66);
+}
+
+.color-b{
+    color: rgb(153, 153, 153);
+}
+
+.color-rp{
+    color: rgb(237, 28, 40);
+}
+
+.color-gray{
+    color: gray;
+}
+
+
+.bg-opacity{
+    position: relative;
+    background-color: #000;
+}
+
+.bg-opacity::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.3;
+    background:url("https://i.ibb.co/NZr6RfY/bicentenario-fondo.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.content{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.title-line{
+    border-top: 4px solid rgb(20, 30, 66);
+    padding-top: 7px;
+}
+.title-text{
+    background: rgb(20, 30, 66);
+    padding: 9px 18px 4px;
+    color: #fff;
+    border-radius: 0;
+
+}
+
+.title-line-b{
+    border-top: 4px solid rgb(153, 153, 153);
+    padding-top: 7px;
+}
+.title-text-b{
+    background: rgb(153, 153, 153);
+    padding: 9px 18px 4px;
+    color: #fff;
+    border-radius: 0;
+
+}
+.content-text{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.content-info{
+    padding-top: 30px;
+}
+
+.p-row{
+    padding: 40px 25px 40px 25px;
+}

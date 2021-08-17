@@ -16,7 +16,7 @@ export class OnlineWorkshopsService {
       organizedBy: "CONECTADOS Ministerio de Educación del Perú",
       date: "30/03/2021",
       hour: "",
-      state: true,
+      state: false,
       link: "https://www.facebook.com/watch/live/?v=2813650198889484&ref=watch_permalink",
     },
     {
@@ -27,7 +27,7 @@ export class OnlineWorkshopsService {
       organizedBy: "CONECTADOS Ministerio de Educación del Perú",
       date: "09/03/2021",
       hour: "",
-      state: true,
+      state: false,
       link: "https://www.facebook.com/mineduperu/videos/214581467124929",
     },
     {

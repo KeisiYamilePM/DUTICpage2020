@@ -4,13 +4,13 @@
     </div-->
     <div class="pl-4 pr-4 pt-4" style="background-color: #465767;">
         <div class="pt-4 pl-4" style="color: ghostwhite;">
-            <div class="border-left-dutic pt-4 pl-4 pr-4">
+            <div class=" pt-4 pl-4 pr-4">
                 <div class="row">
                     <div class="col-lg-5 col-md-8 col-sm-12">
-                        <h3 class="border-right-dutic"><strong>CAPACITACIONES VIRTUALES DUTIC 2021</strong><br></h3>
+                        <h2 class="border-right-dutic"><strong>CAPACITACIONES VIRTUALES DUTIC 2021</strong><br></h2>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-12">
-                        <h1 class=""><strong></strong><small></small></h1>
+                        <h1 class=""><strong>17</strong><small>Agosto</small></h1>
                     </div>
                     <!--div class="col-lg-4 col-md-8 col-sm-12 text-center">
                         <h2 class="white--box--border pt-2 pb-2"><strong>E-DUTICATE</strong></h2>
@@ -55,6 +55,16 @@
                         </p>
 
                         <!--h2 class="white--box--border pt-2 pb-2 pl-3 pr-3"><strong>¡CUPOS LIMITADOS!</strong></h2-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center pb-4">
+                        <a href="https://dutic.unsa.edu.pe/entregacertificado/" target="_blank"
+                            class="btn btn-primary btn-round btn-lg mr-3">Descarga tu certificado</a>
+                        <p>Nota: Se continuará la actualización de certificados de las últimas capacitaciones en el
+                            enlace de descarga</p>
+                        <!--a href="https://dutic.unsa.edu.pe/capacitaciones/login/index.php" target="_blank"
+                            class="btn btn-primary btn-round btn-lg mr-4">Accede al aula virtual de Capacitaciones</a-->
                     </div>
                 </div>
             </div>
@@ -140,7 +150,7 @@
                                         <div class="col-12">
                                             <h5 class="card-title font-weight-bold">Aplicaciones Google para la
                                                 Educación</h5>
-                                            <h5 class="card-title font-weight-bold text-center">Inicio:
+                                            <h5 class="card-title font-weight-bold text-center">Inicio: 
                                             </h5>
                                         </div>
                                         <div class="col-12">
@@ -211,6 +221,72 @@
                         </div>
                         <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
                             <div class="card">
+                                <img src="assets/img/trainings/moodleBasico.jpg" class="card-img-top"
+                                    style="width: 100%; height: 200px;" alt="...">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h5 class="card-title font-weight-bold">AULAS VIRTUALES I – Moodle Básico
+                                            </h5>
+                                            <h5 class="card-title font-weight-bold text-center">Inicio: 17 Agosto
+                                            </h5>
+                                        </div>
+                                        <div class="col-12">
+                                            <button *ngIf="descFlagMoodleI==true? false : true"
+                                                class="btn btn-success btn-block" (click)="openModal('moodleI')"
+                                                data-toggle="tooltip" data-placement="top" title="Ver más"><i
+                                                    class="fas fa-plus mr-1"></i>MÁS INFORMACIÓN AQUÍ
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card-text">
+                                        <span>
+                                            <strong class="text-justify">Objetivos</strong><br>
+                                            Dar a conocer al personal Docente de la Universidad Nacional de San Agustín,
+                                            las
+                                            características Generales y fundamentales de la plataforma virtual de
+                                            enseñanza
+                                            Moodle
+                                            en lo
+                                            que se refiere a recursos y actividades<br>
+                                        </span>
+                                        <div *ngIf="descFlagMoodleI==true? true : false">
+                                            <strong>Contenidos</strong><br>
+                                            - Acceso a la Plataforma<br>
+                                            - Descripción de la Interfaz de Usuario de Moodle<br>
+                                            - Configuración de Perfil de Usuario: Subir Foto y agregar Descripción<br>
+                                            - Cambiar Contraseña<br>
+                                            - Administración Básica de un curso: Ajustes del Curso, Usuarios
+                                            Matriculados<br>
+                                            - Agregar Recursos:Archivos, URL, Etiquetas<br>
+                                            - Agregar Actividades:<br>
+                                            Tareas. Configuración General de una tarea. Revisar, Calificar y
+                                            Retroalimentar una
+                                            tarea<br>
+                                            Foros. Agregando un foro al aula virtual. Tipos de Foros. Configuración.<br>
+                                        </div>
+                                    </div><br>
+                                    <div class="card-text font-weight-bold">Horario primer turno: 9:00 hrs. a 11:00 hrs.
+                                    </div>
+                                    <button class="btn btn-danger btn-block" (click)="onClicLinkMoodle('moodleI')">
+                                        INSCRIBETE AQUÍ</button>
+                                    <div class="card-text font-weight-bold">Horario segundo turno: 15:00 hrs. a 17:00
+                                        hrs.</div>
+                                    <button class="btn btn-danger btn-block" (click)="onClicLinkMoodleTurnB('moodleI')">
+                                        INSCRIBETE AQUÍ</button>
+                                    <!--button class="btn btn-primary btn-block">
+                                        INSCRIPCIONES CERRADAS</button>
+                                    <button class="btn btn-primary btn-block">
+                                        PRÓXIMAMENTE</button>
+                                    
+                                <button class="btn btn-success btn-round" (click)="openDescription(true)" title="Ver mas" type="button">
+                                    <i class="now-ui-icons arrows-1_minimal-down"> Ver más</i>
+                                </button-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
+                            <div class="card">
                                 <img src="assets/img/trainings/moodleInterm.jpg" class="card-img-top"
                                     style="width: 100%; height: 200px;" alt="...">
                                 <div class="card-body">
@@ -218,7 +294,7 @@
                                         <div class="col-12">
                                             <h5 class="card-title font-weight-bold">AULAS VIRTUALES II – Moodle
                                                 Intermedio</h5>
-                                            <h5 class="card-title font-weight-bold text-center">Inicio:
+                                            <h5 class="card-title font-weight-bold text-center">Inicio: 17 Agosto
                                             </h5>
                                         </div>
                                         <div class="col-12">
@@ -254,90 +330,19 @@
                                             preguntas. Previsualización de Cuestionarios.<br>
                                             - Evaluación por pares: Taller – Creación y configuración<br>
                                         </div>
+                                    </div><br>
+                                    <div class="card-text font-weight-bold">Horario primer turno: 11:00 hrs. a 13:00 hrs.
                                     </div>
-                                    <!--button class="btn btn-danger btn-block" (click)="onClicLinkMoodle('moodleII')">
-                                        INSCRIBETE AQUÍ</button-->
+                                    <button class="btn btn-danger btn-block" (click)="onClicLinkMoodle('moodleII')">
+                                        INSCRIBETE AQUÍ</button>
+                                    <div class="card-text font-weight-bold">Horario segundo turno: 17:00 hrs. a 19:00 hrs.</div>
+                                    <button class="btn btn-danger btn-block" (click)="onClicLinkMoodleTurnB('moodleII')">
+                                        INSCRIBETE AQUÍ</button>
+
                                     <!--button class="btn btn-primary btn-block">
                                         INSCRIPCIONES CERRADAS</button-->
-                                    <button class="btn btn-primary btn-block">
-                                        PRÓXIMAMENTE</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
-                            <div class="card">
-                                <img src="assets/img/trainings/moodleAvanzado.jpg" class="card-img-top"
-                                    style="width: 100%; height: 200px;" alt="...">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <h5 class="card-title font-weight-bold ">AULAS VIRTUALES III – Moodle
-                                                Avanzado</h5>
-                                            <h5 class="card-title font-weight-bold text-center">Inicio: 
-                                            </h5>
-
-                                        </div>
-                                        <div class="col-12">
-                                            <!-- <button *ngIf="descFlagMoodleIII==true? false : true"
-                                                    class="btn btn-primary float-right btn-icon btn-round"
-                                                    (click)="openModal('moodleIII')" data-toggle="tooltip" data-placement="top"
-                                                    title="Ver más">
-                                                    <i class="fas fa-plus"></i>
-                                                </button> -->
-                                            <button *ngIf="descFlagMoodleIII==true? false : true"
-                                                class="btn btn-success btn-block" (click)="openModal('moodleIII')"
-                                                data-toggle="tooltip" data-placement="top">
-                                                <i class="fas fa-plus mr-1"></i> MÁS INFORMACIÓN AQUÍ
-                                            </button>
-                                            <button *ngIf="descFlagMoodleIII==true? true : false"
-                                                class="btn btn-primary float-right btn-icon btn-round"
-                                                (click)="OnClickDescriptionMoodleIII()" data-toggle="tooltip"
-                                                data-placement="top" title="Ver menos">
-                                                <i class="fas fa-minus"></i>
-                                            </button>
-
-                                            <!-- <button *ngIf="descFlagMoodleIII==true? false : true"
-                                                    class="btn btn-success btn-block" (click)="OnClickDescriptionMoodleIII()"
-                                                    data-toggle="tooltip" data-placement="top" title="Ver más"><i
-                                                        class="fas fa-plus mr-1"></i>MÁS INFORMACIÓN AQUÍ
-                                                </button>
-                                                <button *ngIf="descFlagMoodleIII==true? true : false"
-                                                    class="btn btn-success btn-block" (click)="OnClickDescriptionMoodleIII()"
-                                                    data-toggle="tooltip" data-placement="top" title="Ver menos"><i
-                                                        class="fas fa-minus mr-1"></i>VER MENOS
-                                                </button> -->
-                                        </div>
-                                    </div>
-                                    <div class="card-text">
-                                        <strong class="text-justify">Objetivos</strong><br>
-                                        Dar a conocer al personal Docente de la Universidad Nacional de San Agustín
-                                        métodos y
-                                        características avanzadas del uso y gestión de la plataforma virtual de
-                                        enseñanza Moodle
-                                        respecto a recursos y actividades avanzadas<br>
-                                        <div *ngIf="descFlagMoodleIII==true? true : false">
-                                            <strong>Contenidos</strong><br>
-                                            - Grupos: Creación de grupos. Gestión de Grupos y Agrupamiento de
-                                            grupos.<br>
-                                            - Configuración de restricciones de acceso por grupos para Actividades y
-                                            Recursos.<br>
-                                            - Informe de Calificaciones: Configuraciones fundamentales. Informe de
-                                            Calificaciones.
-                                            Exportar Calificaciones.<br>
-                                            - Copia de Seguridad y Restauración<br>
-                                            - Glosario y Wikis<br>
-                                            - Base de Datos<br>
-                                            - Lecciones: Creación de Lecciones<br>
-                                            - Paquetes SCORM<br>
-                                        </div>
-                                    </div>
-
-                                    <!--button class="btn btn-danger btn-block" (click)="onClicLinkMoodle('moodleIII')">
-                                        INSCRIBETE AQUÍ</button-->
                                     <!--button class="btn btn-primary btn-block">
-                                        INSCRIPCIONES CERRADAS</button-->
-                                    <button class="btn btn-primary btn-block">
-                                        PRÓXIMAMENTE</button>
+                                        PRÓXIMAMENTE</button-->
                                 </div>
                             </div>
                         </div>
@@ -367,7 +372,7 @@
                                     <h5 class="card-title font-weight-bold ">Herramientas Digitales para la
                                         docencia
                                     </h5>
-                                    <h5 class="card-title font-weight-bold text-center">Inicio: 
+                                    <h5 class="card-title font-weight-bold text-center">Inicio:
                                     </h5>
 
                                 </div>
@@ -425,6 +430,83 @@
                             </div>
 
                             <!--button class="btn btn-danger btn-block" (click)="onClicLinkMoodle('tool')">
+                                INSCRIBETE AQUÍ</button-->
+                            <!--button class="btn btn-primary btn-block">
+                                INSCRIPCIONES CERRADAS</button-->
+                            <button class="btn btn-primary btn-block">
+                                PRÓXIMAMENTE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="assets/img/trainings/moodleAvanzado.jpg" class="card-img-top"
+                            style="width: 100%; height: 200px;" alt="...">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5 class="card-title font-weight-bold ">AULAS VIRTUALES III – Moodle
+                                        Avanzado</h5>
+                                    <h5 class="card-title font-weight-bold text-center">Inicio: 
+                                    </h5>
+
+                                </div>
+                                <div class="col-12">
+                                    <!-- <button *ngIf="descFlagMoodleIII==true? false : true"
+                                            class="btn btn-primary float-right btn-icon btn-round"
+                                            (click)="openModal('moodleIII')" data-toggle="tooltip" data-placement="top"
+                                            title="Ver más">
+                                            <i class="fas fa-plus"></i>
+                                        </button> -->
+                                    <button *ngIf="descFlagMoodleIII==true? false : true"
+                                        class="btn btn-success btn-block" (click)="openModal('moodleIII')"
+                                        data-toggle="tooltip" data-placement="top">
+                                        <i class="fas fa-plus mr-1"></i> MÁS INFORMACIÓN AQUÍ
+                                    </button>
+                                    <button *ngIf="descFlagMoodleIII==true? true : false"
+                                        class="btn btn-primary float-right btn-icon btn-round"
+                                        (click)="OnClickDescriptionMoodleIII()" data-toggle="tooltip"
+                                        data-placement="top" title="Ver menos">
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+
+                                    <!-- <button *ngIf="descFlagMoodleIII==true? false : true"
+                                            class="btn btn-success btn-block" (click)="OnClickDescriptionMoodleIII()"
+                                            data-toggle="tooltip" data-placement="top" title="Ver más"><i
+                                                class="fas fa-plus mr-1"></i>MÁS INFORMACIÓN AQUÍ
+                                        </button>
+                                        <button *ngIf="descFlagMoodleIII==true? true : false"
+                                            class="btn btn-success btn-block" (click)="OnClickDescriptionMoodleIII()"
+                                            data-toggle="tooltip" data-placement="top" title="Ver menos"><i
+                                                class="fas fa-minus mr-1"></i>VER MENOS
+                                        </button> -->
+                                </div>
+                            </div>
+                            <div class="card-text">
+                                <strong class="text-justify">Objetivos</strong><br>
+                                Dar a conocer al personal Docente de la Universidad Nacional de San Agustín
+                                métodos y
+                                características avanzadas del uso y gestión de la plataforma virtual de
+                                enseñanza Moodle
+                                respecto a recursos y actividades avanzadas<br>
+                                <div *ngIf="descFlagMoodleIII==true? true : false">
+                                    <strong>Contenidos</strong><br>
+                                    - Grupos: Creación de grupos. Gestión de Grupos y Agrupamiento de
+                                    grupos.<br>
+                                    - Configuración de restricciones de acceso por grupos para Actividades y
+                                    Recursos.<br>
+                                    - Informe de Calificaciones: Configuraciones fundamentales. Informe de
+                                    Calificaciones.
+                                    Exportar Calificaciones.<br>
+                                    - Copia de Seguridad y Restauración<br>
+                                    - Glosario y Wikis<br>
+                                    - Base de Datos<br>
+                                    - Lecciones: Creación de Lecciones<br>
+                                    - Paquetes SCORM<br>
+                                </div>
+                            </div>
+
+                            <!--button class="btn btn-danger btn-block" (click)="onClicLinkMoodle('moodleIII')">
                                 INSCRIBETE AQUÍ</button-->
                             <!--button class="btn btn-primary btn-block">
                                 INSCRIPCIONES CERRADAS</button-->

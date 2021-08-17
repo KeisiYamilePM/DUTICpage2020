@@ -4,6 +4,9 @@ import { NgbAccordionConfig } from '@ng-bootstrap/ng-bootstrap';
 import * as Rellax from 'rellax';
 import { NewsService } from '../services/news.service';
 import * as AOS from 'aos';
+import { NgbdModalBasic } from './modal/modal.component';
+import { MatDialog } from '@angular/material/dialog';
+import Swal from 'sweetalert2'
 
 @Component({
     selector: 'app-components',
@@ -34,10 +37,16 @@ export class ComponentsComponent implements OnInit, OnDestroy {
     public isCollapsed2 = true;
 
     state_icon_primary = true;
-    
-    content:any[]=[];
 
-    constructor(private renderer: Renderer2, config: NgbAccordionConfig, private newsService: NewsService) {
+    content: any[] = [];
+
+    constructor(
+        private renderer: Renderer2,
+        config: NgbAccordionConfig,
+        private newsService: NewsService,
+        private dialog: MatDialog,
+
+    ) {
         config.closeOthers = true;
         config.type = 'info';
     }
@@ -58,7 +67,10 @@ export class ComponentsComponent implements OnInit, OnDestroy {
         body.classList.add('index-page');
 
         this.ongetNewsList();
+        //this.openModal();
+        //this.openInfoNew();
         AOS.init();
+
     }
     ngOnDestroy() {
         var navbar = document.getElementsByTagName('nav')[0];
@@ -66,7 +78,32 @@ export class ComponentsComponent implements OnInit, OnDestroy {
         var body = document.getElementsByTagName('body')[0];
         body.classList.remove('index-page');
     }
-    ongetNewsList(){
+    ongetNewsList() {
         this.content = this.newsService.getNews();
-      }
+    }
+
+    openModal() {
+        console.log('Este es el modelo: ')
+        const dialogRef = this.dialog.open(NgbdModalBasic, {
+            width: '70%',
+            height: '460px',
+        })
+    }
+    openInfoNew() {
+        Swal.fire({
+            html: `
+          <div class="row">
+            <div class="col-12 col-lg-12 col-md-12 col-sm-12">
+              <img src="assets/img/bicentenary/TARJETA_BICENTENARIO.jpg" class="card-img-top" alt="...">
+           
+              <a [routerLink]="['/bicentenario/paradero-cultural']" class="btn btn-primary">Ver más</a>
+              
+            </div>
+          </div>
+          `,
+            showConfirmButton: false,
+            width: 900,
+            showCloseButton: true,
+        })
+    }
 }

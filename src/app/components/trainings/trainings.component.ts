@@ -81,9 +81,9 @@ export class TrainingsComponent implements OnInit {
 
   onClicLinkMoodle(data) {
     if (data == 'moodleI') {
-      window.open('','_blank')
+      window.open('https://forms.gle/LPwoBWUxA84aHdXf6','_blank')
     } else if (data == 'moodleII') {
-      window.open('https://forms.gle/mFerqkw2kxDpGY1M6','_blank')
+      window.open('https://forms.gle/XweTHi6vT3uq2JuQ8','_blank')
     } else if (data == 'moodleIII') {
       window.open('https://docs.google.com/forms/d/e/1FAIpQLSdpRe3sR2NzJVqZ5XVshFdo1dF9_kIv80qb174psqn84fM_LA/viewform','_blank')
     } else if (data == 'hgoogle') {
@@ -92,7 +92,21 @@ export class TrainingsComponent implements OnInit {
       window.open('https://forms.gle/N3v1g2o3tusVDu6Q6','_blank')
     }
   }
-  
+
+  onClicLinkMoodleTurnB(data) {
+    if (data == 'moodleI') {
+      window.open('https://forms.gle/WPsKRXrLNSmYCAer7','_blank')
+    } else if (data == 'moodleII') {
+      window.open('https://forms.gle/cXos4p7yLfWd4pEw9','_blank')
+    } else if (data == 'moodleIII') {
+      window.open('https://docs.google.com/forms/d/e/1FAIpQLSdpRe3sR2NzJVqZ5XVshFdo1dF9_kIv80qb174psqn84fM_LA/viewform','_blank')
+    } else if (data == 'hgoogle') {
+      window.open('https://docs.google.com/forms/d/e/1FAIpQLSe2ZT89U0GK4YtGrINEO9Ku6NMSBtuRWABFnC8m9JPCZAU6bA/viewform','_blank')
+    } else if (data == 'tool') {
+      window.open('https://forms.gle/N3v1g2o3tusVDu6Q6','_blank')
+    }
+  }
+
   openModal(data: any) {
     console.log('Este es el modelo: ', data)
     const dialogRef = this.dialog.open(ContentsComponent, {

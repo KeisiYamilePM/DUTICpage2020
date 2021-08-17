@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
@@ -12,6 +12,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatTabsModule } from '@angular/material/tabs';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 
 import { ComponentsComponent } from './components.component';
 import { NgbdModalBasic } from './modal/modal.component';
@@ -30,6 +32,15 @@ import { NewsContentComponent } from './virtualteaching/news-content/news-conten
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import { NewsContentLearnComponent } from './virtuallearning/news-content-learn/news-content-learn.component';
 import { InnovaticComponent } from './innovatic/innovatic.component';
+import { CulturalsiteComponent } from './culturalsite/culturalsite.component';
+import { LibraryComponent } from './culturalsite/library/library.component';
+import { CuriositiesComponent } from './culturalsite/curiosities/curiosities.component';
+import { ActivitiesComponent } from './activities/activities.component';
+import { DigitalArtComponent } from './activities/digital-art/digital-art.component';
+import { GamesComponent } from './activities/games/games.component';
+import { KnowledgeComponent } from './activities/knowledge/knowledge.component';
+import { NoveltiesComponent } from './culturalsite/novelties/novelties.component';
+import { ProgramComponent } from './culturalsite/program/program.component';
 
 @NgModule({
     declarations: [
@@ -49,7 +60,20 @@ import { InnovaticComponent } from './innovatic/innovatic.component';
         NewsletterComponent,
         NewsContentLearnComponent,
         InnovaticComponent,
+        CulturalsiteComponent,
+        LibraryComponent,
+        CuriositiesComponent,
+        ActivitiesComponent,
+        DigitalArtComponent,
+        GamesComponent,
+        KnowledgeComponent,
+        NoveltiesComponent,
+        ProgramComponent,
     ],
+    schemas: [
+        CUSTOM_ELEMENTS_SCHEMA,
+        NO_ERRORS_SCHEMA,
+      ],
     imports: [
         CommonModule,
         FormsModule,
@@ -64,6 +88,8 @@ import { InnovaticComponent } from './innovatic/innovatic.component';
         MatProgressBarModule,
         MatTabsModule,
         MatDividerModule,
+        MatCardModule,
+        MatButtonModule,
         MatDialogModule,
     ],
     exports:[ ComponentsComponent ],
