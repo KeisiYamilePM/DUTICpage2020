@@ -13,7 +13,17 @@
     width: 100%;
     height: 100%;
     z-index: 0;
-    opacity: 0.3;
-    background: url("https://i.ibb.co/NZr6RfY/bicentenario-fondo.jpg") no-repeat center center;
+    opacity: 0.2;
+    background: url("assets/img/manos.jpg") no-repeat center center;
     background-size: cover;
+}
+.title-line{
+    border-top: 4px solid rgb(20, 30, 66);
+    padding-top: 7px;
+}
+.title-text{
+    background: rgb(20, 30, 66);
+    padding: 9px 18px 5px;
+    color: #fff;
+    border-radius: 0;
 }
