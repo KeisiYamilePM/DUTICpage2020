@@ -1,5 +1,5 @@
-<div style="padding-top: 80px; " class="wrapper">
-    <section class="inner-header bg-opacity main-font mat-elevation-z10"
+<div style="padding-top: 55px; " class="wrapper">
+    <!-- <section class="inner-header bg-opacity main-font mat-elevation-z10"
         style="padding-top: 6rem; padding-bottom: 6rem;">
         <div class="container">
             <div class="row">
@@ -11,5 +11,906 @@
     </section>
     <section>
         <p>CONTENIDO</p>
+        <iframe src="https://challonge.com/es/jq62kcv9/module" width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+    </section> -->
+
+    <br>
+    <section>
+        <ngb-carousel *ngIf="images">
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <a [routerLink]=""><img [src]="images[0]" alt="Random first slide" (click)="scroll(games)"></a>
+              </div>
+              <!-- <div class="carousel-caption">
+                <h3>10 seconds between slides...</h3>
+                <p>This carousel uses customized default values.</p>
+              </div> -->
+            </ng-template>
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <a [routerLink]=""><img [src]="images[1]" alt="Random second slide" (click)="scroll(competition)"></a>
+              </div>
+              <!-- <div class="carousel-caption">
+                <h3>No mouse events...</h3>
+                <p>This carousel doesn't pause or resume on mouse events</p>
+              </div> -->
+            </ng-template>
+          </ngb-carousel>
     </section>
+    <br><br><br>
+    <section #competition>
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-md-12 title-main">
+                    <mat class="mat-headline">JUEGOS</mat>
+                </div> -->
+
+                <div class="text-center col-md-12">
+                    <mat class="mat-display-1" style="color: rgb(20, 30, 63);"><b>CONCURSO</b></mat>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-md-12">
+                    <mat-tab-group mat-align-tabs="center" [color]="'primary'" [backgroundColor]="'primary'">
+                        <mat-tab>
+                            <ng-template mat-tab-label>
+                                <i class="now-ui-icons files_single-copy-04
+                                Emoticons mr-2"></i>
+                              FORMATO
+                            </ng-template>
+                            <br>
+                            <br>   
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">DEL EVENTO</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <br><br>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Este es un evento celebrado para promover la participación de la comunidad Agustina. 
+                                            Aprovechando el año significativo que estamos celebrando por el bicentenario de nuestro país 
+                                            y en las situaciones que nos encontramos por la pandemia del COVID, encontramos oportuno realizar 
+                                            actividades de competencia que muy aparte de entretener, ayuden al estudiante a estimular sus habilidades 
+                                            cognitivas y el aprendizaje a través de los juegos.
+                                            <br><br> 
+                                            Este evento involucra a la comunidad Agustina de todas las facultades, ya que son actividades que no están 
+                                            ligadas especialmente a una escuela.
+                                            
+                                            Con el desarrollo del evento deseamos promover la competencia sana y justa que se daba en las olimpiadas 
+                                            presenciales ya hace 2 años.
+
+                                        </mat>
+                                        
+                                    </div>
+    
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 20px;">
+                                        <img src="http://lee.fcsh.espol.edu.ec/sites/default/files/imagen%203.png" alt="Ajedrez en chess.com" class="mat-elevation-z8">
+                                    </div>
+                                </div>
+                                <br><br><br>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">REGLAMENTO</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <br><br>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            <ul>
+                                                <li>La participación esta restringida a solo estudiantes de la UNSA.</li>
+                                                <li>Todo participante debe haber estado matriculado en el perido 2021-A.</li>
+                                                <li>Se permite la inscripción en más de 1 juego.</li>
+                                                <li>Toda la información de los juegos y su jugabilidad se encuentran en la sección de <a [routerLink]="" (click)="scroll(games)"><b>juegos.</b></a></li>
+                                                <li>Los premios a los ganadores serán entregados en un máximo de una semana luego de haber culminado las olimpiadas.</li>
+                                                <li>
+                                                    Es responsabilidad del participante crear su usuario en la plataforma que se desarrollara el juego (ver la sección <a [routerLink]="" (click)="scroll(games)"><b>juegos.</b></a>), la sala de juego no permitirá 
+                                                    acceso a usuarios no registrados, el ingreso a la sala solo será para alumnos registrados en el formulario y con id del correo institucional, 
+                                                    es responsabilidad del participante ingresar a la sala que se le indique en el horario en la pestaña de "participantes".
+                                                </li>
+                                            </ul> 
+                                        </mat>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">CLASIFICACIÓN</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <br><br>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            De acuerdo al número de participantes y el tipo de juego se hará la clasificación y premiación.
+                                            <br><br>
+                                            <ul>
+                                                <li>
+                                                    <b>Ajedrez</b>
+                                                    <ul>
+                                                        <li>
+                                                            Se realizarán enfrentamientos entre 2 participantes con el formato BO1 (el mejor de un juego), el ganador de cada encuentro 
+                                                            seguirá avanzado en llave hasta llegar a la final.
+                                                        </li>
+
+                                                        <li>
+                                                            En la etapa final se considerará a los 2 finalistas para la premiación. El primer y segundo lugar se definirá con el resultado de este último partido.
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <b>Tetris - Programación - Trivia</b>
+                                                    <ul>
+                                                        <li>Se considerará grupos del total de participantes, la eliminación será directa solo se considerará los 2 primero lugares de cada grupo que pasaran a las siguientes etapas hasta llegar a la final.</li>
+                                                        <li>En la etapa final solo se considerará los 2 primeros lugares para su premiación. </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </mat>
+                                        
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">FASES DEL EVENTO</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            El evento se realizará en dos fases, una primera fase de rondas de eliminación y otra fase también de rondas de eliminación seguido de semifinales y final. La información de los participantes y los enfrentamientos estará disponible en la pestaña “participantes” y “torneo”. 
+                                            <br><br>
+                                            <b>La primera fase se realizará</b> el día 23 de agosto desde las 9:00hrs. la información de los participantes y su hora de participación estará en la pestaña de “participantes”, allí también encontrará la sala meet donde deberá ingresar 5 min antes de hora pactada.
+                                            <b>La segunda fase se realizará</b> el día 24 de agosto desde las 9:00hrs. De igual forma toda la información sobre su participación se encontrará en la pestaña de “participantes”, importante estar al tanto ya que se ira actualizando mientras se realicen las eliminaciones.
+
+                                        </mat>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">REGISTRO AL EVENTO</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Desde el siguiente formulario podrá registrarse en los juegos que desee participar.
+                                            Las inscripciones estarán abiertas desde el día miercoles 18 de agosto del 2021 a partir de las 9:00hrs. 
+                                            hasta el día viernes 20 de agosto del 2021 a las 12:00hrs.
+                                            <br><br>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnnJX8pUgv4n2usVYgMUulk-1n4QtTC6Lh-AWIyhDiC7jTIQ/viewform?usp=sf_link" target="_blank"><b>Formulario para registro al evento.</b></a>
+                                        </mat>
+                                    </div>
+
+                                    <div class="col-md-8 offset-md-2" style="padding-bottom: 20px;">
+                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnnJX8pUgv4n2usVYgMUulk-1n4QtTC6Lh-AWIyhDiC7jTIQ/viewform?usp=sf_link" target="_blank"><img src="https://tiempodenegocios.com/wp-content/uploads/2017/07/Google-Forms.jpg" alt="Ajedrez en chess.com" class="mat-elevation-z8"></a>
+                                    </div>
+                                </div>
+                                <br>
+                                
+                            </div>
+
+                          </mat-tab>
+                          <mat-tab>
+                            <ng-template mat-tab-label>
+                                <i class="now-ui-icons objects_diamond
+                                Emoticons mr-2"></i>
+                              PREMIOS
+                            </ng-template>
+                            <br><br>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">PREMIOS</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <br><br>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Los siguientes premios se entregarán a todos los ganadores de los distintos juegos, como se indica en las reglas, el plazo máximo de entrega será la semana siguiente a la culminación del evento.
+                                            <br><br>
+                                            <ul>
+                                                <li> Se otorgará Diplomas por participación.</li>
+                                                <li>A los dos primeros puestos se otorgará Certificado indicando puesto de clasificación.</li>
+                                                <li>Presencia en la web: los concursantes podrán ver una mención honrosa en la página web de DUTIC indicando cuál escuela y facultad obtuvieron mayor cantidad de ganadores.</li>
+                                                <li>El primer puesto de las categorías podrá acceder a Becas de alguna institución que pueda acceder DUTIC (ej. INFOUNSA o Centro de Idiomas).</li>
+                                                <li>El segundo puesto de las categorías podrá acceder a Semibecas de alguna institución que pueda acceder DUTIC (ej. INFOUNSA o Centro de Idiomas).</li>
+
+                                            </ul>
+
+                                        </mat>
+                                        
+                                    </div>
+
+                                    <div class="col-md-8 offset-md-2" style="padding-bottom: 20px;">
+                                        <img src="https://i.ibb.co/NZrqb3b/pngegg.png" alt="podio con 3 primeros puestos">
+                                    </div>
+
+                                </div>
+                            </div>
+                          </mat-tab>
+                          <mat-tab>
+                            <ng-template mat-tab-label>
+                                <i class="now-ui-icons sport_user-run
+                                Emoticons mr-2"></i>
+                            PARTICIPANTES
+                            </ng-template>
+                            <br><br>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">LISTA DE PARTICIPANTES</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <br><br>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Se ha definido 4 tablas para los juegos de ajedrez, tetris, programación y trivia respectivamente, cada tabla muestra la información de los concursantes registrados,
+                                            además de la hora y fecha de su participación y de la sala meet donde deberá ingresar 5 min. antes para validar e iniciar su participación.
+                                            
+                                        </mat>
+                                    <br><br>  
+                                    </div>
+                                    <div class="col-md-12" style="padding-bottom: 35px;">
+                                        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRgfLwoTPhy09MlyFShqVdgJ-zh_Q4c9GcQCbtmnq8yE0Ho-8E-6gn-H2Pycrf2McPvb6399tT5k23s/pubhtml?widget=true&amp;headers=false" width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>    
+                                    </div>
+                                    
+                                    <div class="col-md-12" style="padding-bottom: 35px;">
+                                        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRqaef1lwW1XnFs4HgS83mpRn2H2XKahLKB6BwdkvQGTMHKptmv1_jBaKOJLAHmSyuanDHgwAYziYBM/pubhtml?widget=true&amp;headers=false" width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>    
+                                    </div>
+
+                                    <div class="col-md-12" style="padding-bottom: 35px;">
+                                        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRdAPc-jBgd0NIUByMbHYmvex1-ASN1mphJysGVp-pAwZztW2R1dRK9qeztDzNMWeUsL6c5kyRPmBi9/pubhtml?widget=true&amp;headers=false" width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>    
+                                    </div>
+
+                                    <div class="col-md-12" style="padding-bottom: 35px;">
+                                        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP0k14mkLBCDN0Uo7YznUCFlxQkpuvconsLCI0VtL8l8gLseKJlJ2v8NNZMILG2Z4WVWW7YtH1fSuu/pubhtml?widget=true&amp;headers=false" width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>    
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                          </mat-tab>
+                          <mat-tab>
+                            <ng-template mat-tab-label>
+                                <i class="now-ui-icons design_vector
+                                Emoticons mr-2"></i>
+                            TORNEO
+                            </ng-template>
+                            <br><br>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">GRUPOS PARA EL TORNEO</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <br><br>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Se ha definido 4 grupos para el seguimiento y la clasificación en vivo de los concursantes en cada juego. En cada grupo se muestra los concursantes y ganadores de cada grupo o llave,
+                                            cada vez que inicia un grupo o llave se marca un recuadro azul alrededor.
+                                            
+                                        </mat>
+                                    <br><br>  
+                                    </div>
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">GRUPO AJEDREZ</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <div class="col-md-12" style="padding-bottom: 30px;">
+                                        <iframe src="https://challonge.com/es/n7m1pe4l/module" width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+                                    </div>
+                                    <br>
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">GRUPO TETRIS</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <div class="col-md-12" style="padding-bottom: 30px;">
+                                        <iframe src="https://challonge.com/es/m4kui04c/module" width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+                                    </div>
+                                    <br>
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">GRUPO PROGRAMACIÓN</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <div class="col-md-12" style="padding-bottom: 30px;">
+                                        <iframe src="https://challonge.com/es/i3o9kugg/module" width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+                                    </div>
+                                    <br>
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">GRUPO TRIVIA</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <div class="col-md-12" style="padding-bottom: 30px;">
+                                        <iframe src="https://challonge.com/es/ta0hz2bl/module" width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+                                    </div>
+                                    <br>
+                                </div>
+
+                            </div>
+                          </mat-tab>
+                          <mat-tab>
+                            <ng-template mat-tab-label>
+                                <i class="now-ui-icons sport_trophy
+                                Emoticons mr-2"></i>
+                            GANADORES
+                            </ng-template>
+                            <br><br>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <mat class="title-text mat-subheading-2">GANADORES DEL EVENTO</mat>
+                                            <div class="title-line"></div>
+                                        </div>
+                                        <br><br>
+                                        <div class="col-md-12 p-body">
+                                            <mat class="mat-body">
+                                                A continuación, se muestra a los ganadores de cada uno de los juegos, 
+                                                con una pequeña mención honrosa por su excelente participación y triunfo 
+                                                en el primer concurso de juegos virtuales organizados por DUTIC.  
+                                            </mat>
+                                        <br><br>  
+                                        </div>
+                                        
+                                        <div class="col-md-10 offset-md-1" style="padding-bottom: 30px;">
+                                            <img src="https://i.ibb.co/khXNBr2/men-ajedrez.jpg" alt="ganador ajedrez">
+                                        </div>
+
+                                       
+                                        <div class="col-md-10 offset-md-1" style="padding-bottom: 30px;">
+                                            <img src="https://i.ibb.co/qrFDMTy/men-tetris.jpg" alt="ganador ajedrez">
+                                        </div>
+
+                                       
+                                        <div class="col-md-10 offset-md-1" style="padding-bottom: 30px;">
+                                            <img src="https://i.ibb.co/Wyn187V/men-programacion.jpg" alt="ganador ajedrez">
+                                        </div>
+
+                                        
+                                        <div class="col-md-10 offset-md-1" style="padding-bottom: 30px;">
+                                            <img src="https://i.ibb.co/XS0GYfS/men-trivia.jpg" alt="ganador ajedrez">
+                                        </div>
+                                    </div>
+                                </div>
+                          </mat-tab>
+                      </mat-tab-group>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <br><br>
+    <div class="container">
+        <hr>
+    </div>
+    <br><br>
+    <section #games>
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-md-12 title-main">
+                    <mat class="mat-headline">JUEGOS</mat>
+                </div> -->
+
+                <div class="text-center col-md-12">
+                    <mat class="mat-display-1" style="color: rgb(20, 30, 66);"><b>JUEGOS</b></mat>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-md-12">
+                    <mat-tab-group mat-align-tabs="center" [color]="'primary'" [backgroundColor]="'primary'">
+                        <mat-tab>
+                            <ng-template mat-tab-label>
+                                <i class="now-ui-icons business_bulb-63
+                                Emoticons mr-2"></i>
+                              AJEDREZ
+                            </ng-template>
+                            <br>
+                            <br>   
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">¿QUÉ ES EL AJEDREZ?</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <br><br>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            El ajedrez es un juego entre dos contrincantes en el que cada uno dispone al inicio de 16 piezas móviles 
+                                            que se colocan sobre un tablero, dividido en 64 casillas o escaques. En su versión de competición, está 
+                                            considerado como un deporte​ aunque en la actualidad tiene claramente una dimensión social, educativa​ y terapéutica.
+                                            <br><br>
+                                            Este deporte, tal como se conoce actualmente, surgió en Europa durante el siglo XV,​ como evolución del juego persa shatranj, 
+                                            que a su vez surgió a partir del más antiguo chaturanga, que se practicaba en la India en el siglo VI. La tradición de organizar 
+                                            competiciones de ajedrez empezó en el siglo XVI. El primer campeonato oficial del mundo de ajedrez se organizó en 1886. 
+                                            El ajedrez está considerado por el Comité Olímpico Internacional como un deporte, y las competiciones internacionales están reguladas por la FIDE. 
+                                        </mat>
+                                        
+                                    </div>
+    
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 20px;">
+                                        <img src="https://assets.spartangeek.com/cc/jugar-ajedrez-gratis.png?mtime=20210121124555&focal=none" alt="Ajedrez en chess.com" class="mat-elevation-z8">
+                                    </div>
+                                </div>
+                                <br><br>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">BENEFICIOS DE PRACTICARLO</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            El ajedrez es uno de los pocos deporte tradicional que se puede seguir jugando durante el confinamiento, así que es importante promoverlo. Además de distraernos y divertirnos, tienen grandes beneficios para el desarrollo mental. 
+                                            Entre sus beneficios destacan, la mejora las habilidades de estrategia, matemáticas y memorísticas, las cuales ayudan a tomar decisiones más rápidas y precisas. Es un deporte ideal para todos los estudiantes.
+                                            <br><br>
+                                            Según estudios todos deben saber lo esencial en cuanto a este juego tradicional, es parte del individuo explotar su creatividad para obtener resultados positivos como lo es el pasar oponentes cada vez más competitivos y 
+                                            a través de estos tener experiencias como resultados al problema que implica el juego el cual es la competencia de estrategias.
+                                        </mat>
+                                    </div>
+                                </div>
+                                <br><br>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">JUGABILIDAD</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Para el torneo se utilizará la página <a href="https://chess.com/" target="_blank"><b>chess.com</b></a> el cual permite jugar ajedrez en línea con otros jugadores de cualquier parte del mundo. 
+                                            A continuación, se muestra una pequeña guía de como ingresar a la aplicación para poder jugar.
+                                        </mat>
+                                    </div>
+
+                                    <br>
+                                    <div class="text-center col-md-12">
+                                        <mat class="mat-title" style="color: rgb(20, 30, 66);"><b>CHESS.COM</b></mat>
+                                    </div>
+
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Chess.com es una página web dedicada completamente 
+                                            al ajedrez en todas sus formas y a los millones de apasionados ajedrecistas alrededor del mundo que aman a este deporte/arte.
+
+                                        </mat>
+                                    </div>
+
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 30px;">
+                                        <img src="https://i.ibb.co/0QJWKck/chess-main.jpg" alt="Chess" class="mat-elevation-z8">
+                                    </div>
+
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Como primer paso para participar en el concurso de ajedrez, el participante debe registrarse en la plataforma con su correo institucional.
+
+                                        </mat>
+                                    </div>
+
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 30px;">
+                                        <img src="https://i.ibb.co/GJWjVVN/chess-reg.jpg" alt="Chess" class="mat-elevation-z8">
+                                    </div>
+
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Ya en el evento, uno de los participantes iniciara una partida y compartirá el código al adversario y al encargado, todo esto se realizar a través de la sala programada de acuerdo a la fecha y hora.
+
+                                        </mat>
+                                    </div>
+
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 30px;">
+                                        <img src="https://i.ibb.co/85kcSkj/chess-enlace.jpg" alt="Chess" class="mat-elevation-z8">
+                                    </div>
+
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            El enfrentamiento será de 5 min. Terminado este periodo se dará como ganador aquel que tenga un mayor puntaje y/o piezas.
+
+                                        </mat>
+                                    </div>
+
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 30px;">
+                                        <img src="https://i.ibb.co/QrMLpzL/chess-jug.jpg" alt="Chess" class="mat-elevation-z8">
+                                    </div>
+                                </div>
+                            </div>
+
+                          </mat-tab>
+                          <mat-tab>
+                            <ng-template mat-tab-label>
+                                <i class="now-ui-icons tech_controller-modern
+                                Emoticons mr-2"></i>
+                              TETRIS
+                            </ng-template>
+                            <br><br>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">¿QUÉ ES TETRIS?</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <br><br>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Es un videojuego de lógica originalmente diseñado y programado por Alekséi Pázhitnov en la Unión Soviética. 
+                                            Fue lanzado el 6 de junio de 1984 que permite a los jugadores rotar bloques que caen estratégicamente para despejar niveles. Tetris se ha 
+                                            lanzado para prácticamente todas las computadoras y sistemas de juegos electrónicos, y a menudo es venerado como un clásico. Aunque se han 
+                                            generado numerosas secuelas, los juegos de Tetris casi siempre tienen la misma mecánica de juego: los bloques de diferentes formas caen a diferentes 
+                                            velocidades y, a medida que los bloques descienden, el jugador debe rotarlos y organizarlos para crear una fila horizontal ininterrumpida en la pantalla. 
+                                            Cuando el jugador forma una o más filas sólidas, las filas completadas desaparecen. El objetivo del juego es evitar que los bloques se apilen en la parte superior 
+                                            de la pantalla durante el mayor tiempo posible. 
+
+                                        </mat>
+                                        
+                                    </div>
+    
+                                    <div class="col-md-8 offset-md-2" style="padding-bottom: 20px;">
+                                        <img src="https://i.ibb.co/k5djvV9/tetris.png" alt="Tetris" width="90%">
+                                    </div>
+                                </div>
+                                <br><br>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">BENEFICIOS DE PRACTICARLO</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Un estudio publicado en la revista BMC Research Notes dejó de manifiesto que el Tetris tiene el poder de mejorar el desarrollo de 
+                                            las áreas del cerebro que están vinculadas tanto al pensamiento crítico como a la coordinación. Tanto es así que hay investigaciones 
+                                            que demuestran que las personas que juegan a menudo a unir piezas con este juego tienen la oportunidad de agilizar sus pensamientos y 
+                                            de encontrar solución a los problemas con más rapidez que aquellas que no incluyen ningún pasatiempo similar en sus vidas.
+                                            <br><br>
+                                            Otro de los beneficios de jugar al Tetris reside en el poder de esta actividad para estimular la memoria. Al recurrir a este pasatiempo 
+                                            los usuarios deben colocar las piezas que van apareciendo mientras observan cuál será la siguiente forma y la retienen en su cabeza para 
+                                            saber cómo la colocarán cuando empiece a deslizarse por la pantalla.
+                                            La gran mayoría de las personas que dedican una pequeña parte de su tiempo libre a jugar a pasatiempos como el Tetris tienen una gran facilidad 
+                                            para ordenar los objetos que forman parte de su hogar u oficina y a conseguir que todos encajen a la perfección en pequeños espacios, 
+                                            ya que este es también el objetivo del Tetris.
+
+
+                                        </mat>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">JUGABILIDAD</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Para el torneo se utilizará la página <a href="https://tetr.io/" target="_blank"><b>tetrio</b></a> el cual permite jugar Tetris en línea con otros jugadores de cualquier parte del mundo. 
+                                            A continuación, se muestra una pequeña guía de como ingresar a la aplicación para poder jugar.
+                                        </mat>
+                                    </div>
+
+                                    <br>
+                                    <div class="text-center col-md-12">
+                                        <mat class="mat-title" style="color: rgb(20, 30, 66);"><b>TETR.IO</b></mat>
+                                    </div>
+
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            TETR.IO es un apilador en línea moderno y familiar. Juega contra amigos y personas de todo el mundo, o reclama un lugar en las tablas de clasificación.
+
+                                        </mat>
+                                    </div>
+
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 30px;">
+                                        <img src="https://i.ibb.co/rs7Lsjb/tetris-main.jpg" alt="Chess" class="mat-elevation-z8">
+                                    </div>
+
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Como primer paso para participar en el concurso de tetris, el participante debe registrarse en la plataforma con su correo institucional. 
+                                            Para ello primero debe ingresar su correo sin el arroba y dominio como se ve en la imágen.
+            
+
+                                        </mat>
+                                    </div>
+
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 30px;">
+                                        <img src="https://i.ibb.co/sPWJJk6/tetris-log.jpg" alt="Chess" class="mat-elevation-z8">
+                                    </div>
+
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Al dar "Join" se le mostrará una nueva ventana donde deberá dar click en el boton "Register" y proceder a registrarse con su correo institucional.
+                                        
+                                        </mat>
+                                    </div>
+
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 30px;">
+                                        <img src="https://i.ibb.co/vwwkqrn/tetris-prereg.jpg" alt="Chess" class="mat-elevation-z8">
+                                    </div>
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 30px;">
+                                        <img src="https://i.ibb.co/D9BksyT/tetris-reg.jpg" alt="Chess" class="mat-elevation-z8">
+                                    </div>
+
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Ya en el evento, se brindará un código para ingresar a la sala de acuerdo a la fecha y hora que se asignará, la partida empezará al mismo tiempo para todos los participantes.
+
+                                        </mat>
+                                    </div>
+
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 30px;">
+                                        <img src="https://i.ibb.co/5xcH8CM/tetris-jug.jpg" alt="Chess" class="mat-elevation-z8">
+                                    </div>
+
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Las partidas seran en grupos de 6. Las partidas suelen durar entre 5-7min. Los dos últimos en quedar en pie continuarán a la siguiente ronda, según la tabla de posiciones final.
+                                        </mat>
+                                    </div>
+
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 30px;">
+                                        <img src="https://i.ibb.co/7252QBF/tetris-jug-2.jpg" alt="Chess" class="mat-elevation-z8">
+                                    </div>
+
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 30px;">
+                                        <img src="https://i.ibb.co/DYMXkBh/tetris-resul.jpg" alt="Chess" class="mat-elevation-z8">
+                                    </div>
+                                </div>
+                            </div>
+                          </mat-tab>
+                          <mat-tab>
+                            <ng-template mat-tab-label>
+                                <i class="now-ui-icons objects_globe
+                                Emoticons mr-2"></i>
+                            PROGRAMACIÓN
+                            </ng-template>
+                            <br><br>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">¿QUÉ ES LA PROGRAMACIÓN?</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <br><br>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            En el ámbito de la informática, la programación refiere a la acción de crear programas o aplicaciones a 
+                                            través del desarrollo de un código fuente, que se basa en el conjunto de instrucciones que sigue el ordenador para 
+                                            ejecutar un programa.
+                                            La programación es lo que permite que un ordenador funcione y realice las tareas que el usuario solicita.
+                                            <br><br>
+                                            El principal objetivo de la programación es definir instrucciones para que un ordenador pueda ejecutar sistemas, 
+                                            programas y aplicaciones que sean eficaces, accesibles y amigables para el usuario.
+                                            Los programas informáticos suelen seguir algoritmos, que son el conjunto de instrucciones organizadas 
+                                            y relacionadas entre sí que permiten trabajar al software de los equipos de computación.
+                                        </mat>
+                                        
+                                    </div>
+    
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 20px;">
+                                        <img src="https://dev-res.thumbr.io/libraries/82/12/41/lib/1452348363337_1.jpg?size=854x493s&ext=jpg" alt="Ajedrez en chess.com" class="mat-elevation-z8">
+                                    </div>
+                                </div>
+                                <br><br>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">BENEFICIOS DE PRACTICARLO</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Con la programación mejoramos nuestra capacidad de pensamiento computacional. Muy constantemente estamos enfrentados a problemas que debemos resolver. Y no, 
+                                            un problema no siempre es malo, un problema es un desafío que debemos resolver de una manera creativa y eficiente. 
+                                            Es decir, que la mente del programador no se obstaculiza con un problema, sino que busca diversas maneras de resolverlo. 
+                                            Al enfrentar problemas en el mundo del código, es un hecho de que se aprende a resolver problemas sin mucho esfuerzo también en la vida diaria.
+                                        </mat>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">JUGABILIDAD</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Para el torneo se utilizará la página <a href="https://code.org/" target="_blank"><b>code.org</b></a> el cual permite crear actividades de programación que serán resueltas por los participantes. 
+                                            A continuación, se muestra una pequeña guía de como ingresar a la aplicación para poder jugar.
+                                        </mat>
+                                    </div>
+                                    <br>
+                                    <div class="text-center col-md-12">
+                                        <mat class="mat-title" style="color: rgb(20, 30, 66);"><b>CODE ORG</b></mat>
+                                    </div>
+
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Code.org es una iniciativa para aprender a programar desde niños con bloques en que estos se pueden registrar directamente o con un profesor.
+                                            En nuestro caso lo usaremos como un juego de concurso siendo el objetivo principal aprender a programar, y dando al primer puesto un premio más que bueno.
+                                            sin más que añadir el grupo de olimpiadas de juegos esperemos que les guste nuestra propuesta y sobre todo que se diviertan.
+
+                                        </mat>
+                                    </div>
+
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 30px;">
+                                        <img src="https://i.ibb.co/wQfZKWf/codeorg-inicio.png" alt="Code org" class="mat-elevation-z8">
+                                    </div>
+
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Como primer paso debemos crearnos una cuenta con la cual podremos integrarnos a un grupo donde se competirá con otros estudiantes.
+                                        </mat>
+                                    </div>
+
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 30px;">
+                                        <img src="https://i.ibb.co/WzmFdzn/code-registro.png" alt="Code org" class="mat-elevation-z8">
+                                    </div>
+
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Luego de crearte tu cuenta el profesor o en este caso nosotros como administradores crearemos cursos para que puedas entrar y jugar. 
+                                            Vas al apartado de estudiantes e ingresas.
+
+                                        </mat>
+                                    </div>
+
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 30px;">
+                                        <img src="https://i.ibb.co/nzWzsyT/code-list.png" alt="Code org" class="mat-elevation-z8">
+                                    </div>
+
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Una vez dentro podrán observar la siguiente página. Podrás ver como te da indicaciones a seguir, en la parte de arriba te da un primer nivel donde lo único que tienes que hacer es seguir las instrucciones, en este caso mover el bloque dentro del bloque "establecer".
+                                        </mat>
+                                    </div>
+
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 30px;">
+                                        <img src="https://i.ibb.co/qsFp3cG/code-jugar.png" alt="Code org" class="mat-elevation-z8">
+                                    </div>
+
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 30px;">
+                                        <img src="https://i.ibb.co/GH6rZhd/code-jugar-2.png" alt="Code org" class="mat-elevation-z8">
+                                    </div>
+
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Por último puede ejecutar el programa yendo a la parte izquierda y presionar “ejecutar”.
+                                            Realizada esta última parte saldrá un recuadro de nivel 
+                                            completado y así es como se irá pasando de nivel en nivel, hasta donde se le indique el día del evento.
+
+                                        </mat>
+                                    </div>
+
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 30px;">
+                                        <img src="https://i.ibb.co/JFF2C2d/code-fin.png" alt="Code org" class="mat-elevation-z8">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                          </mat-tab>
+                          <mat-tab>
+                            <ng-template mat-tab-label>
+                                <i class="now-ui-icons objects_spaceship
+                                Emoticons mr-2"></i>
+                            TRIVIA
+                            </ng-template>
+                            <br><br>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">¿QUÉ ES UNA TRIVIA?</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <br><br>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            se conoce popularmente como trivia a aquel juego, generalmente con modalidad de concurso, 
+                                            en el que se enfrentan varios participantes y que consiste en la formulación de preguntas 
+                                            respecto de puntuales temas de interés como ser: las artes, las ciencias, la historia, el deporte, 
+                                            entre otros, a las cuales se les añadirán una serie de opciones como respuesta, en tanto, los concursantes 
+                                            deberán escoger entre una de ellas a la cual consideran es la correcta. 
+                                            De acuerdo a la definición de la trivia es una buena técnica que traslada el juego competitivo al ámbito educativo de conocimientos.
+
+                                        </mat>
+                                        
+                                    </div>
+    
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 20px;">
+                                        <img src="https://api.web.gamepix.com/assets/img/600/340/banner/trivia-quiz.png" alt="Ajedrez en chess.com" class="mat-elevation-z8" width="140%">
+                                    </div>
+                                </div>
+                                <br><br>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">BENEFICIOS DE PRACTICARLO</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            La trivia es un juego competitivo que abarca todos los temas actuales e históricos, 
+                                            en el cual cada participante demuestra y adquiere conocimientos de la variedad de temas.
+                                            Ayudará a mejorar nuestras habilidades de razonamiento, rapidez e incentiva la competitividad.
+
+                                        </mat>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <mat class="title-text mat-subheading-2">JUGABILIDAD</mat>
+                                        <div class="title-line"></div>
+                                    </div>
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Para el torneo se utilizará la página <a href="https://quizizz.com " target="_blank"><b>quizizz</b></a> el cual permite jugar trivias en línea con otros jugadores de cualquier parte del mundo. 
+                                            A continuación, se muestra una pequeña guía de como ingresar a la aplicación para poder jugar.
+                                        </mat>
+                                    </div>
+
+                                    <br>
+                                    <div class="text-center col-md-12">
+                                        <mat class="mat-title" style="color: rgb(20, 30, 66);"><b>QUIZIZZ</b></mat>
+                                    </div>
+
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Quizizz es una aplicación para crear preguntas personalizadas de manera lúdica y divertida, 
+                                            donde el docente genera las preguntas en la web y le proporciona al alumnado la página web y el código del cuestionario 
+                                            para responder desde un ordenador o dispositivo móvil. Es compatible con todos los dispositivos y ordenadores.
+
+                                        </mat>
+                                    </div>
+
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 30px;">
+                                        <img src="https://i.ibb.co/cv5hYny/quizizz-ini.jpg" alt="Quizizz" class="mat-elevation-z8">
+                                    </div>
+
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Como primer paso para participar en el concurso de trivia, el participante debe registrarse en la plataforma con su correo institucional.
+
+                                        </mat>
+                                    </div>
+
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 30px;">
+                                        <img src="https://i.ibb.co/Gkmdhs4/quizizz-regi.jpg" alt="Quizizz" class="mat-elevation-z8">
+                                    </div>
+
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            Ya en el evento, se brindará un código para ingresar a la sala de acuerdo a la fecha y hora que se asignará, la trivia empezará al mismo tiempo para todos los participantes.
+
+                                        </mat>
+                                    </div>
+
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 30px;">
+                                        <img src="https://i.ibb.co/gzndvJy/quizizz-cod.jpg" alt="Quizizz" class="mat-elevation-z8">
+                                    </div>
+
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            La prueba consta de 30 preguntas en el ámbito deportivo (futbol, básquet y otros deportes, nacional e internacional), cada pregunta tiene un tiempo para responderla dependiendo a su dificultad este tiempo vario de 5 a 10 segundos, las preguntas son para marcar y rellenar espacios en blanco.
+
+                                        </mat>
+                                    </div>
+
+                                    <div class="col-md-10 offset-md-1" style="padding-bottom: 30px;">
+                                        <img src="https://i.ibb.co/H2pW99P/quizizz-jug.jpg" alt="Quizizz" class="mat-elevation-z8">
+                                    </div>
+
+                                    <div class="col-md-12 p-body">
+                                        <mat class="mat-body">
+                                            La plataforma da el puntaje correspondiente de acuerdo a las preguntas acertadas y el tiempo en que las respondió.
+
+                                        </mat>
+                                    </div>
+                                </div>
+                            </div>
+                          </mat-tab>
+                      </mat-tab-group>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    
 </div>

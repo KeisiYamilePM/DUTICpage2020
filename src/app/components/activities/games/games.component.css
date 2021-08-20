@@ -16,3 +16,102 @@
     background: url("https://i.ibb.co/NZr6RfY/bicentenario-fondo.jpg") no-repeat center center;
     background-size: cover;
 }
+
+
+
+    /* ::ng-deep.carousel-item {
+      transition: opacity 0.7s ease !important;
+      position: absolute !important;
+      display: block !important;
+      opacity: 0;
+    }
+  
+    ::ng-deep.carousel-item.active {
+      position: relative !important;
+      opacity: 1;
+    } */
+
+
+    ::ng-deep.carousel-item {
+        
+        display: block !important;
+        z-index: 0;
+        position: absolute;
+        transform: translateX(100%);
+        opacity: 0;
+        transition:all  0.4s;
+        visibility: hidden;
+        filter: brightness(93%);
+      }
+      
+      ::ng-deep.carousel-item.active {
+        position: relative;
+        transform: translateX(0);
+        visibility: visible ;
+        opacity: 1;
+      }
+
+      .carousel {
+        /* background: rgba(0, 0, 0, 0.7); */
+        background:  rgb(20, 30, 66);
+    }
+
+    ::ng-deep.carousel-control-prev:hover{
+        background: rgba(0, 0, 0, 0.7);
+    }
+    ::ng-deep.carousel-control-next:hover{
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+      /* ::ng-deep .carousel-item {
+        display: block !important;
+        position: absolute;
+        transform: translateY(100%);
+        opacity: 0;
+        transition:all  1s;
+      }
+      
+      ::ng-deep .carousel-item.active {
+        position: relative;
+        transform: translateY(0);
+        opacity: 1;
+        top: 0;
+      } */
+
+      ::ng-deep.mat-tab-group.mat-background-primary .mat-tab-header, .mat-tab-group.mat-background-primary .mat-tab-links, .mat-tab-group.mat-background-primary .mat-tab-header-pagination, .mat-tab-nav-bar.mat-background-primary .mat-tab-header, .mat-tab-nav-bar.mat-background-primary .mat-tab-links, .mat-tab-nav-bar.mat-background-primary .mat-tab-header-pagination {
+        background-color: rgb(20 30 66);
+      }
+
+      .title-line{
+        border-top: 4px solid rgb(20, 30, 66);
+        padding-top: 7px;
+    }
+    .title-text{
+        background: rgb(20, 30, 66);
+        padding: 9px 18px 5px;
+        color: #fff;
+        border-radius: 0;
+    
+    }
+
+    .title-main{
+        background: rgb(153, 154, 153);
+        border-radius: 0;
+        color: #fff;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .content-text{
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .p-body{
+        padding-top: 20px;
+        padding-bottom: 35px;
+        text-align: justify;
+    }
+
+    
+      
