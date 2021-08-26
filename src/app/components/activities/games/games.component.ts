@@ -10,7 +10,7 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 })
 export class GamesComponent implements OnInit {
 
-  images = ['https://i.ibb.co/18p43Nx/banner-olimpiadas-v1.jpg','https://i.ibb.co/7gy4Jpj/Olimpiadas.jpg'];
+  images = ['https://i.ibb.co/18p43Nx/banner-olimpiadas-v1.jpg','https://i.ibb.co/3RrR502/Olimpiadas-2.jpg'];
 
   constructor(config: NgbCarouselConfig) {
     // customize default values of carousels used by this component tree
