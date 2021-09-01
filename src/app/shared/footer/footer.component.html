@@ -1,10 +1,40 @@
-<footer class="footer" data-background-color="black">
+<footer class="footer" style="background-color: black; color: white;">
     <div class="container">
-        <nav>
+        <div class="row" style="font-size: 0.8571em;">
+            <div class="col-lg-6 col-md-6">
+                <h6>CONTÁCTANOS</h6>
+                <p>Central Telefónica: 939084541<br>
+                    Número de WhatsApp (Ingenierías): 939083870<br>
+                    Número de WhatsApp (Biomédicas): 939084706<br>
+                    Número de WhatsApp (Sociales): 939074882</p>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                
+                <p>Email: soportedutic@unsa.edu.pe<br>
+                Dirección: Francisco Velasco 129, Parque Industrial Arequipa-Perú<br>
+                Redes sociales:</p>
+                <a target="_blank" href="https://twitter.com/DuticUnsa"
+                    class="btn btn-neutral btn-icon btn-twitter btn-round mr-2" rel="tooltip" title="Follow us">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/dutic.unsa.7"
+                    class="btn btn-neutral btn-icon btn-facebook btn-round" rel="tooltip" title="Like us">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <nav style="font-size: 0.8571em;">
             <ul>
                 <li>
                     <a [routerLink]="['virtualTeaching/subjectDesign']">
                         Docencia virtual
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['virtualLearning']">
+                        Aprendizaje virtual
                     </a>
                 </li>
                 <li>
