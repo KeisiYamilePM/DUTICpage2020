@@ -1,14 +1,1 @@
-.col-md-3 svg{
-	height: 150px;
-    width: 150px;
-    stroke:none;
-}
-.col-md-3:hover path, .col-lg-6:hover path{
-    animation: animate-init 0.5s forwards;
-}
 
-@keyframes animate-init{
-  0% { opacity: 1;}
-  50% {  opacity: 0.4;}
-  100% { opacity: 1;}       
-}
