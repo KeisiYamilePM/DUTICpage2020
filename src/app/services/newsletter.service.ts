@@ -7,6 +7,13 @@ export class NewsletterService {
 
   private content: any[] = [
     {
+      name: "INFORMATIC - Agt, Set",
+      id: "6",
+      category: "General",
+      file: "assets/doc/lineamientos.pdf",
+      date: "Mar 15,2021",
+    },
+    {
       name: "INFORMATIC - Julio",
       id: "5",
       category: "General",
