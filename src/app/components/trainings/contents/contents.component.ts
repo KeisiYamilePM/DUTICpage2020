@@ -44,8 +44,9 @@ export class ContentsComponent implements OnInit {
       this.getHGoogle();
     } else if (this.data == 'tools') {
       this.getTools();
+    } else if (this.data == 'exeL') {
+      this.getExeL();
     }
-
   }
 
   getMoodleI() {
@@ -115,6 +116,23 @@ export class ContentsComponent implements OnInit {
   getTools() {
     this.isLoad = true
     this.trainingsService.getTools().subscribe((data: any) => {
+      /*       console.log('moodlei pruebaaaaaaa: ', data[0].theme)
+       */
+      this.dataContent = data
+      this.dataSource = new MatTableDataSource(data[0].theme)
+
+      this.dataSource.paginator = this.paginator
+      this.dataSource.sort = this.sort
+      this.isLoad = false
+      this.lenghtData = data.length
+    }, err => {
+      this.isLoad = false
+    })
+  }
+
+  getExeL() {
+    this.isLoad = true
+    this.trainingsService.getExeL().subscribe((data: any) => {
       /*       console.log('moodlei pruebaaaaaaa: ', data[0].theme)
        */
       this.dataContent = data

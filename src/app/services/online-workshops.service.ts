@@ -9,6 +9,17 @@ export class OnlineWorkshopsService {
 
   private videoconferences: any[] = [
     {
+      name: "Coaching docente: un nuevo modelo para la interacción con los alumnos",
+      speaker: "Ana María Quintanilla",
+      nationality: "México",
+      category: "Educación",
+      organizedBy: "Pontificia Universidad Católica del Perú",
+      date: "29/10/2021",
+      hour: "",
+      state: true,
+      link: "https://zoom.us/meeting/register/tJUvfuuuqD8uG9dZuVGmgaWVQnO6q-Zvg4Mw",
+    },
+    {
       name: "Como encontrar la mejor revista para publicar un artículo científico",
       speaker: "Dra. Thais Vick",
       nationality: "Perú",
