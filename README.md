@@ -4,6 +4,6 @@
 <<<<<<< HEAD
 # DUTICpage2020
 =======
-# DUTICpage2020 Hola
+# DUTICpage2020
 >>>>>>> master
 >>>>>>> franklin
