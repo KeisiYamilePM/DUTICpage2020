@@ -17,6 +17,7 @@ export class TrainingsComponent implements OnInit {
   descFlagMoodleIII: boolean;
   descFlagHGoogle: boolean;
   descFlagTools: boolean;
+  descFlagExeL: boolean;
 
   videos: Video[] = []
   content: any[] = [];
@@ -78,6 +79,12 @@ export class TrainingsComponent implements OnInit {
     else
       this.descFlagTools = true
   }
+  OnClickDescriptionExeL(){
+    if (this.descFlagExeL == true)
+      this.descFlagExeL = false
+    else
+      this.descFlagExeL = true
+  }
 
   onClicLinkMoodle(data) {
     if (data == 'moodleI') {
@@ -90,6 +97,8 @@ export class TrainingsComponent implements OnInit {
       window.open('https://forms.gle/X4jUEUXzJhyRbtvd9','_blank')
     } else if (data == 'tool') {
       window.open('','_blank')
+    } else if (data == 'exeL') {
+      window.open('https://forms.gle/3Yx5NKGn6GvwQg5y7','_blank')
     }
   }
 
@@ -104,6 +113,8 @@ export class TrainingsComponent implements OnInit {
       window.open('','_blank')
     } else if (data == 'tool') {
       window.open('','_blank')
+    } else if (data == 'exeL') {
+      window.open('https://forms.gle/3Yx5NKGn6GvwQg5y7','_blank')
     }
   }
 

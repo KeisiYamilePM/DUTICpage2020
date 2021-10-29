@@ -18,33 +18,33 @@ export class TrainingsService {
       theme: [
         {
           nameTheme: "Actividades y recursos: Acceso a la Plataforma, Descripción de la Interfaz de Usuario de Moodle, Configuración de Perfil de Usuario: Subir Foto y agregar. Descripción. Cambiar Contraseña. Administración Básica de un curso: Ajustes del Curso, Usuarios Matriculados",
-          date: "17/08/2021",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         },
         {
           nameTheme: "Agregar Recursos: Archivos, URL, Etiquetas",
-          date: "18/08/2021",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         },
         {
           nameTheme: "Agregar Actividades: Tareas. Configuración General de una tarea. Revisar, Calificar y Retroalimentar una tarea. Foros. Agregando un foro al aula virtual. Tipos de Foros. Configuración.",
-          date: "19/08/2021",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         }, {
           nameTheme: "Taller de desarrollo e implementación I",
-          date: "20/08/2021",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         }, {
           nameTheme: "Taller de desarrollo e implementación II",
-          date: "23/08/2021",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
@@ -65,35 +65,35 @@ export class TrainingsService {
       theme: [
         {
           nameTheme: "Banco de Preguntas: Creación y configuración General, Tipos de preguntas más comunes, Crear un banco de preguntas.",
-          date: "17/08/2021",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         },
         {
           nameTheme: "Cuestionarios: Crear y configurar Cuestionarios, Agregar preguntas del banco de preguntas, Previsualización de Cuestionarios.",
-          date: "18/08/2021",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         },
         {
           nameTheme: "Evaluación por pares: Creación y configuración de Talleres",
-          date: "19/08/2021",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         },
         {
           nameTheme: "Taller de desarrollo e implementación I",
-          date: "20/08/2021",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         },
         {
           nameTheme: "Taller de desarrollo e implementación II",
-          date: "23/08/2021",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
@@ -114,33 +114,33 @@ export class TrainingsService {
       theme: [
         {
           nameTheme: "Gestion del aula: Grupos: Creación de grupos. Gestión de Grupos y Agrupamiento de grupos. Configuración de restricciones de acceso por grupos para Actividades y Recursos. Informe de Calificaciones: Configuraciones fundamentales. Informe de Calificaciones. Exportar Calificaciones. Copia de Seguridad y Restauración",
-          date: "26/08/2021",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         },
         {
           nameTheme: "Actividades Avanzadas: Creación y configuración de Glosario de términos. Creación y configuración de Wikis. Creación y configuración de Base de Datos ",
-          date: "27/08/2021",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         },
         {
           nameTheme: "Actividades Avanzadas: Lecciones: Creación y configuración de Lecciones. eXe Learning: Gestor de contenidos digitales educativos. Crear Paquetes SCORM desde eXe Learning ",
-          date: "31/08/2021",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         },{
           nameTheme: "Taller de desarrollo e implementación I",
-          date: "01/08/2021",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         }, {
           nameTheme: "Taller de desarrollo e implementación II",
-          date: "02/08/2021",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
@@ -152,7 +152,7 @@ export class TrainingsService {
   private hgoogle: any[] = [
     {
       name: "Aplicaciones Google para la Educación",
-      turn1: "Horario primer turno: 9:00 hrs. a 11:00 hrs.",
+      turn1: "Horario segundo turno: 17:00 hrs. a 19:00 hrs.",
       turn2: "",
       coment: "",
       sesion: 5,
@@ -161,35 +161,35 @@ export class TrainingsService {
       theme: [
         {
           nameTheme: "Generalidades y acceso a Google Apps desde cuenta institucional.",
-          date: "26/08/2021",
+          date: "04/10/2021",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         },
         {
           nameTheme: "APLICACIONES GOOGLE: Documentos y hoja de cálculo.",
-          date: "27/08/2021",
+          date: "05/10/2021",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         },
         {
           nameTheme: "APLICACIONES GOOGLE: Presentaciones y formularios.",
-          date: "31/08/2021",
+          date: "06/10/2021",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         },
         {
           nameTheme: "APLICACIONES GOOGLE: Google Calendar y Hangouts Meet",
-          date: "01/08/2021",
+          date: "07/10/2021",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         },
         {
           nameTheme: "YouTube y Jamboard",
-          date: "02/08/2021",
+          date: "08/10/2021",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
@@ -201,9 +201,9 @@ export class TrainingsService {
   private tools: any[] = [
     {
       name: "Herramientas Digitales para la docencia",
-      turn1: "Horario primer turno: 11:00 hrs. a 13:00 hrs.",
+      turn1: "",
       turn2: "Horario segundo turno: 17:00 hrs. a 19:00 hrs.",
-      coment: "*Considerar que la sesión en ambos horarios es la misma",
+      coment: "",
       sesion: 5,
       des: "Inicio del curso: ",
       silabo: "assets/img/trainings/SILABO HERRAMIENTAS DIGITALES PARA LA DOCENCIA 2021_c.pdf",
@@ -247,6 +247,55 @@ export class TrainingsService {
     },
   ];
 
+  private exeL: any[] = [
+    {
+      name: "Creación de contenidos educativos digitales",
+      turn1: "",
+      turn2: "Horario segundo turno: 15:00 hrs. a 17:00 hrs.",
+      coment: "",
+      sesion: 5,
+      des: "Inicio del curso: 25 de Octubre",
+      silabo: "assets/img/trainings/Sílabo_Creacion_Contenidos_Educativos_Digitales_c.pdf",
+      theme: [
+        {
+          nameTheme: "¿Qué es exe Learning? / Proceso de Instalación / Descripción del entorno de trabajo / Estilos de presentación",
+          date: "25/10/2021",
+          hour: "10am-12pm / 3pm-5pm",
+          state: true,
+          link: "",
+        },
+        {
+          nameTheme: "iDevices",
+          date: "26/10/2021",
+          hour: "10am-12pm / 3pm-5pm",
+          state: true,
+          link: "",
+        },
+        {
+          nameTheme: "iDevices de presentación de información no textual (imágenes y páginas web)",
+          date: "27/10/2021",
+          hour: "10am-12pm / 3pm-5pm",
+          state: true,
+          link: "",
+        },
+        {
+          nameTheme: "iDevices de actividades no interactivas",
+          date: "28/10/2021",
+          hour: "10am-12pm / 3pm-5pm",
+          state: true,
+          link: "",
+        },
+        {
+          nameTheme: "iDevices de actividades interactivas / Formatos de Exportación",
+          date: "29/10/2021",
+          hour: "10am-12pm / 3pm-5pm",
+          state: true,
+          link: "",
+        },
+      ]
+    },
+  ];
+
   constructor() { }
 
   getMoodleI(): Observable<any[]> {
@@ -267,6 +316,10 @@ export class TrainingsService {
 
   getTools(): Observable<any[]> {
     return of(this.tools);
+  }
+
+  getExeL(): Observable<any[]> {
+    return of(this.exeL);
   }
 
 }
