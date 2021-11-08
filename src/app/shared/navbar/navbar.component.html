@@ -36,14 +36,14 @@
       <li class="nav-item">
         <a class="nav-link text-center" style="color:#ffffff;" [routerLink]="['virtualLearning']">
           <i class="now-ui-icons education_hat mr-1"></i>
-          <span class="badge badge-success mr-2">Nuevo</span><br>
+          <!--span class="badge badge-success mr-2">Nuevo</span--><br>
           <p>Aprendizaje virtual</p>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-center" [routerLink]="['videoconferences']" style="color:#ffffff;">
           <i class="now-ui-icons objects_globe mr-1"></i>
-          <span class="badge badge-success ml-2">Nuevo</span><br>
+          <!--span class="badge badge-success ml-2">Nuevo</span--><br>
           Videoconferencias
         </a>
       </li>
@@ -55,13 +55,14 @@
         </a>
         <div ngbDropdownMenu routerLinkActive="active">
           <a class="dropdown-item" [routerLink]="['virtualTeaching/trainings']">Capacitaciones
-            <span
-              class="badge badge-success ml-2">N</span>
           </a>
-          <a class="dropdown-item" [routerLink]="['videoandresources/teachers']">Docentes
+          <a class="dropdown-item" [routerLink]="['videoandresources/teachers']">Docentes<span
+            class="badge badge-success ml-2">N</span>
             <!--span class="badge badge-success ml-2">Nuevo</span-->
           </a>
-          <a class="dropdown-item" [routerLink]="['videoandresources/students']">Estudiantes</a>
+          <a class="dropdown-item" [routerLink]="['videoandresources/students']">Estudiantes<span
+            class="badge badge-success ml-2">N</span>
+          </a>
           <!--span class="badge badge-success ml-2">Nuevo</span-->
           <a class="dropdown-item" [routerLink]="['videoandresources/googletools']">Herramientas
             <!--span class="badge badge-success ml-2">Nuevo</span-->
