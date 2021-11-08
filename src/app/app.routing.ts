@@ -29,6 +29,12 @@ import { KnowledgeComponent } from './components/activities/knowledge/knowledge.
 import { NoveltiesComponent } from './components/culturalsite/novelties/novelties.component';
 import { ProgramComponent } from './components/culturalsite/program/program.component';
 
+import { EcositeComponent } from './components/ecosite/ecosite.component';
+import { EdutipsComponent } from './components/ecosite/edutips/edutips.component';
+import { DefinitionComponent } from './components/ecosite/definition/definition.component';
+import { EnewsComponent } from './components/ecosite/enews/enews.component';
+import { EresearchComponent } from './components/ecosite/eresearch/eresearch.component';
+
 
 const routes: Routes =[
     { path: '', redirectTo: 'homepage', pathMatch: 'full' },
@@ -64,6 +70,11 @@ const routes: Routes =[
     { path: 'dutic-activities/digital-art', component: DigitalArtComponent},
     { path: 'dutic-activities/games', component: GamesComponent},
     { path: 'dutic-activities/knowledge', component: KnowledgeComponent},
+    { path: 'eco-eficiencia', component: EcositeComponent},
+    { path: 'ecoeficiencia/definicion', component: EdutipsComponent},
+    { path: 'ecoeficiencia/ecodutips', component: DefinitionComponent},
+    { path: 'ecoeficiencia/noticias', component: EnewsComponent},
+    { path: 'ecoeficiencia/investigaciones', component: EresearchComponent},
 
 ];
 

@@ -41,6 +41,11 @@ import { GamesComponent } from './activities/games/games.component';
 import { KnowledgeComponent } from './activities/knowledge/knowledge.component';
 import { NoveltiesComponent } from './culturalsite/novelties/novelties.component';
 import { ProgramComponent } from './culturalsite/program/program.component';
+import { EcositeComponent } from './ecosite/ecosite.component';
+import { EnewsComponent } from './ecosite/enews/enews.component';
+import { EresearchComponent } from './ecosite/eresearch/eresearch.component';
+import { EdutipsComponent } from './ecosite/edutips/edutips.component';
+import { DefinitionComponent } from './ecosite/definition/definition.component';
 
 @NgModule({
     declarations: [
@@ -69,6 +74,11 @@ import { ProgramComponent } from './culturalsite/program/program.component';
         KnowledgeComponent,
         NoveltiesComponent,
         ProgramComponent,
+        EcositeComponent,
+        EnewsComponent,
+        EresearchComponent,
+        EdutipsComponent,
+        DefinitionComponent,
     ],
     schemas: [
         CUSTOM_ELEMENTS_SCHEMA,
