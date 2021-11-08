@@ -20,9 +20,8 @@ export class YoutubeService {
 
   //private playlistTeacherManagement2020 = "PLqtSFRmgPpYHVUDvKoDXu7z5CupI_UKyK";
   private playlistTeacherManagement = "PLqtSFRmgPpYF1SWFrcdYaVzE8QlEDMn1F";
-
-  private playlistTeacherDesign = "PLqtSFRmgPpYGDUdl_5tXPqZXAhEogn2Ld";
-  private playlistTeacherEvaluation = "PLqtSFRmgPpYHav3atEVw1C7ev1e-GhLZq";
+  private playlistTeacherDesign = "PLqtSFRmgPpYEXh0dJia4QZC7hLlN_OUVu";
+  private playlistTeacherEvaluation = "PLqtSFRmgPpYE3cHexMFoo3b_80138Bh-1";
 
   private playlistTools = "PLqtSFRmgPpYHsDEOTtLmottSvjN315r4j";
 
