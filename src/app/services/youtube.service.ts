@@ -12,7 +12,7 @@ export class YoutubeService {
 
   private youtubeURL = "https://www.googleapis.com/youtube/v3"; 
   private apikey = "AIzaSyBZjOjowZu_rBbgTjAgLqT39cd8CMdVirU";
-  private playlisteGoogle = "PLqtSFRmgPpYGM6jyjddP1-rtpZkwnPyRf";
+  
   //private playlistStudent2020 = "PLqtSFRmgPpYHdIFtSiLRtMMSDtc3_Tg7b";
   private playlistStudent = "PLqtSFRmgPpYEUaoEjb7egx1XSaR6WilrM";
 
@@ -23,6 +23,7 @@ export class YoutubeService {
   private playlistTeacherDesign = "PLqtSFRmgPpYEXh0dJia4QZC7hLlN_OUVu";
   private playlistTeacherEvaluation = "PLqtSFRmgPpYE3cHexMFoo3b_80138Bh-1";
 
+  private playlisteGoogle = "PLqtSFRmgPpYEtfaYVD___9s2Ff7l1HjdM";
   private playlistTools = "PLqtSFRmgPpYHsDEOTtLmottSvjN315r4j";
 
   private playlistworkshop = "PLqtSFRmgPpYEQsU82qIClMGMuTRULDv8B";
@@ -37,7 +38,7 @@ export class YoutubeService {
       .set('part','snippet')
       .set('key', this.apikey)
       .set('playlistId', this.playlisteGoogle)
-      .set('maxResults','10')
+      .set('maxResults','20')
 
     return this.http.get<YoutubeResponse>(url, {params})
       .pipe(
@@ -55,7 +56,7 @@ export class YoutubeService {
       .set('part','snippet')
       .set('key', this.apikey)
       .set('playlistId', this.playlistStudent)
-      .set('maxResults','10')
+      .set('maxResults','20')
 
     return this.http.get<YoutubeResponse>(url, {params})
       .pipe(
