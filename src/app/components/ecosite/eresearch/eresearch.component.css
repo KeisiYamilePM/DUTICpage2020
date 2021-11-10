@@ -1,0 +1,38 @@
+.color-a{
+    color: rgb(20, 30, 66);
+}
+
+.color-b{
+    color: rgb(153, 153, 153);
+}
+
+.color-rp{
+    color: rgb(237, 28, 40);
+}
+
+.color-gray{
+    color: gray;
+}
+
+.color-plo{
+    color: #888888;
+}
+
+.color-azul{
+    color: #141E42;
+}
+
+
+
+.title-line{
+    
+    border-top: 4px solid #009B00;
+    padding-top: 10px;
+}
+.title-text{
+    background: #009B00;
+    padding: 9px 18px 4px;
+    color: #fff;
+    border-radius: 0;
+
+}
