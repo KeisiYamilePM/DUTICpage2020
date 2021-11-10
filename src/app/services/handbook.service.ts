@@ -37,6 +37,7 @@ export class HandbookService {
   ]
 
   private handbookTeacher: any[] = [
+    //GESTION DEL AULA
     {
       videoId: "E0wyTT2Ngpg",
       handbookId: "assets/doc/TUTORIAL_Ingresando a la plataforma_c.pdf",
@@ -46,56 +47,62 @@ export class HandbookService {
       handbookId: "assets/doc/TUTORIAL_Ingresando a mi perfil en el Aula virtual_c.pdf",
     },
     {
-      videoId: "eI6UQniaoco",
-      handbookId: "assets/doc/teacher/2020_Tutotial_Docente_Cambiando_Contraseña_v3Cinco.pdf",
+      videoId: "JjDG5un8uEE", //video 2020
+      handbookId: "assets/doc/teacher/gestion/Creacion_De_Grupos_Y_Agrupamientos_Docentes.03082021_c.pdf",
     },
     {
-      videoId: "JjDG5un8uEE",
-      handbookId: "assets/doc/teacher/2020_Tutorial_Grupos_v3Cinco.pdf",
+      videoId: "jOv_xsQbxwo",
+      handbookId: "assets/doc/teacher/gestion/Copia_de_seguridad.02082021_c.pdf",
     },
     {
-      videoId: "KxBRvdusU38",
-      handbookId: "assets/doc/teacher/2020_Tutotial_CatedraCompartidaRegistrandoProfesores_v3Cinco.pdf",
+      videoId: "rtUkSL75_KM",
+      handbookId: "assets/doc/teacher/gestion/Restaurar_un_curso.02082021_c.pdf",
     },
     {
-      videoId: "l6xC0ag7rsM",
-      handbookId: "assets/doc/teacher/2020_Tutorial_SubiendoArchivos_v3Cinco.pdf",
+      videoId: "AzuZURmY7Ws",
+      handbookId: "assets/doc/teacher/gestion/Gestion_de_Usuarios.30072021_c.pdf",
     },
     {
-      videoId: "hh8EZazzzzs", //recurso url
-      handbookId: "no",
+      videoId: "FcjbzXMSXO8",
+      handbookId: "assets/doc/teacher/gestion/Recuperar_archivos_eliminados.09082021_c.pdf",
+    },
+    // DISEÑO DEL AULA
+    {
+      videoId: "l6xC0ag7rsM", //video2020
+      handbookId: "assets/doc/teacher/diseño/Guia_Subiendo_Archivos.30072021_c.pdf",
     },
     {
-      videoId: "ouCI7TFVOAg",
-      handbookId: "assets/doc/teacher/2020_Tutorial_AgregandoTemas_v3Cinco.pdf",
+      videoId: "Ygju5coGXwk", //video2020
+      handbookId: "assets/doc/teacher/diseño/Guia_Agregando_Videos.22072021_c.pdf",
     },
     {
-      videoId: "Ygju5coGXwk",
-      handbookId: "assets/doc/teacher/2020_Tutorial_AgregandoVideos_v3Cinco.pdf",
+      videoId: "hlhxWd6auSg",
+      handbookId: "assets/doc/teacher/diseño/Creando_carpeta.05082021_c.pdf",
     },
     {
-      videoId: "bjQBQfdrWPo",
-      handbookId: "assets/doc/teacher/2020_Tutotial_CreandoForo_v3Cinco.pdf",
+      videoId: "kfmjnNd0mTA",
+      handbookId: "assets/doc/teacher/diseño/Foro_Docentes.22072021_c.pdf",
     },
     {
-      videoId: "xy0oFzuDOds", //Creación y Configuración de Banco de Preguntas_v3.5
-      handbookId: "assets/doc/teacher/2020_Tutorial_CreandoCuestionarioyBancodePreguntas_v3Cinco.pdf",
+      videoId: "3v4t5abGEAI",
+      handbookId: "assets/doc/teacher/diseño/Gestion_Temas.23072021_c.pdf",
+    },
+    // EVALUACION DEL AULA
+    {
+      videoId: "sTNHxKkRjaE", 
+      handbookId: "assets/doc/teacher/evaluacion/Categorias_en_Banco_de_Preguntas.05082021_c.pdf",
     },
     {
-      videoId: "jMB5Ye6zltE", //Creación y Configuración de Cuestionario en el Aula Virtual_v3.5
-      handbookId: "assets/doc/teacher/2020_Tutorial_CreandoCuestionarioyBancodePreguntas_v3Cinco.pdf",
+      videoId: "zRTB1Ozu2iw", 
+      handbookId: "assets/doc/teacher/evaluacion/CreaciónYEdiciónDeBancoDePreguntas_Docentes.30082021_c.pdf",
     },
     {
-      videoId: "JK3GOMyRZug",
-      handbookId: "assets/doc/teacher/2020_Tutorial_ReporteCalificador_v3Cinco.pdf",
+      videoId: "-QhQzDK1uyY", 
+      handbookId: "assets/doc/teacher/evaluacion/Cuestionario_Docentes.24072021_c.pdf",
     },
     {
-      videoId: "0oc6n3BojQc", //creando una tarea
-      handbookId: "no",
-    },
-    {
-      videoId: "LsXd7o2lkmc", //Cuestionario y Banco de Preguntas para Docentes
-      handbookId: "assets/doc/teacher/2020_Tutorial_CreandoCuestionarioyBancodePreguntas_v3Cinco.pdf",
+      videoId: "SdfnQaqwWME", 
+      handbookId: "assets/doc/teacher/evaluacion/Guia_Reporte_Calificador.26072021_c.pdf",
     },
     {
       videoId: "7wXTT5dBL_I", //actividad taller en moodle parte 1
@@ -121,24 +128,20 @@ export class HandbookService {
       handbookId: "assets/doc/google/2020_Google_Drive.pdf",
     },
     {
-      videoId: "",
-      handbookId: "assets/doc/google/2020_TutorialDocumentosGoogle.pdf",
-    },
-    {
-      videoId: "Kv-dyUBV0_k", //presentaciones de google
+      videoId: "iQ4ixFy1eek", //presentaciones de google
       handbookId: "assets/doc/google/2020_TutorialPresentacionesGoogle_v3.5_compressed.pdf",
     },
     {
-      videoId: "9pQbolFaRa8", //formulario de google
+      videoId: "ApoaUpCmci8", //formulario de google
       handbookId: "assets/doc/google/FORMULARIO DE GOOGLE_c.pdf",
     },
     {
-      videoId: "EwrebA2ZBa4",
-      handbookId: "assets/doc/google/2020_TutorialDocumentosGoogle_v3.5_c.pdf",
+      videoId: "zuQ79rDtSsM", //formulario de google
+      handbookId: "assets/doc/google/FORMULARIO DE GOOGLE_c.pdf",
     },
     {
-      videoId: "yniA6nDYIPo",
-      handbookId: "assets/doc/google/CALENDARIO DE GOOGLE_c.pdf",
+      videoId: "s0fevpLrDvM",
+      handbookId: "assets/doc/google/2020_TutorialDocumentosGoogle_v3.5_c.pdf",
     },
     {
       videoId: "t6lRyo2nOIo",

@@ -79,16 +79,16 @@ export class TeachersComponent implements OnInit {
   }
 
   verify(videoId):boolean{
-    console.log("seraaaa", videoId)
+    //console.log("seraaaa", videoId)
     this.contentV = this.handbookService.gethandbookTeacher()
     for (let index = 0; index < this.contentV.length; index++) {
       if(videoId == this.contentV[index].videoId){
         if(this.contentV[index].handbookId == "no"){
-          console.log("false")
+          //console.log("false")
           return false
         }
         else {           
-          console.log("true")
+          //console.log("true")
           return true
         }
       }
