@@ -46,6 +46,8 @@ import { EnewsComponent } from './ecosite/enews/enews.component';
 import { EresearchComponent } from './ecosite/eresearch/eresearch.component';
 import { EdutipsComponent } from './ecosite/edutips/edutips.component';
 import { DefinitionComponent } from './ecosite/definition/definition.component';
+import { AniversarioComponent } from './culturalsite/aniversario/aniversario.component';
+import { AvancesComponent } from './culturalsite/aniversario/avances/avances.component';
 
 @NgModule({
     declarations: [
@@ -79,6 +81,8 @@ import { DefinitionComponent } from './ecosite/definition/definition.component';
         EresearchComponent,
         EdutipsComponent,
         DefinitionComponent,
+        AniversarioComponent,
+        AvancesComponent,
     ],
     schemas: [
         CUSTOM_ELEMENTS_SCHEMA,

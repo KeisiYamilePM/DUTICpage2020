@@ -28,6 +28,8 @@ import { GamesComponent } from './components/activities/games/games.component';
 import { KnowledgeComponent } from './components/activities/knowledge/knowledge.component';
 import { NoveltiesComponent } from './components/culturalsite/novelties/novelties.component';
 import { ProgramComponent } from './components/culturalsite/program/program.component';
+import { AniversarioComponent } from './components/culturalsite/aniversario/aniversario.component';
+import { AvancesComponent } from './components/culturalsite/aniversario/avances/avances.component';
 
 import { EcositeComponent } from './components/ecosite/ecosite.component';
 import { EdutipsComponent } from './components/ecosite/edutips/edutips.component';
@@ -65,6 +67,8 @@ const routes: Routes =[
     { path: 'paradero-cultural/biblioteca', component: LibraryComponent},
     { path: 'paradero-cultural/novelties', component: NoveltiesComponent},
     { path: 'paradero-cultural/activities', component: ProgramComponent},
+    { path: 'paradero-cultural/aniversario', component: AniversarioComponent},
+    { path: 'paradero-cultural/aniversario/avances', component: AvancesComponent},
 
     { path: 'dutic-activities', component: ActivitiesComponent},
     { path: 'dutic-activities/digital-art', component: DigitalArtComponent},
