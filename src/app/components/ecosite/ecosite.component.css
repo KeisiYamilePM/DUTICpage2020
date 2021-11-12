@@ -242,6 +242,10 @@
     border-top: 1px solid #DEDEDE;
 }
 
+.a-pag:hover{
+    text-decoration: none;
+}
+
 
 
 

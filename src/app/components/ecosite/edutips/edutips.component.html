@@ -1,6 +1,22 @@
 <br><br><br><br><br><br>
 <section>
     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="content-route"> 
+                    <a class="a-route" [routerLink]="['/ecoeficiencia']">DUTIC Ecoeficiente</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="7.639" height="12.388" viewBox="0 0 7.639 12.388">
+                        <path id="path" d="M342.645,875l6.194,6.194-6.194,6.194-1.445-1.445,4.749-4.749-4.749-4.749Z" transform="translate(-341.2 -875)" fill="#888"/>
+                    </svg>   
+                    &nbsp;&nbsp;&nbsp;&nbsp;Eco-dutips
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<br><br>
+<section>
+    <div class="container">
       <div class="row">
           <div class="col-md-12">
               <mat class="title-text mat-title">ECO-DUTIPS</mat>
@@ -21,7 +37,7 @@
                 Lavado de trastes:  Procuremos hacerlo mientras están frescos, en orden y los cubiertos en conjunto, así desperdiciamos menos agua.
               </p>
               <p class="content-source">
-                Por <a href="https://www.unsa.edu.pe/ouresponsabilidadsocial/" target="_blank"><b>OURS</b></a> | 05 de noviembre, 2021
+                Por <a class="a-route" href="https://www.unsa.edu.pe/ouresponsabilidadsocial/" target="_blank"><b>OURS</b></a> | 05 de noviembre, 2021
               </p>
           </div>
           <div class="col-md-6">
@@ -48,11 +64,37 @@
                 Por lo cual hacemos un llamado a tener una buena alimentación, procuremos preparar alimentos acordes a nuestras necesidades en cantidad, asimismo a ser cuidadosos con los residuos que generemos, como el caso de restos de comida y aceite, este último considerado residuo peligroso.
             </p>
             <p class="content-source">
-                Por <a href="https://www.unsa.edu.pe/ouresponsabilidadsocial/" target="_blank"><b>OURS</b></a> | 05 de noviembre, 2021
+                Por <a class="a-route" href="https://www.unsa.edu.pe/ouresponsabilidadsocial/" target="_blank"><b>OURS</b></a> | 05 de noviembre, 2021
             </p>
         </div>
     </div>
-  
+    
   </div>
+  </section>
+  <br><br>
+  <section>
+      <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+                <hr class="pagination-hr">
+            </div>
+            <div class="col-md-6 text-left">
+                <a class="a-pag" [routerLink]="['/ecoeficiencia/definicion']">
+                    <p class="content-source">Tema anterior</p>
+                    <p class="content-pagination">¿Qué es la ecoeficiencia?</p>
+                </a>
+            </div>
+            <div class="col-md-6 text-right">
+                <a class="a-pag"[routerLink]="['/ecoeficiencia/noticias']">
+                    <p class="content-source">Tema siguiente</p>
+                    <p class="content-pagination">Noticias ecoeficientes</p>
+                </a>
+            </div>
+            <div class="col-md-12">
+                <hr class="pagination-hr">
+            </div>
+          </div>
+
+      </div>
   </section>
   <br><br><br>
