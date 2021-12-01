@@ -10,8 +10,8 @@ export class TrainingsService {
     {
       name: "AULAS VIRTUALES I – Moodle Básico",
       turn1: "Horario primer turno: 9:00 hrs. a 11:00 hrs.",
-      turn2: "Horario segundo turno: 15:00 hrs. a 17:00 hrs.",
-      coment: "*Considerar que la sesión en ambos horarios es la misma",
+      turn2: "",
+      coment: "",
       sesion: 3,
       des: "Inicio del curso: 17 de Agosto",
       silabo: "assets/img/trainings/Sílabo_Moodle_Básico.pdf",
@@ -56,9 +56,9 @@ export class TrainingsService {
   private moodleII: any[] = [
     {
       name: "AULAS VIRTUALES II – Moodle Intermedio",
-      turn1: "Horario primer turno: 11:00 hrs. a 13:00 hrs.",
-      turn2: "Horario segundo turno: 17:00 hrs. a 19:00 hrs.",
-      coment: "*Considerar que la sesión en ambos horarios es la misma",
+      turn1: "Horario primer turno: 9:00 hrs. a 11:00 hrs.",
+      turn2: "",
+      coment: "",
       sesion: 3,
       des: "Inicio del curso: 17 de Agosto",
       silabo: "assets/img/trainings/Sílabo_Moodle_Intermedio.pdf",
@@ -106,8 +106,8 @@ export class TrainingsService {
     {
       name: "AULAS VIRTUALES III – Moodle Avanzado",
       turn1: "Horario primer turno: 11:00 hrs. a 13:00 hrs.",
-      turn2: "Horario segundo turno: 15:00 hrs. a 17:00 hrs.",
-      coment: "*Considerar que la sesión en ambos horarios es la misma",
+      turn2: "",
+      coment: "",
       sesion: 3,
       des: "Inicio del curso: 26 Agosto",
       silabo: "assets/img/trainings/SILABO_MOODLE_AVANZADO_2021.pdf",
