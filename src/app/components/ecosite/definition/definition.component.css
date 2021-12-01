@@ -47,10 +47,17 @@
    
     color: #009B00 ;
     font-family: AvertaStd-Bold;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .content-main p{
+   
+    color: rgb(20, 30, 66) ;
+    font-family: AvertaStd-Light;
+    font-size: 16px;
+}
+
+.content-main ul, .content-main li{
    
     color: rgb(20, 30, 66) ;
     font-family: AvertaStd-Light;
