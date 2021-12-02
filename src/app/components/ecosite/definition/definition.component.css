@@ -1,0 +1,103 @@
+.content-route{
+
+    color: #888888 ;
+    font-family: AvertaStd-Light;
+    font-size: 14px;
+    margin-bottom: 6px;
+
+}
+
+.a-route, .a-route:hover{
+    color: #888888 ;
+    text-decoration: none;
+}
+
+.content-menu{
+    border: 1px solid #DEDEDE;
+    padding-top: 22px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 22px;
+}
+
+.content-title{
+    color: white;
+    background-color: #009B00 ;
+    font-family: AvertaStd-Bold;
+    font-size: 20px;
+    padding-left: 12px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    margin-bottom: 25px;
+}
+
+.content-des h2{
+    color: rgb(20, 30, 66);
+    font-size: 16px;
+    font-family: AvertaStd-Light;
+    margin-bottom: 0px;
+}
+
+.content-des hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.content-main h3{
+   
+    color: #009B00 ;
+    font-family: AvertaStd-Bold;
+    font-size: 22px;
+}
+
+.content-main p{
+   
+    color: rgb(20, 30, 66) ;
+    font-family: AvertaStd-Light;
+    font-size: 16px;
+}
+
+.content-main ul, .content-main li{
+   
+    color: rgb(20, 30, 66) ;
+    font-family: AvertaStd-Light;
+    font-size: 16px;
+}
+
+.content-source{
+
+    color: #888888 ;
+    font-family: AvertaStd-Light;
+    font-size: 15px;
+    margin-bottom: 6px;
+
+}
+
+.content-source{
+
+    color: #888888 ;
+    font-family: AvertaStd-Light;
+    font-size: 15px;
+    margin-bottom: 6px;
+
+}
+
+.content-pagination{
+
+    color: rgb(20, 30, 66) ;
+    font-family: AvertaStd-Bold;
+    font-size: 16px;
+    margin-bottom: 0px;
+
+}
+
+.pagination-hr{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 0;
+    border-top: 1px solid #DEDEDE;
+}
+
+.a-pag:hover{
+    text-decoration: none;
+}

@@ -74,9 +74,9 @@ const routes: Routes =[
     { path: 'dutic-activities/digital-art', component: DigitalArtComponent},
     { path: 'dutic-activities/games', component: GamesComponent},
     { path: 'dutic-activities/knowledge', component: KnowledgeComponent},
-    { path: 'eco-eficiencia', component: EcositeComponent},
-    { path: 'ecoeficiencia/definicion', component: EdutipsComponent},
-    { path: 'ecoeficiencia/ecodutips', component: DefinitionComponent},
+    { path: 'ecoeficiencia', component: EcositeComponent},
+    { path: 'ecoeficiencia/definicion', component: DefinitionComponent},
+    { path: 'ecoeficiencia/ecodutips', component: EdutipsComponent},
     { path: 'ecoeficiencia/noticias', component: EnewsComponent},
     { path: 'ecoeficiencia/investigaciones', component: EresearchComponent},
 

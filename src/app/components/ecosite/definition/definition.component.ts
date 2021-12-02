@@ -9,6 +9,9 @@ export class DefinitionComponent implements OnInit {
 
   constructor() { }
 
+  scroll(el: HTMLElement) {
+    el.scrollIntoView({behavior: 'smooth', block: "start" , inline: 'nearest'});
+}
   ngOnInit(): void {
   }
 

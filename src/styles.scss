@@ -148,3 +148,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#465767', end
   }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@font-face {
+  font-family: "AvertaStd-Bold";
+  src: local("AvertaStd-Bold"), url(./assets/fonts/AvertaStd-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "AvertaStd";
+  src: local("AvertaStd"), url(./assets/fonts/AvertaStd-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "AvertaStd-Semibold";
+  src: local("AvertaStd-Semibold"), url(./assets/fonts/AvertaStd-Semibold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "AvertaStd-Light";
+  src: local("AvertaStd-Light"), url(./assets/fonts/AvertaStd-Light.ttf) format("truetype");
+}
+

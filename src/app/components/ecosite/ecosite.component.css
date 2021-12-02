@@ -1,0 +1,251 @@
+.color-a{
+    color: rgb(20, 30, 66);
+}
+
+.color-b{
+    color: #888888;
+}
+
+.color-c{
+    color:  #009B00;
+}
+
+/* .eco{
+    position: relative;
+    z-index: 1;
+}
+
+.eco .bg{
+    background-image: url('https://i.ibb.co/c8s2PDw/eco-banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center; 
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    border-radius: 34px;
+    font-family: "AvertaStd";
+
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('https://i.ibb.co/c8s2PDw/eco-banner.jpg') center center;
+    opacity: .4;
+    width: 100%;
+    height: 100%;
+} */
+
+.banner-font-b{
+    font-size: 18px;
+    font-family: "AvertaStd-Semibold";
+}
+
+.banner-font-a{
+    font-size: 2.7em;
+    font-family: "AvertaStd-Bold";
+}
+
+.bg-image {
+    position: relative;
+    z-index: 1;
+    text-shadow: 0px 3px 6px #b3b3b3;
+}
+
+.bg-image:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('https://i.ibb.co/c8s2PDw/eco-banner.jpg') center center;
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+    border-radius: 34px;
+    box-shadow: 0px 3px 6px #c5c5c5;
+}
+
+
+.bg-image-eco {
+    position: relative;
+    z-index: 1;
+    font-family: "AvertaStd-Bold";
+    text-shadow: 2px 3px 8px black;
+}
+
+.bg-image-eco:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('https://i.ibb.co/34FZsRh/ecoeficiencia.jpg') center center;
+    opacity: .85;
+    width: 100%;
+    height: 100%;
+    border-radius: 27px;
+    box-shadow: 0px 3px 10px #c5c5c5;
+}
+
+.bg-image-eco:hover{
+    
+    text-decoration: none;
+    transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+    opacity: .85;
+}
+
+
+.bg-image-tips {
+    position: relative;
+    z-index: 1;
+    font-family: "AvertaStd-Bold";
+    text-shadow: 2px 3px 8px black;
+}
+
+.bg-image-tips:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('https://i.ibb.co/qnrHd5M/ecodutips.jpg') center center;
+    opacity: .85;
+    width: 100%;
+    height: 100%;
+    border-radius: 27px;
+    box-shadow: 0px 3px 10px #c5c5c5;
+}
+
+.bg-image-tips:hover{
+    
+    text-decoration: none;
+    transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+    opacity: .85;
+}
+
+
+.bg-image-news {
+    position: relative;
+    z-index: 1;
+    font-family: "AvertaStd-Bold";
+    text-shadow: 2px 2px 8px black;
+}
+
+.bg-image-news:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('https://i.ibb.co/y8GysdQ/eco-noticias.jpg') center center;
+    opacity: .85;
+    width: 100%;
+    height: 100%;
+    border-radius: 27px;
+    box-shadow: 0px 3px 10px #c5c5c5;
+}
+
+.bg-image-news:hover{
+    
+    text-decoration: none;
+    transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+    opacity: .85;
+}
+
+.bg-image-res {
+    position: relative;
+    z-index: 1;
+    font-family: "AvertaStd-Bold";
+    text-shadow: 2px 3px 8px black;
+}
+
+.bg-image-res:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('https://i.ibb.co/rp4M7zp/eco-investigaciones.jpg') center center;
+    opacity: .85;
+    width: 100%;
+    height: 100%;
+    border-radius: 27px;
+    box-shadow: 0px 3px 10px #c5c5c5;
+}
+
+.bg-image-res:hover{
+    
+    text-decoration: none;
+    transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+    opacity: .85;
+}
+
+
+.title-line{
+    border-top: 4px solid #009B00;
+    padding-top: 7px;
+}
+.title-text{
+    background: #009B00;
+    padding: 9px 18px 4px;
+    color: #fff;
+    border-radius: 0;
+    font-family: "AvertaStd-Bold";
+
+}
+
+.content-text{
+
+    color: rgb(20, 30, 66) ;
+    font-family: AvertaStd-Light;
+    font-size: 16px;
+
+}
+
+.content-title{
+
+    color: #009B00 ;
+    font-family: AvertaStd-Bold;
+    font-size: 18px;
+
+}
+.content-source{
+
+    color: #888888 ;
+    font-family: AvertaStd-Light;
+    font-size: 15px;
+    margin-bottom: 6px;
+
+}
+
+.color-hr{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 0;
+    border-top: 1px solid #DEDEDE;
+}
+
+.a-pag:hover{
+    text-decoration: none;
+}
+
+
+
+
