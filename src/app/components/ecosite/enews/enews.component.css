@@ -1,38 +1,77 @@
-.color-a{
-    color: rgb(20, 30, 66);
-}
-
-.color-b{
-    color: rgb(153, 153, 153);
-}
-
-.color-rp{
-    color: rgb(237, 28, 40);
-}
-
-.color-gray{
-    color: gray;
-}
-
-.color-plo{
-    color: #888888;
-}
-
-.color-azul{
-    color: #141E42;
-}
-
-
-
 .title-line{
-    
     border-top: 4px solid #009B00;
-    padding-top: 10px;
+    padding-top: 7px;
 }
 .title-text{
     background: #009B00;
     padding: 9px 18px 4px;
     color: #fff;
     border-radius: 0;
+    font-family: "AvertaStd-Bold";
 
+}
+
+.content-text{
+
+    color: rgb(20, 30, 66) ;
+    font-family: AvertaStd-Light;
+    font-size: 16px;
+
+}
+
+.content-title{
+
+    color: #009B00 ;
+    font-family: AvertaStd-Bold;
+    font-size: 19px;
+
+}
+.content-source{
+
+    color: #888888 ;
+    font-family: AvertaStd-Light;
+    font-size: 15px;
+    margin-bottom: 6px;
+
+}
+
+.color-hr{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    border: 0;
+    border-top: 1px solid #DEDEDE;
+}
+
+.content-route{
+
+    color: #888888 ;
+    font-family: AvertaStd-Light;
+    font-size: 14px;
+    margin-bottom: 6px;
+
+}
+
+.a-route, .a-route:hover{
+    color: #888888 ;
+    text-decoration: none;
+}
+
+.content-pagination{
+
+    color: rgb(20, 30, 66) ;
+    font-family: AvertaStd-Bold;
+    font-size: 16px;
+    margin-bottom: 0px;
+
+}
+
+.pagination-hr{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 0;
+    border-top: 1px solid #DEDEDE;
+}
+
+.a-pag:hover{
+    text-decoration: none;
 }
