@@ -7,8 +7,15 @@ export class NewsletterService {
 
   private content: any[] = [
     {
+      name: "INFORMATIC - Noviembre",
+      id: "8",
+      category: "General",
+      file: "assets/doc/lineamientos.pdf",
+      date: "Mar 15,2021",
+    },
+    {
       name: "INFORMATIC - Octubre",
-      id: "6",
+      id: "7",
       category: "General",
       file: "assets/doc/lineamientos.pdf",
       date: "Mar 15,2021",

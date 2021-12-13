@@ -68,7 +68,7 @@ export class ComponentsComponent implements OnInit, OnDestroy {
 
         this.ongetNewsList();
         //this.openModal();
-        //this.openInfoNew();
+        this.openInfoNew();
         AOS.init();
 
     }
@@ -94,15 +94,12 @@ export class ComponentsComponent implements OnInit, OnDestroy {
             html: `
           <div class="row">
             <div class="col-12 col-lg-12 col-md-12 col-sm-12">
-              <img src="assets/img/bicentenary/TARJETA_BICENTENARIO.jpg" class="card-img-top" alt="...">
-           
-              <a [routerLink]="['/bicentenario/paradero-cultural']" class="btn btn-primary">Ver más</a>
-              
+              <img src="assets/img/PROPUESTA_TARJETA_NAVIDAD.png" style="height:auto; width:100%;" class="card-img-top" alt="tarjeta navideña">
             </div>
           </div>
           `,
             showConfirmButton: false,
-            width: 900,
+            width: 600,
             showCloseButton: true,
         })
     }

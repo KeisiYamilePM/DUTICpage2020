@@ -88,11 +88,11 @@ export class TrainingsComponent implements OnInit {
 
   onClicLinkMoodle(data) {
     if (data == 'moodleI') {
-      window.open('https://forms.gle/LPwoBWUxA84aHdXf6','_blank')
+      window.open('https://forms.gle/yD4uUuvQeuHdLHrL9','_blank')
     } else if (data == 'moodleII') {
       window.open('https://forms.gle/XweTHi6vT3uq2JuQ8','_blank')
     } else if (data == 'moodleIII') {
-      window.open('https://forms.gle/jpPNUSGD72cSC9h8A','_blank')
+      window.open('https://forms.gle/Hk3AFWeMQp6F4ADq7','_blank')
     } else if (data == 'hgoogle') {
       window.open('https://forms.gle/X4jUEUXzJhyRbtvd9','_blank')
     } else if (data == 'tool') {

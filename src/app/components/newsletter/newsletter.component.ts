@@ -11,7 +11,7 @@ export class NewsletterComponent implements OnInit {
   content: any[] = []
   entryName: string
   entryFile: any
-  entryId: any = 7
+  entryId: any = 8
 
   constructor(private newsletterService: NewsletterService,) { 
   }
