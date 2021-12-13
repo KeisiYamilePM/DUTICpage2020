@@ -25,40 +25,40 @@
                         width='100%' height='100%'></iframe>
                 </div>
                 <div *ngIf="entryId==1? true : false" class='embed-responsive' name='asdjk' style='padding-bottom:150%'>
-                    <iframe src='assets/newsletter/BoletinDUTIC_Marzo.pdf' type='application/pdf'
-                        width='100%' height='100%'></iframe>
+                    <iframe src='assets/newsletter/BoletinDUTIC_Marzo.pdf' type='application/pdf' width='100%'
+                        height='100%'></iframe>
                 </div>
                 <div *ngIf="entryId==2? true : false" class='embed-responsive' name='asdjk' style='padding-bottom:150%'>
                     <iframe src='assets/newsletter/Boletin_Edicion_EspecialAbril.pdf' type='application/pdf'
                         width='100%' height='100%'></iframe>
                 </div>
                 <div *ngIf="entryId==3? true : false" class='embed-responsive' name='asdjk' style='padding-bottom:150%'>
-                    <iframe src='assets/newsletter/BoletinDUTIC_Mayo_c.pdf' type='application/pdf'
-                        width='100%' height='100%'></iframe>
+                    <iframe src='assets/newsletter/BoletinDUTIC_Mayo_c.pdf' type='application/pdf' width='100%'
+                        height='100%'></iframe>
                 </div>
                 <div *ngIf="entryId==4? true : false" class='embed-responsive' name='asdjk' style='padding-bottom:150%'>
-                    <iframe src='assets/newsletter/boletinDutic_Junio FINAL_c.pdf' type='application/pdf'
-                        width='100%' height='100%'></iframe>
+                    <iframe src='assets/newsletter/boletinDutic_Junio FINAL_c.pdf' type='application/pdf' width='100%'
+                        height='100%'></iframe>
                 </div>
                 <div *ngIf="entryId==5? true : false" class='embed-responsive' name='asdjk' style='padding-bottom:150%'>
-                    <iframe src='assets/newsletter/BoletinDUTIC_Julio.pdf' type='application/pdf'
-                        width='100%' height='100%'></iframe>
+                    <iframe src='assets/newsletter/BoletinDUTIC_Julio.pdf' type='application/pdf' width='100%'
+                        height='100%'></iframe>
                 </div>
                 <div *ngIf="entryId==6? true : false" class='embed-responsive' name='asdjk' style='padding-bottom:150%'>
-                    <iframe src='assets/newsletter/Boletin_EdicionEspecial_c.pdf' type='application/pdf'
-                        width='100%' height='100%'></iframe>
+                    <iframe src='assets/newsletter/Boletin_EdicionEspecial_c.pdf' type='application/pdf' width='100%'
+                        height='100%'></iframe>
                 </div>
                 <div *ngIf="entryId==7? true : false" class='embed-responsive' name='asdjk' style='padding-bottom:150%'>
-                    <iframe src='assets/newsletter/boletinDutic_OCTUBRE_c.pdf' type='application/pdf'
-                        width='100%' height='100%'></iframe>
+                    <iframe src='assets/newsletter/boletinDutic_OCTUBRE_c.pdf' type='application/pdf' width='100%'
+                        height='100%'></iframe>
                 </div>
                 <div *ngIf="entryId==8? true : false" class='embed-responsive' name='asdjk' style='padding-bottom:150%'>
-                    <iframe src='assets/newsletter/boletinDutic_NOVIEMBRE_c.pdf' type='application/pdf'
-                        width='100%' height='100%'></iframe>
+                    <iframe src='assets/newsletter/boletinDutic_NOVIEMBRE_c.pdf' type='application/pdf' width='100%'
+                        height='100%'></iframe>
                 </div>
-                
+
                 <!--ngx-extended-pdf-viewer [src]="entryFile" useBrowserLocale="true" height="80vh">
-                </ngx-extended-pdf-viewer-->
+                </ngx--pdf-viewer-->
 
                 <!--object data="entryFile" class='embed-responsive' type="application/pdf" width="100%" height="100%">
                     <p>Your browser does not support PDFs.
@@ -71,6 +71,34 @@
                         href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdutic.unsa.edu.pe%2F%23%2Fnews%2Fnewsletter&amp;src=sdkpreparse"
                         class="fb-xfbml-parse-ignore">Compartir</a></div-->
             </div>
+
+            <div>
+                <head>
+                    <title>DUTIC</title>
+                    <meta property="og:url" content="http://localhost:4200/eco-eficiencia#/homepage" />
+                    <meta property="og:type" content="website" />
+                    <meta property="og:title" content="Your Website Title" />
+                    <meta property="og:description" content="Your description" />
+                    <meta property="og:image" content="assets/newsletter/Recurso4.svg" />
+                </head>
+                <body>
+                    <!-- Load Facebook SDK for JavaScript -->
+                    <div id="fb-root"></div>
+                    <script>(function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (d.getElementById(id)) return;
+                            js = d.createElement(s); js.id = id;
+                            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));</script>
+
+                    <!-- Your share button code -->
+                    <div class="fb-share-button" data-href="https://dutic.unsa.edu.pe/#/news/newsletter"
+                        data-layout="button_count">
+                    </div>
+                </body>
+            </div>
+            <br>
         </div>
     </div>
     <!--<div class="container">
