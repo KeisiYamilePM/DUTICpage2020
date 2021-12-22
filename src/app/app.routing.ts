@@ -36,6 +36,7 @@ import { EdutipsComponent } from './components/ecosite/edutips/edutips.component
 import { DefinitionComponent } from './components/ecosite/definition/definition.component';
 import { EnewsComponent } from './components/ecosite/enews/enews.component';
 import { EresearchComponent } from './components/ecosite/eresearch/eresearch.component';
+import { QuestionComponent } from './components/question/question.component';
 
 
 const routes: Routes =[
@@ -79,6 +80,8 @@ const routes: Routes =[
     { path: 'ecoeficiencia/ecodutips', component: EdutipsComponent},
     { path: 'ecoeficiencia/noticias', component: EnewsComponent},
     { path: 'ecoeficiencia/investigaciones', component: EresearchComponent},
+
+    { path: 'dutic-questions', component: QuestionComponent},
 
 ];
 

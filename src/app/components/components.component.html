@@ -39,7 +39,7 @@
                         <div class="carousel-caption d-none d-md-block">
                         </div>
                     </ng-template>
-                    
+
                     <!--ng-template ngbSlide>
                         <a [routerLink]="['/virtualTeaching/news/content']">
                         <img class="d-block" src="assets/img/banner-asesorias.jpg" alt="asesoria docente"></a>
@@ -123,11 +123,6 @@
                                                 title="Boletin informativo">
                                                 <strong class="text-wrap">IR A BOLETÍN INFORMATIVO</strong>
                                                 <i class="now-ui-icons arrows-1_minimal-right ml-1"></i>
-                                                <i class="fas fa-file-download"></i>
-                                                <br>
-                                                <br>
-
-
                                             </a>
                                         </div>
                                     </div>
@@ -135,14 +130,45 @@
                             </div>
                         </div>
                     </div>
-
-
+                    <div class="card-deck mb-4" style="margin-right: 15px!important">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                                <div class="card card-news animated fadeIn fast" style="width: 100%; height: auto;">
+                                    <div class="card-body text-center">
+                                        <div style="background-color: #F6F6F6; border-radius: 50%;">
+                                            <img src="assets/img/dutic-eco.png" class="card-img-top m2" alt="..."
+                                                style="width: 100%; height: auto;"><br>
+                                        </div>
+                                        <p>
+                                            <span class="badge badge-success">Nuevo</span>
+                                        </p>
+                                        <a [routerLink]="['/ecoeficiencia']" href="" class="btn btn-primary btn-sm">Ver
+                                            más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                                <div class="card card-news animated fadeIn fast" style="width: 100%; height: auto;">
+                                    <div class="card-body text-center">
+                                        <div style="background-color: #F6F6F6; border-radius: 50%;">
+                                        <img src="assets/img/dutic-preg.png" class="card-img-top" alt="..."
+                                            style="width: 100%; height: auto;"><br></div>
+                                        <p>
+                                            <span class="badge badge-success">Nuevo</span>
+                                        </p>
+                                        <a [routerLink]="['/dutic-questions']" href=""
+                                            class="btn btn-primary btn-sm">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col">
                             <h3><strong>NOTICIAS<br><small>UNSA Y ACTUALIDAD</small></strong></h3>
                         </div>
                     </div>
-                    <div class="card-deck" style="margin-right: 15px!important">
+                    <div class="card-deck mb-4" style="margin-right: 15px!important">
                         <div class="row">
                             <div class="col-6 col-lg-4 col-md-6 col-sm-6" *ngFor="let news of content">
                                 <div *ngIf="news.state==true? true : false" class="card card-news animated fadeIn fast"
@@ -160,20 +186,10 @@
                             </div>
                         </div>
                     </div>
-
-                    
-                    
-                    <div  class="col" style="margin-left: 45px!important">
-                           
-                    <div class="fb-page" 
-                    data-tabs="timeline,events,messages"
-                    data-href="https://www.facebook.com/DUTIC.UNSA.AQP/"  
-                    data-width="400" 
-                    data-hide-cover="false"></div>
-
-                    </div>
-                 
-
+                    <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/MzCFme-7FGc"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe> -->
 
                     <!-- <div class="row">
                             <div class="slider">

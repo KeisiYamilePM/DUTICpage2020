@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+//import {MatExpansionModule} from '@angular/material/expansion';
 
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -41,6 +42,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
         MatButtonModule,
         MatIconModule,
         MatStepperModule,
+        //MatExpansionModule,
        // NgxExtendedPdfViewerModule
     ],
     providers: [],

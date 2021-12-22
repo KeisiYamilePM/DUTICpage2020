@@ -68,7 +68,7 @@ export class ComponentsComponent implements OnInit, OnDestroy {
 
         this.ongetNewsList();
         //this.openModal();
-        this.openInfoNew();
+        //this.openInfoNew();
         AOS.init();
 
     }

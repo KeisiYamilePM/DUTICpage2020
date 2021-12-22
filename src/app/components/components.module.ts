@@ -48,6 +48,7 @@ import { EdutipsComponent } from './ecosite/edutips/edutips.component';
 import { DefinitionComponent } from './ecosite/definition/definition.component';
 import { AniversarioComponent } from './culturalsite/aniversario/aniversario.component';
 import { AvancesComponent } from './culturalsite/aniversario/avances/avances.component';
+import { QuestionComponent } from './question/question.component';
 
 @NgModule({
     declarations: [
@@ -83,6 +84,7 @@ import { AvancesComponent } from './culturalsite/aniversario/avances/avances.com
         DefinitionComponent,
         AniversarioComponent,
         AvancesComponent,
+        QuestionComponent,
     ],
     schemas: [
         CUSTOM_ELEMENTS_SCHEMA,

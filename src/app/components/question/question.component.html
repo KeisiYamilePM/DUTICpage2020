@@ -1,0 +1,49 @@
+<div style="padding-top: 100px;" class="style--content">
+    <div class="container">
+
+        <mat-tab-group dynamicHeight>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <i class="now-ui-icons ui-2_chat-round mr-2"></i><strong>PREGUNTAS FRECUENTES</strong>
+                </ng-template>
+                <div class="mt-4">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12" *ngFor="let question of questions">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <strong>{{question.title}}</strong>
+                                    </h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">{{question.code}}</h6>
+                                    <p class="card-text">{{question.des}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </mat-tab>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <i class="now-ui-icons tech_laptop mr-2"></i><strong>DUTIPS</strong>
+                </ng-template>
+                <div class="mt-4">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12" *ngFor="let dutip of dutips">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <strong>{{dutip.title}}</strong>
+                                    </h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">{{dutip.code}}</h6>
+                                    <p class="card-text">{{dutip.des}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </mat-tab>
+        </mat-tab-group>
+        <img src="assets/svg/questions-rafiki.svg" class="card-img-top" alt="..."
+            style="width: 50%; height: auto; margin-left: auto; margin-right: auto; display: block;">
+    </div>
+</div>
