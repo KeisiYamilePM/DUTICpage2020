@@ -296,6 +296,55 @@ export class TrainingsService {
     },
   ];
 
+  private tcolab: any[] = [
+    {
+      name: "Herramientas colaborativas para la docencia",
+      turn1: "Horario: 8:00 hrs. a 10:00 hrs.",
+      turn2: "",
+      coment: "",
+      sesion: 5,
+      des: "Inicio del curso: 01 de Marzo",
+      silabo: "",
+      theme: [
+        {
+          nameTheme: "Wakelet",
+          date: "01/03/2022",
+          hour: "10am-12pm / 3pm-5pm",
+          state: true,
+          link: "",
+        },
+        {
+          nameTheme: "Adobe Creative Cloud",
+          date: "04/03/2022",
+          hour: "10am-12pm / 3pm-5pm",
+          state: true,
+          link: "",
+        },
+        {
+          nameTheme: "Flipgrip",
+          date: "05/03/2022",
+          hour: "10am-12pm / 3pm-5pm",
+          state: true,
+          link: "",
+        },
+        {
+          nameTheme: "Socrative",
+          date: "06/03/2022",
+          hour: "10am-12pm / 3pm-5pm",
+          state: true,
+          link: "",
+        },
+        {
+          nameTheme: "Whiteboard.Fi",
+          date: "07/03/2022",
+          hour: "10am-12pm / 3pm-5pm",
+          state: true,
+          link: "",
+        },
+      ]
+    },
+  ];
+
   constructor() { }
 
   getMoodleI(): Observable<any[]> {
@@ -320,6 +369,10 @@ export class TrainingsService {
 
   getExeL(): Observable<any[]> {
     return of(this.exeL);
+  }
+
+  getTColab(): Observable<any[]> {
+    return of(this.tcolab);
   }
 
 }

@@ -46,6 +46,8 @@ export class ContentsComponent implements OnInit {
       this.getTools();
     } else if (this.data == 'exeL') {
       this.getExeL();
+    } else if (this.data == 'tcolab') {
+      this.getTColab();
     }
   }
 
@@ -133,6 +135,22 @@ export class ContentsComponent implements OnInit {
   getExeL() {
     this.isLoad = true
     this.trainingsService.getExeL().subscribe((data: any) => {
+      /*       console.log('moodlei pruebaaaaaaa: ', data[0].theme)
+       */
+      this.dataContent = data
+      this.dataSource = new MatTableDataSource(data[0].theme)
+
+      this.dataSource.paginator = this.paginator
+      this.dataSource.sort = this.sort
+      this.isLoad = false
+      this.lenghtData = data.length
+    }, err => {
+      this.isLoad = false
+    })
+  }
+  getTColab() {
+    this.isLoad = true
+    this.trainingsService.getTColab().subscribe((data: any) => {
       /*       console.log('moodlei pruebaaaaaaa: ', data[0].theme)
        */
       this.dataContent = data

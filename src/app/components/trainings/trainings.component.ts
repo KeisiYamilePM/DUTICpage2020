@@ -18,6 +18,7 @@ export class TrainingsComponent implements OnInit {
   descFlagHGoogle: boolean;
   descFlagTools: boolean;
   descFlagExeL: boolean;
+  descFlagTColab: boolean;
 
   videos: Video[] = []
   content: any[] = [];
@@ -88,33 +89,37 @@ export class TrainingsComponent implements OnInit {
 
   onClicLinkMoodle(data) {
     if (data == 'moodleI') {
-      window.open('https://forms.gle/yD4uUuvQeuHdLHrL9','_blank')
+      window.open('','_blank')
     } else if (data == 'moodleII') {
-      window.open('https://forms.gle/XweTHi6vT3uq2JuQ8','_blank')
+      window.open('','_blank')
     } else if (data == 'moodleIII') {
-      window.open('https://forms.gle/Hk3AFWeMQp6F4ADq7','_blank')
+      window.open('','_blank')
     } else if (data == 'hgoogle') {
-      window.open('https://forms.gle/X4jUEUXzJhyRbtvd9','_blank')
+      window.open('','_blank')
     } else if (data == 'tool') {
       window.open('','_blank')
     } else if (data == 'exeL') {
-      window.open('https://forms.gle/3Yx5NKGn6GvwQg5y7','_blank')
+      window.open('','_blank')
+    } else if (data == 'tcolab') {
+      window.open('https://forms.gle/sLQ9HG9dQdUoh1Xf8','_blank')
     }
   }
 
   onClicLinkMoodleTurnB(data) {
     if (data == 'moodleI') {
-      window.open('https://forms.gle/WPsKRXrLNSmYCAer7','_blank')
+      window.open('','_blank')
     } else if (data == 'moodleII') {
-      window.open('https://forms.gle/cXos4p7yLfWd4pEw9','_blank')
+      window.open('','_blank')
     } else if (data == 'moodleIII') {
-      window.open('https://forms.gle/WEMVpf9Zede9rQko8','_blank')
+      window.open('','_blank')
     } else if (data == 'hgoogle') {
       window.open('','_blank')
     } else if (data == 'tool') {
       window.open('','_blank')
     } else if (data == 'exeL') {
-      window.open('https://forms.gle/3Yx5NKGn6GvwQg5y7','_blank')
+      window.open('','_blank')
+    } else if (data == 'tcolab') {
+      window.open('https://forms.gle/sLQ9HG9dQdUoh1Xf8','_blank')
     }
   }
 
