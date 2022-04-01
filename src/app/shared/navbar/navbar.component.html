@@ -23,14 +23,12 @@
       <li class="nav-item" ngbDropdown>
         <a class="dropdown-toggle nav-link text-center" style="color:#ffffff;" ngbDropdownToggle>
           <i class="now-ui-icons tech_laptop mr-1"></i>
-          <!--span class="badge badge-success mr-2">Nuevo</span--><br>
+          <span class="badge badge-success mr-2">Nuevo</span><br>
           <p>Docencia VIrtual</p>
         </a>
         <div ngbDropdownMenu routerLinkActive="active">
           <a class="dropdown-item" [routerLink]="['virtualTeaching/subjectDesign']">Diseño de asignatura</a>
-          <a class="dropdown-item" [routerLink]="['virtualTeaching/news']">Noticias
-            <!-- <span class="badge badge-success mr-2">Nuevo</span> -->
-          </a>
+          <a class="dropdown-item" [routerLink]="['virtualTeaching/news']">Noticias </a> <span class="badge badge-success mr-2">N</span>
         </div>
       </li>
       <li class="nav-item">
@@ -43,19 +41,19 @@
       <li class="nav-item">
         <a class="nav-link text-center" [routerLink]="['videoconferences']" style="color:#ffffff;">
           <i class="now-ui-icons objects_globe mr-1"></i>
-          <!--span class="badge badge-success ml-2">Nuevo</span--><br>
+          <span class="badge badge-success ml-2">Nuevo</span><br>
           Videoconferencias
         </a>
       </li>
       <li class="nav-item" ngbDropdown>
         <a class="dropdown-toggle nav-link text-center" style="color:#ffffff;" ngbDropdownToggle>
           <i class="now-ui-icons media-1_button-play mr-1"></i>
-          <span class="badge badge-success mr-2">Nuevo</span><br>
+          <!--span class="badge badge-success mr-2">Nuevo</span--><br>
           <p>Videos y recursos</p>
         </a>
         <div ngbDropdownMenu routerLinkActive="active">
           <a class="dropdown-item" [routerLink]="['virtualTeaching/trainings']">Capacitaciones
-            <span class="badge badge-success ml-2">N</span>
+            <!--span class="badge badge-success ml-2">N</span-->
           </a>
           <a class="dropdown-item" [routerLink]="['videoandresources/teachers']">Docentes<!--span
             class="badge badge-success ml-2">N</span-->

@@ -8,6 +8,33 @@ export class NewsService {
 
   private content: any[] = [
     {
+      name: "El sistema universitario frente al COVID-19 durante 2020 y 2021",
+      des: "Los retos y las oportunidades están sobre la mesa, y la universidad pública, con el apoyo del Minedu, ha decidido asumirlos. Este documento revela el trabajo realizado durante el 2020 y el primer semestre del 2021, y plantea el camino que le toca recorrer al sistema universitario peruano.",
+      img: "",
+      date: "",
+      state: true,
+      isnew: false,
+      link: "https://www.minedu.gob.pe/conectados/pdf/universidad-publica-covid-19-minedu.pdf",
+    },
+    {
+      name: "POLÍTICAS DIGITALES EDUCATIVAS EN AMÉRICA LATINA FRENTE A LA PANDEMIA DE COVID-19",
+      des: "El presente documento tiene como propósito presentar y analizar las políticas de educación remota de los países latinoamericanos que buscaron asegurar la continuidad educativa frente a la pandemia por la COVID-19. Se presenta un panorama regional a la vez que se analizan diferentes estrategias y acciones desarrolladas por un grupo de países seleccionados (desde marzo a octubre de 2020).",
+      img: "",
+      date: "",
+      state: true,
+      isnew: false,
+      link: "https://unesdoc.unesco.org/ark:/48223/pf0000378636",
+    },
+    {
+      name: "Marco de competencias de los docentes enmateria de TIC UNESCO",
+      des: "Aborda las repercusiones de los recientes avances tecnológicos en materia de educación y aprendizaje, como la inteligencia artificial (IA), las tecnologías móviles, la Internet de las cosas y los recursos educativos abiertos, en apoyo a la creación de sociedades del conocimiento inclusivas.",
+      img: "",
+      date: "30/05/2020",
+      state: true,
+      isnew: false,
+      link: "https://unesdoc.unesco.org/ark:/48223/pf0000371024",
+    },
+    {
       name: "PMESUT pone a disposición recursos digitales sobre educación virtual",
       des: "PMESUT pone a disposición recursos digitales sobre educación virtual.",
       img: "assets/img/virtualearning/pmsut.jpg",
@@ -35,16 +62,6 @@ export class NewsService {
       link: "http://www.iesalc.unesco.org/wp-content/uploads/2020/04/COVID-19-060420-ES-2.pdf",
     },
     
-    
-    {
-      name: "Diálogo: Laboratorios Remotos",
-      des: "En la séptima edición de la iniciativa “Diálogos”, tres especialistas del Tecnológico de Monterrey, Pontificia Universidad Católica del Perú (PUCP) y Universitat Oberta de Catalunya (UOC) conversarán sobre  la educación a distancia y el uso de laboratorios en estos tiempos de emergencia sanitaria.",
-      img: "assets/img/news/labsremotos.jpg",
-      date: "Tecnológico de Monterrey, Pontificia Universidad Católica del Perú (PUCP) y Universitat Oberta de Catalunya (UOC) jueves 17 de septiembre de 2020, 9:00 AM, hora de México (GMT-5)",
-      state: false,
-      isnew: false,
-      link: "https://observatorio.tec.mx/dialogos-del-observatorio?fbclid=IwAR0p4kH-7LIvjhH_GzmWZwI_wEmbBJ4U3Tcpg0XW8t0JqCt6_t5FhTgDe8M",
-    },
     {
       name: "La tecnología como herramienta en el desarrollo de la educación en Arequipa",
       des: "Analizar la importancia del rol adquirido por la tecnología como herramienta en el desarrollo de la educación básica y superior durante la emergencia sanitaria y recopilar información que permita mejorar la enseñanza virtual en Arequipa.",
@@ -53,15 +70,6 @@ export class NewsService {
       state: false,
       isnew: false,
       link: "https://forms.gle/ihdFPV3GJ11QvCLh8",
-    },
-    {
-      name: "Lanzamiento de PROGRAMA DE ENTRENAMIENTO PARA MENTORES",
-      des: "ste viernes 18 de septiembre a las 17:00 horas, se llevará a cabo el lanzamiento oficial del PROGRAMA DE ENTRENAMIENTO PARA MENTORES, que tiene como objetivo fortalecer los Soft Skill de los participantes y así lograr una comunicación efectiva en el proceso de mentoring.",
-      img: "assets/img/news/jakuemprende.png",
-      date: "JAKU Emprende UNSA",
-      state: false,
-      isnew: false,
-      link: "https://www.facebook.com/hashtag/programamentores",
     },
     {
       name: "Curso Internacional Online en Cultura de la Investigación",
@@ -100,15 +108,6 @@ export class NewsService {
       link: "assets/doc/news/Ciclo_De_lo_presencial_a_lo_virtual_Peru.pdf",
     },
     {
-      name: "Dialogo PUCP y Tecnologico de Monterrey",
-      des: "En este diálogo, expertos del Tecnológico de Monterrey PONTIFICIA UNIVERSIDAD CATOLICA DEL PERU y Universitat Oberta de Catalunya (UOC) conversarán sobre los retos de la educación a distancia ante la pandemia...",
-      img: "assets/img/news/monterrey.png",
-      date: "04/06/2020",
-      state: false,
-      isnew: false,
-      link: "https://www.facebook.com/watch/live/?v=1044527619283099&ref=watch_permalink",
-    },
-    {
       name: "RPU presenta el catálogo de herramientas digitales para la enseñanza",
       des: "Herramientas digitales para la enseñanza es el primer material de un conjunto que viene preparando la Dirección Académica de Planeamiento y Evaluación (DAPE) y la Dirección Académica de Responsabilidad Social (DARS) de la Pontificia Universidad Católica del Perú, en coordinación con la Secretaría Técnica de la Red Peruana de Universidades (RPU)",
       img: "assets/img/news/rpu14062020.jpg",
@@ -117,16 +116,6 @@ export class NewsService {
       isnew: false,
       link: "http://rpu.edu.pe/2020/05/21/rpu-presenta-catalogo-herramientas-digitales-la-ensenanza/",
     },
-    {
-      name: "El cambio de la enseñanza presencial a la remota",
-      des: "La Rédum (Red de Expertos) en colaboración con al Pontificia Universidad Católica del Perú desarrollarán la Conferencia en Línea: “El cambio en la enseñanza presencial remota” a cargo del docente Raúl Santiago de la Universidad de la Rioja (España).Este evenot se realizo el 09/06/2020",
-      img: "assets/img/news/pucp14062020.png",
-      date: "09/06/2020",
-      state: false,
-      isnew: false,
-      link: "https://www.facebook.com/novedadesacademicaspucp/videos/688303838619527/?embtrk=9j3a-R-31018422-R-6c5-R-5c1%2Co46",
-    },
-    
   ];
 
   constructor() { }

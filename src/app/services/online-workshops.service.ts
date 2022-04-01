@@ -9,6 +9,29 @@ export class OnlineWorkshopsService {
 
   private videoconferences: any[] = [
     {
+      name: "claves para el desarrollo d ecompetencia en un contexto hibrido",
+      speaker: "Mg. Ana Lucía Fernández Castillo",
+      nationality: "Perú",
+      category: "Educación",
+      organizedBy: "CONECTADOS Ministerio de Educación del Perú",
+      date: "03/2022",
+      hour: "",
+      state: true,
+      link: "https://www.minedu.gob.pe/conectados/webinars.php",
+    },
+    {
+      name: "preparando el retorno a clases: retos  para afrontar  la presencialidad y semipresencilidad en las universidades",
+      speaker: "Mg. Rocío Quispe Rupaylla",
+      nationality: "Perú",
+      category: "Educación",
+      organizedBy: "CONECTADOS Ministerio de Educación del Perú",
+      date: "02/2022",
+      hour: "",
+      state: true,
+      link: "https://www.minedu.gob.pe/conectados/webinars.php",
+    },
+
+    {
       name: "Coaching docente: un nuevo modelo para la interacción con los alumnos",
       speaker: "Ana María Quintanilla",
       nationality: "México",
@@ -16,7 +39,7 @@ export class OnlineWorkshopsService {
       organizedBy: "Pontificia Universidad Católica del Perú",
       date: "29/10/2021",
       hour: "",
-      state: true,
+      state: false,
       link: "https://zoom.us/meeting/register/tJUvfuuuqD8uG9dZuVGmgaWVQnO6q-Zvg4Mw",
     },
     {
