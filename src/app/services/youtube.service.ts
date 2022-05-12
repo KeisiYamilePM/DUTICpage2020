@@ -22,9 +22,11 @@ export class YoutubeService {
   private playlistTeacherManagement = "PLqtSFRmgPpYF1SWFrcdYaVzE8QlEDMn1F";
   private playlistTeacherDesign = "PLqtSFRmgPpYEXh0dJia4QZC7hLlN_OUVu";
   private playlistTeacherEvaluation = "PLqtSFRmgPpYE3cHexMFoo3b_80138Bh-1";
+  private playlistTeacherGamification = "PLqtSFRmgPpYG4rZ1VxL6PAbpdt1N8P4RU";
 
   private playlisteGoogle = "PLqtSFRmgPpYEtfaYVD___9s2Ff7l1HjdM";
   private playlistTools = "PLqtSFRmgPpYHsDEOTtLmottSvjN315r4j";
+  private playlistTColaborative = "PLqtSFRmgPpYF8E0-07bCU_wCxFiit2uW8"
 
   private playlistworkshop = "PLqtSFRmgPpYEQsU82qIClMGMuTRULDv8B";
 
@@ -140,6 +142,24 @@ export class YoutubeService {
         })
       )
   }
+  getVideosTeacherGamification(){
+    var url = this.youtubeURL+'/playlistItems'
+    const params = new HttpParams()
+      .set('part','snippet')
+      .set('key', this.apikey)
+      .set('playlistId', this.playlistTeacherGamification)
+      .set('maxResults','20')
+
+    return this.http.get<YoutubeResponse>(url, {params})
+      .pipe(
+        map( resp => {
+          return resp.items;
+        }),
+        map( items=>{
+          return items.map( video => video.snippet)
+        })
+      )
+  }
   getVideosTools(){
     var url = this.youtubeURL+'/playlistItems'
     const params = new HttpParams()
@@ -165,6 +185,24 @@ export class YoutubeService {
       .set('part','snippet')
       .set('key', this.apikey)
       .set('playlistId', this.playlistworkshop)
+      .set('maxResults','20')
+
+    return this.http.get<YoutubeResponse>(url, {params})
+      .pipe(
+        map( resp => {
+          return resp.items;
+        }),
+        map( items=>{
+          return items.map( video => video.snippet)
+        })
+      )
+  }
+  getVideosTColaborative(){
+    var url = this.youtubeURL+'/playlistItems'
+    const params = new HttpParams()
+      .set('part','snippet')
+      .set('key', this.apikey)
+      .set('playlistId', this.playlistTColaborative)
       .set('maxResults','20')
 
     return this.http.get<YoutubeResponse>(url, {params})

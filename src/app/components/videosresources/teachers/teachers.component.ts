@@ -14,6 +14,8 @@ export class TeachersComponent implements OnInit {
   videosM: Video[] = [];
   videosD: Video[] = [];
   videosE: Video[] = [];
+  videosG: Video[] = [];
+
 
   content: any[] = [];
   contentV: any[] = [];
@@ -26,6 +28,7 @@ export class TeachersComponent implements OnInit {
     this.onGetVideosTeacherManagement()
     this.onGetVideosTeacherDesign()
     this.onGetVideosTeacherEvaluation()
+    this.onGetVideosTeacherGamification()
   }
 
   onGetVideosTeacherManagement(){
@@ -51,6 +54,15 @@ export class TeachersComponent implements OnInit {
       //console.log("aquiii",resp);
       var url = "https://www.youtube.com/embed/"
       this.videosE = resp;
+      /*       this.videos.resourceId.videoId = url + this.videos.resourceId.videoId;
+       */
+    });
+  }
+  onGetVideosTeacherGamification(){
+    this.youtubeService.getVideosTeacherGamification().subscribe(resp => {
+      //console.log("aquiii",resp);
+      var url = "https://www.youtube.com/embed/"
+      this.videosG = resp;
       /*       this.videos.resourceId.videoId = url + this.videos.resourceId.videoId;
        */
     });

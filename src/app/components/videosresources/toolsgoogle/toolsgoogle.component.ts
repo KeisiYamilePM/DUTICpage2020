@@ -15,6 +15,7 @@ export class ToolsgoogleComponent implements OnInit {
   videosH: Video[] = [];
   content: any[] = [];
   contentV: any[] = [];
+  videosTColab: Video[] = [];
 
   constructor(private youtubeService: YoutubeService,
     private handbookService: HandbookService
@@ -23,6 +24,7 @@ export class ToolsgoogleComponent implements OnInit {
   ngOnInit(): void {
     this.onGetVideosGoogle()
     this.onGetVideosTools()
+    this.onGetVideosTColaborative()
   }
   onGetVideosGoogle(){
     this.youtubeService.getVideosGoogle().subscribe(resp => {
@@ -38,6 +40,15 @@ export class ToolsgoogleComponent implements OnInit {
       /*console.log(resp);*/
       var url = "https://www.youtube.com/embed/"
       this.videosH = resp;
+      /*       this.videos.resourceId.videoId = url + this.videos.resourceId.videoId;
+       */
+    });
+  }
+  onGetVideosTColaborative(){
+    this.youtubeService.getVideosTColaborative().subscribe(resp => {
+      /*console.log(resp);*/
+      var url = "https://www.youtube.com/embed/"
+      this.videosTColab = resp;
       /*       this.videos.resourceId.videoId = url + this.videos.resourceId.videoId;
        */
     });

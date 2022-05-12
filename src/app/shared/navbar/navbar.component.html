@@ -23,25 +23,26 @@
       <li class="nav-item" ngbDropdown>
         <a class="dropdown-toggle nav-link text-center" style="color:#ffffff;" ngbDropdownToggle>
           <i class="now-ui-icons tech_laptop mr-1"></i>
-          <span class="badge badge-success mr-2">Nuevo</span><br>
+          <!--span class="badge badge-success mr-2">Nuevo</span--><br>
           <p>Docencia VIrtual</p>
         </a>
         <div ngbDropdownMenu routerLinkActive="active">
           <a class="dropdown-item" [routerLink]="['virtualTeaching/subjectDesign']">Diseño de asignatura</a>
-          <a class="dropdown-item" [routerLink]="['virtualTeaching/news']">Noticias </a> <span class="badge badge-success mr-2">N</span>
+          <a class="dropdown-item" [routerLink]="['virtualTeaching/news']">Noticias <!--span
+              class="badge badge-success mr-2">N</span--></a>
         </div>
       </li>
       <li class="nav-item">
         <a class="nav-link text-center" style="color:#ffffff;" [routerLink]="['virtualLearning']">
           <i class="now-ui-icons education_hat mr-1"></i>
-          <!--span class="badge badge-success mr-2">Nuevo</span--><br>
+          <span class="badge badge-success mr-2">Nuevo</span><br>
           <p>Aprendizaje virtual</p>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-center" [routerLink]="['videoconferences']" style="color:#ffffff;">
           <i class="now-ui-icons objects_globe mr-1"></i>
-          <span class="badge badge-success ml-2">Nuevo</span><br>
+          <!--span class="badge badge-success ml-2">Nuevo</span--><br>
           Videoconferencias
         </a>
       </li>
@@ -56,9 +57,10 @@
             <!--span class="badge badge-success ml-2">N</span-->
           </a>
           <a class="dropdown-item" [routerLink]="['videoandresources/teachers']">Docentes<!--span
-            class="badge badge-success ml-2">N</span-->
+              class="badge badge-success ml-2">N</span-->
           </a>
-          <a class="dropdown-item" [routerLink]="['videoandresources/students']">Estudiantes<!--span
+          <a class="dropdown-item" [routerLink]="['videoandresources/students']">Estudiantes
+            <!--span
             class="badge badge-success ml-2">N</span-->
           </a>
           <a class="dropdown-item" [routerLink]="['videoandresources/googletools']">Herramientas
@@ -72,18 +74,21 @@
           <p>Ingrese al aula virtual</p>
         </a>
         <div ngbDropdownMenu>
+          <a class="dropdown-item" href="https://aulavirtual.unsa.edu.pe/2022A/" target="_blank">Aula Virtual
+            2022-A</a>
           <a class="dropdown-item" href="https://aulavirtual.unsa.edu.pe" target="_blank">Aula Virtual
             2021-C</a>
           <a class="dropdown-item" href="https://aulavirtual.unsa.edu.pe/2021B/" target="_blank">Aula Virtual
             2021-B</a>
-          <a class="dropdown-item" href="https://aulavirtual2021.unsa.edu.pe/2021A/" target="_blank">Aula Virtual
+          <a class="dropdown-item" [routerLink]="['comunications']" target="_blank">Aula Virtual
             2021-A</a>
-          <a class="dropdown-item" href="https://aulavirtual2020.unsa.edu.pe/2020C/" target="_blank">Aula Virtual
+          <a class="dropdown-item" [routerLink]="['dutic-questions']">Aula Virtuales 2020</a>
+          <!--a class="dropdown-item" href="https://aulavirtual2020.unsa.edu.pe/2020C/" target="_blank">Aula Virtual
             2020-C</a>
           <a class="dropdown-item" href="https://aulavirtual2020.unsa.edu.pe/2020B/" target="_blank">Aula Virtual
             2020-B</a>
           <a class="dropdown-item" href="https://aulavirtual2020.unsa.edu.pe/2020A/" target="_blank">Aula Virtual
-            2020-A</a>
+            2020-A</a-->
           <a class="dropdown-item" href="https://dutic.unsa.edu.pe/aulavirtual/posgrado/" target="blank">Aula virtual
             Posgrado</a>
         </div>
