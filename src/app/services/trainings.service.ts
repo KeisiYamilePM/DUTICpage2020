@@ -105,8 +105,8 @@ export class TrainingsService {
   private moodleIII: any[] = [
     {
       name: "AULAS VIRTUALES III – Moodle Avanzado",
-      turn1: "Horario primer turno: 11:00 hrs. a 13:00 hrs.",
-      turn2: "",
+      turn1: "Horario primer turno: 8:15 hrs. a 10:15 hrs.",
+      turn2: "Horario segundo turno: 18:00 hrs. a 20:00 hrs.",
       coment: "",
       sesion: 3,
       des: "Inicio del curso: 26 Agosto",
@@ -308,35 +308,35 @@ export class TrainingsService {
       theme: [
         {
           nameTheme: "Wakelet",
-          date: "01/03/2022",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         },
         {
           nameTheme: "Adobe Creative Cloud",
-          date: "04/03/2022",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         },
         {
           nameTheme: "Flipgrip",
-          date: "05/03/2022",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         },
         {
           nameTheme: "Socrative",
-          date: "06/03/2022",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         },
         {
           nameTheme: "Whiteboard.Fi",
-          date: "07/03/2022",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",

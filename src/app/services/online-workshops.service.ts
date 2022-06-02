@@ -16,7 +16,7 @@ export class OnlineWorkshopsService {
       organizedBy: "CONECTADOS Ministerio de Educación del Perú",
       date: "03/2022",
       hour: "",
-      state: true,
+      state: false,
       link: "https://www.minedu.gob.pe/conectados/webinars.php",
     },
     {
@@ -27,7 +27,7 @@ export class OnlineWorkshopsService {
       organizedBy: "CONECTADOS Ministerio de Educación del Perú",
       date: "02/2022",
       hour: "",
-      state: true,
+      state: false,
       link: "https://www.minedu.gob.pe/conectados/webinars.php",
     },
 
