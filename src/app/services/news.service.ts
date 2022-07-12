@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { TrainingStudentsComponent } from 'app/components/trainings/training-students/training-students.component';
 
 @Injectable({
   providedIn: 'root'
@@ -8,21 +9,12 @@ export class NewsService {
 
   private content: any[] = [
     {
-      name: "El sistema universitario frente al COVID-19 durante 2020 y 2021",
-      des: "Los retos y las oportunidades están sobre la mesa, y la universidad pública, con el apoyo del Minedu, ha decidido asumirlos. Este documento revela el trabajo realizado durante el 2020 y el primer semestre del 2021, y plantea el camino que le toca recorrer al sistema universitario peruano.",
-      img: "assets/img/news/n1.png",
-      date: "",
-      state: true,
-      isnew: true,
-      link: "https://www.minedu.gob.pe/conectados/pdf/universidad-publica-covid-19-minedu.pdf",
-    },
-    {
       name: "Políticas digitales educativas frente a la Covid-19",
       des: "El presente documento tiene como propósito presentar y analizar las políticas de educación remota de los países latinoamericanos que buscaron asegurar la continuidad educativa frente a la pandemia por la COVID-19. Se presenta un panorama regional a la vez que se analizan diferentes estrategias y acciones desarrolladas por un grupo de países seleccionados (desde marzo a octubre de 2020).",
       img: "assets/img/news/n2.png",
       date: "",
       state: true,
-      isnew: true,
+      isnew: false,
       link: "https://unesdoc.unesco.org/ark:/48223/pf0000378636",
     },
     {
@@ -31,7 +23,7 @@ export class NewsService {
       img: "assets/img/news/n3.png",
       date: "30/05/2020",
       state: true,
-      isnew: true,
+      isnew: false,
       link: "https://unesdoc.unesco.org/ark:/48223/pf0000371024",
     },
     {
@@ -61,7 +53,15 @@ export class NewsService {
       isnew: false,
       link: "http://www.iesalc.unesco.org/wp-content/uploads/2020/04/COVID-19-060420-ES-2.pdf",
     },
-    
+    {
+      name: "El sistema universitario frente al COVID-19 durante 2020 y 2021",
+      des: "Los retos y las oportunidades están sobre la mesa, y la universidad pública, con el apoyo del Minedu, ha decidido asumirlos. Este documento revela el trabajo realizado durante el 2020 y el primer semestre del 2021, y plantea el camino que le toca recorrer al sistema universitario peruano.",
+      img: "assets/img/news/n1.png",
+      date: "",
+      state: true,
+      isnew: false,
+      link: "https://www.minedu.gob.pe/conectados/pdf/universidad-publica-covid-19-minedu.pdf",
+    },
     {
       name: "La tecnología como herramienta en el desarrollo de la educación en Arequipa",
       des: "Analizar la importancia del rol adquirido por la tecnología como herramienta en el desarrollo de la educación básica y superior durante la emergencia sanitaria y recopilar información que permita mejorar la enseñanza virtual en Arequipa.",

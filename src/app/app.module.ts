@@ -26,6 +26,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
         AppComponent,
         NavbarComponent,
         FooterComponent,
+
     ],
     imports: [
         BrowserAnimationsModule,

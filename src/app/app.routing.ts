@@ -38,6 +38,7 @@ import { EnewsComponent } from './components/ecosite/enews/enews.component';
 import { EresearchComponent } from './components/ecosite/eresearch/eresearch.component';
 import { QuestionComponent } from './components/question/question.component';
 import { CommunicationsComponent } from './components/communications/communications.component';
+import { ComFiveComponent } from './components/com-five/com-five.component';
 
 
 const routes: Routes =[
@@ -83,6 +84,7 @@ const routes: Routes =[
     { path: 'ecoeficiencia/investigaciones', component: EresearchComponent},
 
     { path: 'comunications', component: CommunicationsComponent},
+    { path: 'course-dutic', component: ComFiveComponent},
 
     { path: 'dutic-questions', component: QuestionComponent},
 

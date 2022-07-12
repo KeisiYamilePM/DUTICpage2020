@@ -50,6 +50,8 @@ import { AniversarioComponent } from './culturalsite/aniversario/aniversario.com
 import { AvancesComponent } from './culturalsite/aniversario/avances/avances.component';
 import { QuestionComponent } from './question/question.component';
 import { CommunicationsComponent } from './communications/communications.component';
+import { ComFiveComponent } from './com-five/com-five.component';
+import { ComFiveModalComponent } from './com-five/com-five-modal/com-five-modal.component';
 
 @NgModule({
     declarations: [
@@ -87,6 +89,8 @@ import { CommunicationsComponent } from './communications/communications.compone
         AvancesComponent,
         QuestionComponent,
         CommunicationsComponent,
+        ComFiveComponent,
+        ComFiveModalComponent,
     ],
     schemas: [
         CUSTOM_ELEMENTS_SCHEMA,

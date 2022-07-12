@@ -1,29 +1,35 @@
 .square {
-    position: relative;
-    width: 50%;
-    padding: 5 5 5 5;
-  }
-  
-  .square:after {
-    content: '';
-    display: block;
-    padding-bottom: 100%;
-  }
-  
-  .content {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
+  position: relative;
+  width: 50%;
+  padding: 5 5 5 5;
+}
 
-  .background-guinda{
-      background-color: rgb(94, 21, 29);
-  }
+.square:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
 
-  .background-dutic{
-      background-color: rgb(9, 15, 70);
-  }
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 
-  .background-white{
-    background-color: rgb(255, 255, 255);
+.background-guinda {
+  background-color: rgb(94, 21, 29);
+}
+
+.background-dutic {
+  background-color: rgb(9, 15, 70);
+}
+
+.background-white {
+  background-color: rgb(255, 255, 255);
+}
+
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

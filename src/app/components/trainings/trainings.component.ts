@@ -124,7 +124,6 @@ export class TrainingsComponent implements OnInit {
   }
 
   openModal(data: any) {
-    console.log('Este es el modelo: ', data)
     const dialogRef = this.dialog.open(ContentsComponent, {
       data: data,
       width: '70%',

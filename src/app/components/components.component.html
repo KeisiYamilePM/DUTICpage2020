@@ -26,32 +26,26 @@
         <div class="row justify-content-center">
             <div class="col-12" style="background-color: #141e42;">
                 <ngb-carousel>
-                    <ng-template ngbSlide>
+                    <!--ng-template ngbSlide>
                         <a [routerLink]="['/virtualTeaching/trainings']">
                             <img class="d-block img-fluid mt-4" src="assets/img/bannercap2022.png"
                                 alt="Capacitaciones a docentes"></a>
                         <div class="carousel-caption d-none d-md-block">
                         </div>
-                    </ng-template>
+                    </ng-template-->
                     <ng-template ngbSlide>
-                        <a>
+                        <a href="https://aulavirtual.unsa.edu.pe/2022A/" target="blank">
                             <img class="d-block img-fluid" src="assets/img/banner1.png" alt="bienvenidos"></a>
                         <div class="carousel-caption d-none d-md-block">
                         </div>
                     </ng-template>
                     <!--ng-template ngbSlide>
-                        <a href="https://aulavirtual.unsa.edu.pe/2022A/" target="blank">
-                            <img class="d-block img-fluid" src="assets/img/banner2.png" alt="bienvenidos"></a>
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </ng-template-->
-                    <ng-template ngbSlide>
                         <a [routerLink]="['/virtualLearning/news/content']">
                             <img class="d-block img-fluid" src="assets/newsletter/BannerCapac.jpg"
                                 alt="Capacitacion a estudiantes"></a>
                         <div class="carousel-caption d-none d-md-block">
                         </div>
-                    </ng-template>
+                    </ng-template-->
                     <!--ng-template ngbSlide>
                         <img class="d-block" src="assets/img/header4.jpg" style=" filter: brightness(50%);"
                             alt="Imagen de portada">
@@ -108,26 +102,7 @@
                         allowfullscreen></iframe> -->
                 </div>
                 <div class="col-12 col-lg-4 col-md-6 col-sm-12">
-                    <p><strong>Contáctanos:</strong></p>
-                    <div ngbDropdown class="text-center">
-                        <button class="btn background-white" id="gfg" ngbDropdownToggle style="border-radius: 50px;">
-                            <img src="assets/img/whatsapp.png" alt="whatsapp" style="width: 60px; height: auto;">
-                        </button>
-                        <div ngbDropdownMenu="gfg">
-                            <a class="dropdown-item"
-                                href="https://wa.me/51939083870?text=Buen%20día,%20deseo%20realizar%20una%20consulta."
-                                target="blank">Dutic
-                                Ingenierias</a>
-                            <a class="dropdown-item"
-                                href="https://wa.me/51939074882?text=Buen%20día,%20deseo%20realizar%20una%20consulta."
-                                target="blank">Dutic
-                                Sociales</a>
-                            <a class="dropdown-item"
-                                href="https://wa.me/51939084706?text=Buen%20día,%20deseo%20realizar%20una%20consulta."
-                                target="blank">Dutic
-                                Biomedicas</a>
-                        </div>
-                    </div>
+
                     <!--div class="row">
                         <div class="col">
                             <div class="card mb-3">
@@ -155,6 +130,13 @@
                             </div>
                         </div>
                     </div-->
+                    <div class="row">
+                        <div class="col">
+                            <a href="assets/doc/ProtocoloparalaprevencióndeCovid-19.pdf" target="blank" class=""><img
+                                    src="assets/img/protocoloCovid.png" class="card-img-top" alt="..."
+                                    style="width: 100%; height: auto;"></a>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col">
                             <div class="card mb-3">
@@ -243,6 +225,33 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12">
+                            <p><strong>Contáctanos:</strong></p>
+                            <div ngbDropdown class="text-center">
+                                <button class="btn background-white" id="gfg" ngbDropdownToggle
+                                    style="border-radius: 50px;">
+                                    <img src="assets/img/whatsapp.png" alt="whatsapp"
+                                        style="width: 60px; height: auto;">
+                                </button>
+                                <div ngbDropdownMenu="gfg">
+                                    <a class="dropdown-item"
+                                        href="https://wa.me/51939083870?text=Buen%20día,%20deseo%20realizar%20una%20consulta."
+                                        target="blank">Dutic
+                                        Ingenierias</a>
+                                    <a class="dropdown-item"
+                                        href="https://wa.me/51939074882?text=Buen%20día,%20deseo%20realizar%20una%20consulta."
+                                        target="blank">Dutic
+                                        Sociales</a>
+                                    <a class="dropdown-item"
+                                        href="https://wa.me/51939084706?text=Buen%20día,%20deseo%20realizar%20una%20consulta."
+                                        target="blank">Dutic
+                                        Biomedicas</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
                             <div class="card mb-3">
                                 <div class="card-body">
                                     <div class="row">
@@ -266,9 +275,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--a href="http://matricula.unsa.edu.pe/" target="blank" class="btn btn-primary btn-sm"><img
-                                    src="assets/img/dufa.png" class="card-img-top" alt="..."
-                                    style="width: 100%; height: auto;"></a-->
                         </div>
                     </div>
                     <div class="row">

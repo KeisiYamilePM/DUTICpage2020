@@ -1,0 +1,74 @@
+
+.color-a{
+    color: rgb(20, 30, 66);
+}
+
+.color-b{
+    color: rgb(153, 153, 153);
+}
+
+.color-rp{
+    color: #aa2424;
+}
+
+.color-gray{
+    color: gray;
+}
+
+
+.bg-opacity{
+    position: relative;
+    background-color: #000;
+}
+
+.bg-opacity::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.3;
+    background: url("assets/img/bicentenary/fondo_unsa.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.content{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.example-card {
+    max-width: 400px;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+  
+.main-section{
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.title-card{
+    padding-top: 1rem;
+    padding-bottom: 0.4rem;
+}
+
+.bg-a{
+    background-color: rgb(20, 30, 66);
+}
+
+.bg-b{
+    background-color: #aa2424;
+}
+
+.bg-c{
+    background-color: rgb(153, 153, 153);
+}
+
+.bg-d{
+    background-color: black;
+}
