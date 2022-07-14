@@ -52,6 +52,7 @@ import { QuestionComponent } from './question/question.component';
 import { CommunicationsComponent } from './communications/communications.component';
 import { ComFiveComponent } from './com-five/com-five.component';
 import { ComFiveModalComponent } from './com-five/com-five-modal/com-five-modal.component';
+import { ComFiveModalFormComponent } from './com-five/com-five-modal-form/com-five-modal-form.component';
 
 @NgModule({
     declarations: [
@@ -91,6 +92,7 @@ import { ComFiveModalComponent } from './com-five/com-five-modal/com-five-modal.
         CommunicationsComponent,
         ComFiveComponent,
         ComFiveModalComponent,
+        ComFiveModalFormComponent,
     ],
     schemas: [
         CUSTOM_ELEMENTS_SCHEMA,

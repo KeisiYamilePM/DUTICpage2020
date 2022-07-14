@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { ComFiveModalFormComponent } from './com-five-modal-form/com-five-modal-form.component';
 import { ComFiveModalComponent } from './com-five-modal/com-five-modal.component';
 
 @Component({
@@ -20,6 +21,13 @@ export class ComFiveComponent implements OnInit {
       data: data,
       width: '70%',
       height: '460px',
+    })
+  }
+  openModalForm(data: any) {
+    const dialogRef = this.dialog.open(ComFiveModalFormComponent, {
+      data: data,
+      width: '400px',
+      height: '450px',
     })
   }
 }
