@@ -372,7 +372,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="logo_cabecera_2.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\keisi\\appdata\\local\\temp\\tmpbrp3a4\\logo_cabecera_2.png"></string>
+                     <string value="c:\\users\\usuario\\appdata\\local\\temp\\tmp3fzphx\\logo_cabecera_2.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="1cf8a374412a382532810799f2d550fd"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -791,7 +791,7 @@ learning tasks."></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="mapa_v2.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\keisi\\appdata\\local\\temp\\tmpbrp3a4\\mapa_v2.png"></string>
+                     <string value="c:\\users\\usuario\\appdata\\local\\temp\\tmp3fzphx\\mapa_v2.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="89bebd6dbfe7ff5f18bc4019d5306f9e"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2330,7 +2330,7 @@ for the other options."></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="logo_cabecera_2.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\keisi\\appdata\\local\\temp\\tmpbrp3a4\\logo_cabecera_2.png"></string>
+                     <string value="c:\\users\\usuario\\appdata\\local\\temp\\tmp3fzphx\\logo_cabecera_2.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="1cf8a374412a382532810799f2d550fd"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -4179,7 +4179,7 @@ for the other options."></unicode>
   <string role="key" value="backgroundImgTile"></string>
   <bool value="0"></bool>
   <string role="key" value="currentNode"></string>
-  <reference key="74"></reference>
+  <reference key="3"></reference>
   <string role="key" value="dublinCore"></string>
   <instance class="exe.engine.package.DublinCore">
    <dictionary>
@@ -5440,7 +5440,7 @@ for the other options."></unicode>
   <string role="key" value="scowwebsite"></string>
   <bool value="0"></bool>
   <string role="key" value="style"></string>
-  <unicode value="Estilo_Dutic"></unicode>
+  <unicode value="INTEF"></unicode>
   <string role="key" value="sugaractivityname"></string>
   <string value=""></string>
   <string role="key" value="sugarservicename"></string>

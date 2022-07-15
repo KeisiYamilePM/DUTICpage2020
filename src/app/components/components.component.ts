@@ -94,7 +94,7 @@ export class ComponentsComponent implements OnInit, OnDestroy {
             html: `
           <div class="row">
             <div class="col-12 col-lg-12 col-md-12 col-sm-12">
-            <a href="https://aulasposgrado.unsa.edu.pe/dist/#/planification-design-tools" target="_blank">
+            <a href="https://dutic.unsa.edu.pe/capacitacion2022/course/view.php?id=16" target="_blank">
             <img src="assets/img/sq2.png" style="height:auto; width:100%;" class="card-img-top" alt="sabias que">
             </a
             </div>
