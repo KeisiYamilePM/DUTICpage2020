@@ -28,14 +28,16 @@
         </a>
         <div ngbDropdownMenu routerLinkActive="active">
           <a class="dropdown-item" [routerLink]="['virtualTeaching/subjectDesign']">Diseño de asignatura</a>
-          <a class="dropdown-item" [routerLink]="['virtualTeaching/news']">Noticias <!--span
-              class="badge badge-success mr-2">N</span--></a>
+          <a class="dropdown-item" [routerLink]="['virtualTeaching/news']">Noticias
+            <!--span
+              class="badge badge-success mr-2">N</span-->
+          </a>
         </div>
       </li>
       <li class="nav-item">
         <a class="nav-link text-center" style="color:#ffffff;" [routerLink]="['virtualLearning']">
           <i class="now-ui-icons education_hat mr-1"></i>
-          <span class="badge badge-success mr-2">Nuevo</span><br>
+          <!--span class="badge badge-success mr-2">Nuevo</span--><br>
           <p>Aprendizaje virtual</p>
         </a>
       </li>
@@ -56,7 +58,8 @@
           <a class="dropdown-item" [routerLink]="['virtualTeaching/trainings']">Capacitaciones
             <!--span class="badge badge-success ml-2">N</span-->
           </a>
-          <a class="dropdown-item" [routerLink]="['videoandresources/teachers']">Docentes<!--span
+          <a class="dropdown-item" [routerLink]="['videoandresources/teachers']">Docentes
+            <!--span
               class="badge badge-success ml-2">N</span-->
           </a>
           <a class="dropdown-item" [routerLink]="['videoandresources/students']">Estudiantes
@@ -74,14 +77,11 @@
           <p>Ingrese al aula virtual</p>
         </a>
         <div ngbDropdownMenu>
+          <a class="dropdown-item" href="https://aulavirtual.unsa.edu.pe/2022B/" target="_blank">Aula Virtual
+            2022-B</a>
           <a class="dropdown-item" href="https://aulavirtual.unsa.edu.pe/2022A/" target="_blank">Aula Virtual
             2022-A</a>
-          <a class="dropdown-item" href="https://aulavirtual.unsa.edu.pe" target="_blank">Aula Virtual
-            2021-C</a>
-          <a class="dropdown-item" href="https://aulavirtual.unsa.edu.pe/2021B/" target="_blank">Aula Virtual
-            2021-B</a>
-          <a class="dropdown-item" [routerLink]="['comunications']" target="_blank">Aula Virtual
-            2021-A</a>
+          <a class="dropdown-item" [routerLink]="['dutic-questions']">Aula Virtuales 2021</a>
           <a class="dropdown-item" [routerLink]="['dutic-questions']">Aula Virtuales 2020</a>
           <!--a class="dropdown-item" href="https://aulavirtual2020.unsa.edu.pe/2020C/" target="_blank">Aula Virtual
             2020-C</a>
