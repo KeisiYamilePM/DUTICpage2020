@@ -84,7 +84,7 @@ const routes: Routes =[
     { path: 'ecoeficiencia/investigaciones', component: EresearchComponent},
 
     { path: 'comunications', component: CommunicationsComponent},
-    { path: 'course-dutic', component: ComFiveComponent},
+    { path: 'planification-design-tools', component: ComFiveComponent},
 
     { path: 'dutic-questions', component: QuestionComponent},
 

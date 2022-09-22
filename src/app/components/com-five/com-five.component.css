@@ -30,7 +30,7 @@
     width: 100%;
     height: 100%;
     z-index: 0;
-    opacity: 0.3;
+    opacity: 0.1;
     background: url("assets/img/bicentenary/fondo_unsa.jpg") no-repeat center;
     background-size: cover;
 }

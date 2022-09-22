@@ -94,12 +94,14 @@ export class ComponentsComponent implements OnInit, OnDestroy {
             html: `
           <div class="row">
             <div class="col-12 col-lg-12 col-md-12 col-sm-12">
-              <img src="assets/img/PROPUESTA_TARJETA_NAVIDAD.png" style="height:auto; width:100%;" class="card-img-top" alt="tarjeta navideña">
+            <a href="https://dutic.unsa.edu.pe/capacitacion2022/course/view.php?id=16" target="_blank">
+            <img src="assets/img/sq2.png" style="height:auto; width:100%;" class="card-img-top" alt="sabias que">
+            </a
             </div>
           </div>
           `,
             showConfirmButton: false,
-            width: 600,
+            width: 500,
             showCloseButton: true,
         })
     }

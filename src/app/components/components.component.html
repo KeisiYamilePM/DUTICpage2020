@@ -26,26 +26,45 @@
         <div class="row justify-content-center">
             <div class="col-12" style="background-color: #141e42;">
                 <ngb-carousel>
+                   
                     <!--ng-template ngbSlide>
-                        <a [routerLink]="['/virtualTeaching/trainings']">
-                            <img class="d-block img-fluid mt-4" src="assets/img/bannercap2022.png"
-                                alt="Capacitaciones a docentes"></a>
+                        <a [routerLink]="['/planification-design-tools']">
+                            <img class="d-block img-fluid" src="assets/img/banner-webc5.png"
+                                alt=""></a>
                         <div class="carousel-caption d-none d-md-block">
                         </div>
                     </ng-template-->
+                    <ng-template ngbSlide>
+                        <a [routerLink]="['/paradero-cultural']" target="blank">
+                            <img class="d-block img-fluid" src="assets/img/DIA-ESTUDIANTE.jpg" alt=""></a>
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <a href="https://dutic.unsa.edu.pe/capacitacion2022/course/view.php?id=28" target="blank">
+                            <img class="d-block img-fluid" src="assets/img/H5P.png" alt="bienvenidos"></a>
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <a href="" target="blank">
+                            <img class="d-block img-fluid" src="assets/img/FVWEB.jpg" alt="bienvenidos"></a>
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </ng-template>
                     <ng-template ngbSlide>
                         <a href="https://aulavirtual.unsa.edu.pe/2022B/" target="blank">
                             <img class="d-block img-fluid" src="assets/img/UNSA_WEB.jpg" alt="bienvenidos"></a>
                         <div class="carousel-caption d-none d-md-block">
                         </div>
                     </ng-template>
-                    <ng-template ngbSlide>
+                    <!--ng-template ngbSlide>
                         <a [routerLink]="['/virtualLearning/news/content']">
                             <img class="d-block img-fluid" src="assets/newsletter/BannerCapac.jpg"
                                 alt="Capacitacion a estudiantes"></a>
                         <div class="carousel-caption d-none d-md-block">
                         </div>
-                    </ng-template>
+                    </ng-template-->
                     <!--ng-template ngbSlide>
                         <img class="d-block" src="assets/img/header4.jpg" style=" filter: brightness(50%);"
                             alt="Imagen de portada">
@@ -199,6 +218,33 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col">
+                                            <h5 class="card-title font-weight-bold">PREGUNTAS FRECUENTES
+                                                <!--span class="badge badge-success ml-2">Nuevo</span-->
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-8 col-md-12 col-sm-12">
+                                            <p class="card-text">Estamos para resolver tus dudas o consultas</p>
+                                            <a [routerLink]="['/dutic-questions']" href=""
+                                                class="btn btn-primary btn-sm">Ver
+                                                más</a>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12 col-sm-12">
+                                            <img src="assets/img/dutic-preg.png" class="card-img-top" alt="..."
+                                                style="width: 100%; height: auto;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
                                             <h5 class="card-title font-weight-bold">UNSA ECOEFICIENTE
                                                 <!--span class="badge badge-success ml-2">Nuevo</span-->
                                             </h5>
@@ -220,7 +266,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="row">
@@ -256,21 +301,20 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col">
-                                            <h5 class="card-title font-weight-bold">PREGUNTAS FRECUENTES
-                                                <!--span class="badge badge-success ml-2">Nuevo</span-->
+                                            <h5 class="card-title font-weight-bold">AULAS VIRTUALES
+                                                <span class="badge badge-success ml-2">Nuevo</span>
                                             </h5>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-8 col-md-12 col-sm-12">
-                                            <p class="card-text">Estamos para resolver tus dudas o consultas</p>
-                                            <a [routerLink]="['/dutic-questions']" href=""
+                                            <p class="card-text">Planificación, diseño y herramientas</p>
+                                            <a [routerLink]="['/planification-design-tools']" href=""
                                                 class="btn btn-primary btn-sm">Ver
                                                 más</a>
                                         </div>
                                         <div class="col-lg-4 col-md-12 col-sm-12">
-                                            <img src="assets/img/dutic-preg.png" class="card-img-top" alt="..."
-                                                style="width: 100%; height: auto;">
+                                            <img src="assets/svg/modaddie.svg" class="card-img-top" alt="...">
                                         </div>
                                     </div>
                                 </div>

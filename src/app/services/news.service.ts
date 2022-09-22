@@ -9,6 +9,15 @@ export class NewsService {
 
   private content: any[] = [
     {
+      name: "A través de la Investigadora Elisabeth Vidal DUTIC es Internacional",
+      des: "La rehabilitación virtual apuesta por una tecnología accesible de bajo coste",
+      img: "assets/img/news/ingEli.png",
+      date: "15/09/2022",
+      state: true,
+      isnew: true,
+      link: "https://www.diariodeteruel.es/teruel/la-rehabilitacion-virtual-apuesta-por-una-tecnologia-accesible-de-bajo-coste",
+    },
+    {
       name: "Políticas digitales educativas frente a la Covid-19",
       des: "El presente documento tiene como propósito presentar y analizar las políticas de educación remota de los países latinoamericanos que buscaron asegurar la continuidad educativa frente a la pandemia por la COVID-19. Se presenta un panorama regional a la vez que se analizan diferentes estrategias y acciones desarrolladas por un grupo de países seleccionados (desde marzo a octubre de 2020).",
       img: "assets/img/news/n2.png",
@@ -58,7 +67,7 @@ export class NewsService {
       des: "Los retos y las oportunidades están sobre la mesa, y la universidad pública, con el apoyo del Minedu, ha decidido asumirlos. Este documento revela el trabajo realizado durante el 2020 y el primer semestre del 2021, y plantea el camino que le toca recorrer al sistema universitario peruano.",
       img: "assets/img/news/n1.png",
       date: "",
-      state: true,
+      state: false,
       isnew: false,
       link: "https://www.minedu.gob.pe/conectados/pdf/universidad-publica-covid-19-minedu.pdf",
     },
