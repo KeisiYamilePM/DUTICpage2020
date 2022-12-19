@@ -9,11 +9,11 @@ export class TrainingsService {
   private moodleI: any[] = [
     {
       name: "AULAS VIRTUALES I – Moodle Básico",
-      turn1: "Horario primer turno: 9:00 hrs. a 11:00 hrs.",
+      turn1: "Horario primer turno:",
       turn2: "",
       coment: "",
       sesion: 3,
-      des: "Inicio del curso: 17 de Agosto",
+      des: "Inicio del curso: ",
       silabo: "assets/img/trainings/Sílabo_Moodle_Básico.pdf",
       theme: [
         {
@@ -56,11 +56,11 @@ export class TrainingsService {
   private moodleII: any[] = [
     {
       name: "AULAS VIRTUALES II – Moodle Intermedio",
-      turn1: "Horario primer turno: 9:00 hrs. a 11:00 hrs.",
+      turn1: "Horario primer turno: ",
       turn2: "",
       coment: "",
       sesion: 3,
-      des: "Inicio del curso: 17 de Agosto",
+      des: "Inicio del curso: ",
       silabo: "assets/img/trainings/Sílabo_Moodle_Intermedio.pdf",
       theme: [
         {
@@ -105,11 +105,11 @@ export class TrainingsService {
   private moodleIII: any[] = [
     {
       name: "AULAS VIRTUALES III – Moodle Avanzado",
-      turn1: "Horario primer turno: 8:15 hrs. a 10:15 hrs.",
-      turn2: "Horario segundo turno: 18:00 hrs. a 20:00 hrs.",
+      turn1: "Horario primer turno: ",
+      turn2: "",
       coment: "",
       sesion: 3,
-      des: "Inicio del curso: 26 Agosto",
+      des: "Inicio del curso:",
       silabo: "assets/img/trainings/SILABO_MOODLE_AVANZADO_2021.pdf",
       theme: [
         {
@@ -152,44 +152,44 @@ export class TrainingsService {
   private hgoogle: any[] = [
     {
       name: "Aplicaciones Google para la Educación",
-      turn1: "Horario primer turno: 8:00 hrs. a 10:00 hrs.",
-      turn2: "Horario segundo turno: 14:00 hrs. a 16:00 hrs.",
+      turn1: "",
+      turn2: "Horario: 14:00 hrs. a 16:00 hrs.",
       coment: "",
       sesion: 5,
-      des: "Inicio del curso: 09 de mayo",
+      des: "Inicio del curso:",
       silabo: "assets/img/trainings/SILABO_APLICACIONES_DE_GOOGLE_2021.pdf",
       theme: [
         {
           nameTheme: "Generalidades y acceso a Google Apps desde cuenta institucional.",
-          date: "09/05/2022",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         },
         {
           nameTheme: "APLICACIONES GOOGLE: Documentos y hoja de cálculo.",
-          date: "10/05/2022",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         },
         {
           nameTheme: "APLICACIONES GOOGLE: Presentaciones y formularios.",
-          date: "11/05/2022",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         },
         {
           nameTheme: "APLICACIONES GOOGLE: Google Calendar y Hangouts Meet",
-          date: "12/05/2022",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         },
         {
           nameTheme: "YouTube y Jamboard",
-          date: "13/05/2022",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
@@ -202,7 +202,7 @@ export class TrainingsService {
     {
       name: "Herramientas Digitales para la docencia",
       turn1: "",
-      turn2: "Horario segundo turno: 17:00 hrs. a 19:00 hrs.",
+      turn2: "Horario segundo turno: ",
       coment: "",
       sesion: 5,
       des: "Inicio del curso: ",
@@ -251,43 +251,43 @@ export class TrainingsService {
     {
       name: "Creación de contenidos educativos digitales",
       turn1: "",
-      turn2: "Horario segundo turno: 15:00 hrs. a 17:00 hrs.",
+      turn2: "Horario primer turno: ",
       coment: "",
       sesion: 5,
-      des: "Inicio del curso: 25 de Octubre",
+      des: "Inicio del curso: ",
       silabo: "assets/img/trainings/Sílabo_Creacion_Contenidos_Educativos_Digitales_c.pdf",
       theme: [
         {
           nameTheme: "¿Qué es exe Learning? / Proceso de Instalación / Descripción del entorno de trabajo / Estilos de presentación",
-          date: "25/10/2021",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         },
         {
           nameTheme: "iDevices",
-          date: "26/10/2021",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         },
         {
           nameTheme: "iDevices de presentación de información no textual (imágenes y páginas web)",
-          date: "27/10/2021",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         },
         {
           nameTheme: "iDevices de actividades no interactivas",
-          date: "28/10/2021",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
         },
         {
           nameTheme: "iDevices de actividades interactivas / Formatos de Exportación",
-          date: "29/10/2021",
+          date: "",
           hour: "10am-12pm / 3pm-5pm",
           state: true,
           link: "",
@@ -299,11 +299,11 @@ export class TrainingsService {
   private tcolab: any[] = [
     {
       name: "Herramientas colaborativas para la docencia",
-      turn1: "Horario: 8:00 hrs. a 10:00 hrs.",
+      turn1: "Horario: ",
       turn2: "",
       coment: "",
       sesion: 5,
-      des: "Inicio del curso: 01 de Marzo",
+      des: "Inicio del curso: ",
       silabo: "",
       theme: [
         {

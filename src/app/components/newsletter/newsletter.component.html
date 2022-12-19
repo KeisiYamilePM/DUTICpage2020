@@ -1,13 +1,8 @@
 <div style="padding-top: 90px;" class="style--content">
-    <!--div class="header--style col-lg-9 col-md-12 col-sm-12 pt-4 pr-5 pb-1 mb-4">
-        <h2 class="font-weight-bold">BOLETIN INFORMATIVO</h2>
-    </div-->
-
-    <div class="container backgrey">
-        <div class="row p-3">
-            <div class="col-12">
-                <!--h4 class="font-weight-bold text-center">BOLETÍN INFORMATIVO DUTIC</h4-->
-            </div>
+    <div class="container">
+        <iframe style="border: 1px solid #777;" src="https://indd.adobe.com/embed/659fadbf-253c-4c81-9cd4-f283e499aa4d?startpage=1&allowFullscreen=true" width="100%" height="550px" frameborder="0" allowfullscreen=""></iframe>
+        
+        <!--div class="row">
             <div class="col-lg-3 col-md-4 col-sm-12 pl-4 pr-4 list-group">
                 <h4>Publicaciones 2021</h4>
                 <div *ngFor="let entry of content">
@@ -16,10 +11,6 @@
                 </div>
             </div>
             <div class="col-lg-9 col-md-8 col-sm-12">
-                <!--iframe class="iframe-responsivo" src="assets/newsletter/Boletin_DUTIC_Febrero_compressed.pdf"
-                    frameborder="0" scrolling="no"></iframe-->
-                <!--pdf-viewer [src]="assets/newsletter/BoletinDUTIC_Febrero_compressed.pdf" [render-text]="true" style="display: block;"></pdf-viewer-->
-
                 <div *ngIf="entryId==0? true : false" class='embed-responsive' style='padding-bottom:150%'>
                     <iframe src='assets/newsletter/BoletinDUTIC_Febrero_compressed.pdf' type='application/pdf'
                         width='100%' height='100%'></iframe>
@@ -60,19 +51,6 @@
                     <iframe src='assets/newsletter/boletinDutic_DICIEMBRE_c.pdf' type='application/pdf' width='100%'
                         height='100%'></iframe>
                 </div>
-                <!--ngx-extended-pdf-viewer [src]="entryFile" useBrowserLocale="true" height="80vh">
-                </ngx--pdf-viewer-->
-
-                <!--object data="entryFile" class='embed-responsive' type="application/pdf" width="100%" height="100%">
-                    <p>Your browser does not support PDFs.
-                    </p>
-                </object-->
-                <!--ngx-doc-viewer [url]="assets/newsletter/BoletinDUTIC_Febrero_compressed.pdf" viewer="google" style="width:100%;height:50vh;"></ngx-doc-viewer-->
-
-                <!--div class="fb-share-button" data-href="https://dutic.unsa.edu.pe/#/news/newsletter"
-                    data-layout="button_count" data-size="large"><a target="_blank"
-                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdutic.unsa.edu.pe%2F%23%2Fnews%2Fnewsletter&amp;src=sdkpreparse"
-                        class="fb-xfbml-parse-ignore">Compartir</a></div-->
             </div>
 
             <div>
@@ -85,7 +63,6 @@
                     <meta property="og:image" content="assets/newsletter/Recurso4.svg" />
                 </head>
                 <body>
-                    <!-- Load Facebook SDK for JavaScript -->
                     <div id="fb-root"></div>
                     <script>(function (d, s, id) {
                             var js, fjs = d.getElementsByTagName(s)[0];
@@ -95,33 +72,12 @@
                             fjs.parentNode.insertBefore(js, fjs);
                         }(document, 'script', 'facebook-jssdk'));</script>
 
-                    <!-- Your share button code -->
                     <div class="fb-share-button btn-facebook" data-href="https://dutic.unsa.edu.pe/#/news/newsletter"
                         data-layout="button_count">
                     </div>
                 </body>
             </div>
             <br>
-        </div>
+        </div-->
     </div>
-    <!--<div class="container">
-        <div class="mb-4">
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Buscar entrada" #searchText>
-                <button (click)="searchEntry(searchText.value)"
-                    class="btn btn-primary my-2 my-sm-0" type="button">Buscar</button>
-            </form>
-        </div>
-        <div class="card-columns">
-            <div class="card animated fadeIn fast scroll" *ngFor="let entry of content" style="width: 100%;">
-                <img style="width: 220px; height: auto;" src="{{entry.img}}" class="card-img-top mx-auto d-block"
-                    alt="...">
-                <div class="card-body">
-                    <small class="text-muted card-text text-left">{{entry.categoryName}} | {{entry.date}}</small>
-                    <h6 class="card-title"><strong>{{entry.name}}</strong></h6>
-                    <h6 class="card-text">{{entry.des}}</h6>
-                </div>
-            </div>
-        </div>
-    </div> -->
 </div>

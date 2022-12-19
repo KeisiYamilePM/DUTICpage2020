@@ -93,7 +93,7 @@ export class TrainingsComponent implements OnInit {
     } else if (data == 'moodleII') {
       window.open('','_blank')
     } else if (data == 'moodleIII') {
-      window.open('','_blank')
+      window.open('https://forms.gle/xGtPKbEH3KqKsGwA6','_blank')
     } else if (data == 'hgoogle') {
       window.open('','_blank')
     } else if (data == 'tool') {
@@ -101,7 +101,7 @@ export class TrainingsComponent implements OnInit {
     } else if (data == 'exeL') {
       window.open('','_blank')
     } else if (data == 'tcolab') {
-      window.open('https://forms.gle/sLQ9HG9dQdUoh1Xf8','_blank')
+      window.open('','_blank')
     }
   }
 

@@ -14,7 +14,7 @@ export class NewsService {
       img: "assets/img/news/ingEli.png",
       date: "15/09/2022",
       state: true,
-      isnew: true,
+      isnew: false,
       link: "https://www.diariodeteruel.es/teruel/la-rehabilitacion-virtual-apuesta-por-una-tecnologia-accesible-de-bajo-coste",
     },
     {

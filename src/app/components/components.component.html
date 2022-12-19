@@ -26,7 +26,7 @@
         <div class="row justify-content-center">
             <div class="col-12" style="background-color: #141e42;">
                 <ngb-carousel>
-                   
+
                     <!--ng-template ngbSlide>
                         <a [routerLink]="['/planification-design-tools']">
                             <img class="d-block img-fluid" src="assets/img/banner-webc5.png"
@@ -34,21 +34,10 @@
                         <div class="carousel-caption d-none d-md-block">
                         </div>
                     </ng-template-->
-                    <!--ng-template ngbSlide>
-                        <a [routerLink]="['/paradero-cultural']" target="blank">
-                            <img class="d-block img-fluid" src="assets/img/DIA-ESTUDIANTE.jpg" alt=""></a>
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </ng-template-->
                     <ng-template ngbSlide>
-                        <a href="https://dutic.unsa.edu.pe/capacitacion2022/course/view.php?id=28" target="blank">
-                            <img class="d-block img-fluid" src="assets/img/H5P.png" alt="bienvenidos"></a>
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </ng-template>
-                    <ng-template ngbSlide>
-                        <a href="" target="blank">
-                            <img class="d-block img-fluid" src="assets/img/FVWEB.jpg" alt="bienvenidos"></a>
+                        <a [routerLink]="['/paradero-cultural']">
+                            <img class="d-block img-fluid" src="assets/img/Banner-navidad.jpg"
+                                alt="Navidad DUTIC"></a>
                         <div class="carousel-caption d-none d-md-block">
                         </div>
                     </ng-template>
@@ -151,9 +140,57 @@
                     </div-->
                     <div class="row">
                         <div class="col">
-                            <a href="assets/doc/ProtocoloparalaprevencióndeCovid-19.pdf" target="blank" class=""><img
-                                    src="assets/img/protocoloCovid.png" class="card-img-top" alt="..."
-                                    style="width: 100%; height: auto;"></a>
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="card-title font-weight-bold">BOLETÍN DUTIC
+                                                <span class="text-white badge badge-success ml-2">Nuevo</span>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 col-sm-12">
+                                            <img class="d-block" src="assets/img/contentstructure.svg">
+                                        </div>
+                                        <div class="col-lg-6 col-md-12 col-sm-12">
+                                            <p class="card-text">Dutips y noticias en
+                                                educación virtual.</p>
+                                            <a [routerLink]="['/news/newsletter']" class="btn btn-primary btn-sm"
+                                                title="Boletin informativo">
+                                                Ver más
+                                                <!--i class="now-ui-icons arrows-1_minimal-right ml-1"></i-->
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="card-title font-weight-bold">AULAS VIRTUALES
+                                                <!--span class="badge badge-success ml-2">Nuevo</span-->
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-8 col-md-12 col-sm-12">
+                                            <p class="card-text">Planificación, diseño y herramientas</p>
+                                            <a [routerLink]="['/planification-design-tools']" href=""
+                                                class="btn btn-primary btn-sm">Ver
+                                                más</a>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12 col-sm-12">
+                                            <img src="assets/svg/modaddie.svg" class="card-img-top" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -170,42 +207,12 @@
                                     <div class="row">
                                         <div class="col-lg-6 col-md-12 col-sm-12">
                                             <p class="card-text">Descargue el cronograma 2022 de la UNSA</p>
-                                            <a href="assets/img/RCU_168-2022_cronograma_académico2022A.pdf"
-                                                target="blank" class="btn btn-primary btn-sm">Ver
-                                                documento</a>
+                                            <a href="assets/doc/RCU-0318-2022.pdf" target="blank"
+                                                class="btn btn-primary btn-sm">Cronograma</a>
                                         </div>
                                         <div class="col-lg-6 col-md-12 col-sm-12">
                                             <img src="assets/img/calendar.svg" class="card-img-top m2" alt="..."
                                                 style="width: 100%; height: auto;">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="card mb-3">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col">
-                                            <h5 class="card-title font-weight-bold">BOLETÍN DUTIC
-                                                <!--span class="text-white bg-primary badge badge-success ml-2">Nuevo</span-->
-                                            </h5>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-12 col-sm-12">
-                                            <img class="d-block" src="assets/img/contentstructure.svg">
-                                        </div>
-                                        <div class="col-lg-6 col-md-12 col-sm-12">
-                                            <p class="card-text">Dutips y noticias en
-                                                educación virtual.</p>
-                                            <a [routerLink]="['/news/newsletter']" class="btn btn-primary btn-sm"
-                                                title="Boletin informativo">
-                                                Ver más
-                                                <!--i class="now-ui-icons arrows-1_minimal-right ml-1"></i-->
-                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -294,31 +301,12 @@
                             </div>
 
                         </div>
-                    </div>
+                    </div>                    
                     <div class="row">
-                        <div class="col">
-                            <div class="card mb-3">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col">
-                                            <h5 class="card-title font-weight-bold">AULAS VIRTUALES
-                                                <span class="badge badge-success ml-2">Nuevo</span>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-8 col-md-12 col-sm-12">
-                                            <p class="card-text">Planificación, diseño y herramientas</p>
-                                            <a [routerLink]="['/planification-design-tools']" href=""
-                                                class="btn btn-primary btn-sm">Ver
-                                                más</a>
-                                        </div>
-                                        <div class="col-lg-4 col-md-12 col-sm-12">
-                                            <img src="assets/svg/modaddie.svg" class="card-img-top" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col mb-4">
+                            <a href="assets/doc/ProtocoloparalaprevencióndeCovid-19.pdf" target="blank" class=""><img
+                                    src="assets/img/protocoloCovid.png" class="card-img-top" alt="..."
+                                    style="width: 100%; height: auto;"></a>
                         </div>
                     </div>
                     <div class="row">
