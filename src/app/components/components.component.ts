@@ -68,7 +68,7 @@ export class ComponentsComponent implements OnInit, OnDestroy {
 
         this.ongetNewsList();
         //this.openModal();
-        //this.openInfoNew();
+        this.openInfoNew();
         AOS.init();
 
     }
@@ -94,8 +94,8 @@ export class ComponentsComponent implements OnInit, OnDestroy {
             html: `
           <div class="row">
             <div class="col-12 col-lg-12 col-md-12 col-sm-12">
-            <a href="https://dutic.unsa.edu.pe/capacitacion2022/course/view.php?id=16" target="_blank">
-            <img src="assets/img/sq2.png" style="height:auto; width:100%;" class="card-img-top" alt="sabias que">
+            <a href="https://dutic.unsa.edu.pe/capacitacion2022/login/index.php" target="_blank">
+            <img src="assets/img/flyer2023-1.jpg" style="height:auto; width:100%;" class="card-img-top" alt="sabias que">
             </a
             </div>
           </div>
