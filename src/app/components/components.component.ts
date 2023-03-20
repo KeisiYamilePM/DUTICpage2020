@@ -95,7 +95,7 @@ export class ComponentsComponent implements OnInit, OnDestroy {
           <div class="row">
             <div class="col-12 col-lg-12 col-md-12 col-sm-12">
             <a href="https://dutic.unsa.edu.pe/capacitacion2022/login/index.php" target="_blank">
-            <img src="assets/img/flyer2023-1.jpg" style="height:auto; width:100%;" class="card-img-top" alt="sabias que">
+            <img src="assets/img/flyer2023-3.jpg" style="height:auto; width:100%;" class="card-img-top" alt="sabias que">
             </a
             </div>
           </div>
