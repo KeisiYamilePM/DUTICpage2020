@@ -94,8 +94,8 @@ export class ComponentsComponent implements OnInit, OnDestroy {
             html: `
           <div class="row">
             <div class="col-12 col-lg-12 col-md-12 col-sm-12">
-            <a href="https://dutic.unsa.edu.pe/#/paradero-cultural" target="_blank">
-            <img src="assets/img/flyer2024-1.jpg" style="height:auto; width:100%;" class="card-img-top" alt="sabias que">
+            <a href="https://transparencia.unsa.edu.pe/bitstream/handle/123456789/1511/RCU-0153-2025.pdf?sequence=1&isAllowed=y" target="_blank">
+            <img src="assets/img/normativa-popup.png" style="height:auto; width:100%;" class="card-img-top" alt="sabias que">
             </a
             </div>
           </div>
